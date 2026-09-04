@@ -1,3 +1,5 @@
+import AskBox from './AskBox';
+
 const rumors = [
   { claim: 'AI agents will replace traditional apps', verdict: 'PLAUSIBLE', score: 72, trend: '↑ HOT', tag: 'AGENTS' },
   { claim: 'The next personal computer will be an AI wearable', verdict: 'DEVELOPING', score: 61, trend: '↑', tag: 'DEVICES' },
@@ -26,10 +28,7 @@ export default function Home() {
         <div className="eyebrow">LIVE AI INTELLIGENCE FEED</div>
         <h1>Everybody is saying it.<br/><em>Is it actually true?</em></h1>
         <p>WirelessRumor tracks the claims, predictions, breakthroughs and nonsense surrounding artificial intelligence — then AI investigates the AI.</p>
-        <form className="ask" action="/api/ask" method="POST">
-          <input name="question" placeholder="Ask the Rumor Machine anything about AI…" />
-          <button type="submit">ANALYZE →</button>
-        </form>
+        <AskBox />
         <div className="examples">TRY: “Can AI run my business?” · “Will apps disappear?” · “Is AGI already here?”</div>
       </section>
 
@@ -40,7 +39,7 @@ export default function Home() {
       <section className="section" id="radar">
         <div className="sectionHead"><div><span className="kicker">01 / LIVE</span><h2>RUMOR RADAR</h2></div><p>Claims ranked by evidence, velocity and corroboration. Scores change as the evidence changes.</p></div>
         <div className="rumorGrid">
-          {rumors.map((r, i) => <article className="rumor" key={r.claim}>
+          {rumors.map((r) => <article className="rumor" key={r.claim}>
             <div className="rumorTop"><span>{r.tag}</span><b>{r.trend}</b></div>
             <h3>{r.claim}</h3>
             <div className="verdict"><div><small>AI VERDICT</small><strong>{r.verdict}</strong></div><div className="score">{r.score}<sup>%</sup></div></div>
