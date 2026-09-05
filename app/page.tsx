@@ -1,12 +1,5 @@
 import AskBox from './AskBox';
-
-const rumors = [
-  { claim: 'AI agents will replace traditional apps', verdict: 'PLAUSIBLE', score: 72, trend: '↑ HOT', tag: 'AGENTS' },
-  { claim: 'The next personal computer will be an AI wearable', verdict: 'DEVELOPING', score: 61, trend: '↑', tag: 'DEVICES' },
-  { claim: 'AI can already run a small company with minimal human help', verdict: 'MOSTLY TRUE', score: 84, trend: '↑↑', tag: 'BUSINESS' },
-  { claim: 'AGI is secretly operating inside major AI labs', verdict: 'UNPROVEN', score: 23, trend: '→', tag: 'AGI' },
-  { claim: 'Humanoid robots will become common household products this decade', verdict: 'POSSIBLE', score: 58, trend: '↑', tag: 'ROBOTICS' },
-];
+import { rumors } from '../lib/rumors';
 
 const activity = [
   '17 sources compared on autonomous AI businesses',
@@ -44,7 +37,7 @@ export default function Home() {
             <h3>{r.claim}</h3>
             <div className="verdict"><div><small>AI VERDICT</small><strong>{r.verdict}</strong></div><div className="score">{r.score}<sup>%</sup></div></div>
             <div className="bar"><i style={{width: `${r.score}%`}} /></div>
-            <a href="#">OPEN EVIDENCE FILE <span>→</span></a>
+            <a href={`/rumor/${r.slug}`}>OPEN EVIDENCE FILE <span>→</span></a>
           </article>)}
         </div>
       </section>
