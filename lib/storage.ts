@@ -34,7 +34,6 @@ export async function listArtifacts(prefix?: string): Promise<StoredArtifact[]> 
     pathname: blob.pathname,
     url: blob.url,
     downloadUrl: blob.downloadUrl,
-    contentType: blob.contentType,
     uploadedAt: blob.uploadedAt instanceof Date ? blob.uploadedAt.toISOString() : String(blob.uploadedAt),
   }));
 }
