@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from 'react';
 
+const MAX_QUESTION_CHARS = 2000;
+
 export default function AskBox() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
@@ -39,6 +41,7 @@ export default function AskBox() {
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Ask the Rumor Machine anything about AI…"
           aria-label="Ask the Rumor Machine"
+          maxLength={MAX_QUESTION_CHARS}
         />
         <button type="submit" disabled={loading}>{loading ? 'ANALYZING…' : 'ANALYZE →'}</button>
       </form>
