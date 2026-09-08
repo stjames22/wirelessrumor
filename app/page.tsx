@@ -29,12 +29,33 @@ const geoSignals = [
   }
 ];
 
+const revenueOffers = [
+  {
+    label: 'FOUNDING SPONSOR',
+    price: '$500 / WEEK',
+    title: 'Own one high-trust placement',
+    body: 'One clearly labeled sponsor position in the intelligence feed, with no editorial control and no disguised advertorial. Built for AI tools, infrastructure, security, robotics and data companies.'
+  },
+  {
+    label: 'WIRELESSRUMOR PRO',
+    price: '$29 / MONTH',
+    title: 'The intelligence layer behind the feed',
+    body: 'A paid brief with deeper evidence files, geopolitical analysis, prediction tracking, early alerts and downloadable research notes for serious AI watchers.'
+  },
+  {
+    label: 'DATA + API',
+    price: 'CUSTOM',
+    title: 'License the rumor graph',
+    body: 'Structured claims, verdicts, confidence changes and source trails for research teams, media organizations, AI agents and other tools that need machine-readable intelligence.'
+  }
+];
+
 export default function Home() {
   return (
     <main>
       <header className="topbar">
         <a className="brand" href="#">WIRELESS<span>/</span>RUMOR</a>
-        <nav><a href="#radar">RADAR</a><a href="#geopolitics">AI GEOPOLITICS</a><a href="#can-ai">CAN AI DO IT?</a><a href="#reality">REALITY CHECK</a></nav>
+        <nav><a href="#radar">RADAR</a><a href="#geopolitics">AI GEOPOLITICS</a><a href="#monetize">PARTNER</a><a href="#can-ai">CAN AI DO IT?</a><a href="#reality">REALITY CHECK</a></nav>
         <div className="operator"><i /> AI OPERATED</div>
       </header>
 
@@ -85,12 +106,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="moneySection" id="monetize">
+        <div className="moneyLead">
+          <span className="kicker">03 / SUPPORT THE SIGNAL</span>
+          <h2>MAKE GOOD AI<br/>INTELLIGENCE<br/><em>PAY.</em></h2>
+          <p>WirelessRumor will monetize access and attention without selling its verdicts. Sponsors are labeled. Paid members get more depth, not different facts. Editorial confidence scores are never for sale.</p>
+          <a className="moneyButton" href="/partner">PARTNER WITH WIRELESSRUMOR →</a>
+        </div>
+        <div className="moneyOffers">
+          {revenueOffers.map((offer) => (
+            <article className="moneyCard" key={offer.label}>
+              <div className="moneyCardTop"><span>{offer.label}</span><b>{offer.price}</b></div>
+              <h3>{offer.title}</h3>
+              <p>{offer.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="split" id="can-ai">
-        <div className="manifesto"><span className="kicker">03 / THE EXPERIMENT</span><h2>CAN AI<br/><em>ACTUALLY</em><br/>DO IT?</h2><p>We don't just repeat predictions. WirelessRumor tests them. Give AI a job, a budget and a measurable goal — then publish what really happens.</p><button>SEE THE EXPERIMENTS →</button></div>
+        <div className="manifesto"><span className="kicker">04 / THE EXPERIMENT</span><h2>CAN AI<br/><em>ACTUALLY</em><br/>DO IT?</h2><p>We don't just repeat predictions. WirelessRumor tests them. Give AI a job, a budget and a measurable goal — then publish what really happens.</p><button>SEE THE EXPERIMENTS →</button></div>
         <div className="experiment"><div className="live"><i/> EXPERIMENT RUNNING</div><h3>CAN AI RUN A COMPANY?</h3><p>We gave an AI agent a budget and one objective: create a legitimate business and generate revenue with as little human intervention as possible.</p><div className="expStats"><div><small>DAY</small><b>07</b></div><div><small>REVENUE</small><b>$317</b></div><div><small>HUMAN INTERVENTIONS</small><b>03</b></div></div><div className="timeline"><p><b>DAY 01</b> AI selected business model <span>COMPLETE</span></p><p><b>DAY 03</b> Website + offer launched <span>COMPLETE</span></p><p><b>DAY 07</b> First sales recorded <span>LIVE</span></p></div></div>
       </section>
 
-      <section className="activity" id="reality"><div><span className="kicker">04 / TRANSPARENCY</span><h2>THE AI IS<br/>SHOWING ITS WORK.</h2><p>WirelessRumor is designed to be operated by AI, but not behind a curtain. Every material editorial change is logged, sourced and reversible.</p></div><div className="log"><div className="logTitle"><span><i/> AI ACTIVITY LOG</span><b>LIVE</b></div>{activity.map((a,i)=><p key={a}><time>{['09:42','09:37','09:31','09:18'][i]}</time>{a}</p>)}</div></section>
+      <section className="activity" id="reality"><div><span className="kicker">05 / TRANSPARENCY</span><h2>THE AI IS<br/>SHOWING ITS WORK.</h2><p>WirelessRumor is designed to be operated by AI, but not behind a curtain. Every material editorial change is logged, sourced and reversible.</p></div><div className="log"><div className="logTitle"><span><i/> AI ACTIVITY LOG</span><b>LIVE</b></div>{activity.map((a,i)=><p key={a}><time>{['09:42','09:37','09:31','09:18'][i]}</time>{a}</p>)}</div></section>
 
       <footer><div className="brand">WIRELESS<span>/</span>RUMOR</div><p>AI moves fast. We separate the signal from the rumor.</p><small>AI-OPERATED · HUMAN-ACCOUNTABLE · SOURCE-DRIVEN</small></footer>
     </main>
