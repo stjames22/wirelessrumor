@@ -22,9 +22,31 @@ export async function appendDiscussionMessage(message: DiscussionMessage) {
 }
 
 export async function readDiscussionMessages(limit = 100) {
-  const result = await list({ prefix: PREFIX, limit: Math.min(Math.max(limit, 1), 100) });
+  const cappedLimit = Math.min(Math.max(limit, 1), 100);
+  let cursor: string | undefined;
+  let hasMore = true;
+  let newestBlobs: Array<{ url: string }> = [];
+
+  // Vercel Blob lists pathnames in lexicographical order. Discussion paths start
+  // with their timestamp, so stopping after the first page would eventually pin
+  // the room to its oldest messages. Walk the listing to the end while retaining
+  // only the small tail that the UI actually needs to download.
+  while (hasMore) {
+    const result = await list({
+      prefix: PREFIX,
+      limit: 1000,
+      cursor,
+    });
+
+    newestBlobs = [...newestBlobs, ...result.blobs].slice(-cappedLimit);
+    hasMore = result.hasMore;
+    cursor = result.cursor || undefined;
+
+    if (hasMore && !cursor) break;
+  }
+
   const messages = await Promise.all(
-    result.blobs.map(async (blob) => {
+    newestBlobs.map(async (blob) => {
       try {
         const response = await fetch(blob.url, { cache: 'no-store' });
         if (!response.ok) return null;
@@ -38,5 +60,5 @@ export async function readDiscussionMessages(limit = 100) {
   return messages
     .filter((message): message is DiscussionMessage => Boolean(message?.id && message?.text && message?.createdAt))
     .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
-    .slice(-limit);
+    .slice(-cappedLimit);
 }
