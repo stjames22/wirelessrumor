@@ -29,9 +29,10 @@ export default function DiscussPage() {
   const [shared, setShared] = useState(false);
   const [communityStatus, setCommunityStatus] = useState('CHECKING COMMUNITY…');
 
-  async function refreshCommunity(silent = false) {
+  async function refreshCommunity(silent = false, fresh = false) {
     try {
-      const response = await fetch('/api/discussions', { cache: 'no-store' });
+      const endpoint = fresh ? `/api/discussions?fresh=${Date.now()}` : '/api/discussions';
+      const response = await fetch(endpoint, fresh ? { cache: 'no-store' } : undefined);
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data?.shared) throw new Error(data?.error || 'Community storage unavailable');
       setShared(true);
@@ -100,7 +101,7 @@ export default function DiscussPage() {
         });
         const posted = await post.json().catch(() => ({}));
         if (!post.ok) throw new Error(posted?.error || 'Could not publish this post.');
-        await refreshCommunity(true);
+        await refreshCommunity(true, true);
       } else {
         setMessages((current) => [...current, localHuman]);
       }
@@ -114,7 +115,7 @@ export default function DiscussPage() {
       if (!response.ok) throw new Error(data?.error || 'Astra is unavailable.');
 
       if (shared && data.persisted) {
-        await refreshCommunity(true);
+        await refreshCommunity(true, true);
       } else {
         setMessages((current) => [
           ...current,
@@ -173,7 +174,7 @@ export default function DiscussPage() {
         <div>
           <div className={styles.roomBar}>
             <div><b>OPEN FLOOR</b><span>PUBLIC THREAD · NO LOGIN REQUIRED</span></div>
-            <button type="button" onClick={() => void refreshCommunity(true)}>REFRESH</button>
+            <button type="button" onClick={() => void refreshCommunity(true, true)}>REFRESH</button>
           </div>
           <div className={styles.thread} aria-live="polite">
             {messages.map((message) => (
