@@ -16,7 +16,18 @@ function allowRequest(ip: string) {
 export async function GET() {
   try {
     const messages = await readDiscussionMessages(100);
-    return NextResponse.json({ shared: true, messages }, { headers: { 'Cache-Control': 'no-store' } });
+    return NextResponse.json(
+      { shared: true, messages },
+      {
+        headers: {
+          // The public room is identical for every visitor. Keep browsers from
+          // storing it, but let Vercel briefly share one response at the edge so
+          // every 10-second client poll does not trigger another full Blob scan.
+          'Cache-Control': 'no-store',
+          'Vercel-CDN-Cache-Control': 'max-age=8, stale-while-revalidate=12',
+        },
+      },
+    );
   } catch (error) {
     console.error('Shared discussion read failed', error);
     return NextResponse.json(
