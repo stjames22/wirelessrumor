@@ -17,6 +17,7 @@ export async function appendDiscussionMessage(message: DiscussionMessage) {
     access: 'public',
     addRandomSuffix: false,
     contentType: 'application/json; charset=utf-8',
+    abortSignal: AbortSignal.timeout(10000),
   });
   return message;
 }
@@ -36,24 +37,25 @@ export async function readDiscussionMessages(limit = 100) {
       prefix: PREFIX,
       limit: 1000,
       cursor,
+      abortSignal: AbortSignal.timeout(10000),
     });
 
     newestBlobs = [...newestBlobs, ...result.blobs].slice(-cappedLimit);
     hasMore = result.hasMore;
     cursor = result.cursor || undefined;
 
-    if (hasMore && !cursor) break;
+    if (hasMore && !cursor) throw new Error('Incomplete discussion listing');
   }
 
   const messages = await Promise.all(
     newestBlobs.map(async (blob) => {
-      try {
-        const response = await fetch(blob.url, { cache: 'no-store' });
-        if (!response.ok) return null;
-        return (await response.json()) as DiscussionMessage;
-      } catch {
-        return null;
+      const response = await fetch(blob.url, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+      if (!response.ok) throw new Error('Unable to read discussion message');
+      const message = await response.json();
+      if (!message || typeof message.id !== 'string' || typeof message.text !== 'string' || typeof message.name !== 'string' || !['human', 'astra'].includes(message.role) || !Number.isFinite(Date.parse(message.createdAt))) {
+        throw new Error('Invalid discussion message');
       }
+      return message as DiscussionMessage;
     }),
   );
 

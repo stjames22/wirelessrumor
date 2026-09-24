@@ -13,7 +13,7 @@ function allowRequest(ip: string) {
   return true;
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
     const messages = await readDiscussionMessages(100);
     return NextResponse.json(
@@ -24,14 +24,14 @@ export async function GET() {
           // storing it, but let Vercel briefly share one response at the edge so
           // every 10-second client poll does not trigger another full Blob scan.
           'Cache-Control': 'no-store',
-          'Vercel-CDN-Cache-Control': 'max-age=8, stale-while-revalidate=12',
+          'Vercel-CDN-Cache-Control': request.nextUrl.searchParams.has('fresh') ? 'no-store' : 'max-age=8, stale-while-revalidate=12',
         },
       },
     );
   } catch (error) {
     console.error('Shared discussion read failed', error);
     return NextResponse.json(
-      { shared: false, messages: [], error: 'Shared community storage is not connected on this deployment.' },
+      { shared: false, messages: [], error: 'The public room is temporarily unavailable. Please try again later.' },
       { status: 503, headers: { 'Cache-Control': 'no-store' } },
     );
   }
@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Shared discussion write failed', error);
     return NextResponse.json(
-      { shared: false, error: 'Shared community storage is not connected on this deployment.' },
+      { shared: false, error: 'The public room is temporarily unavailable. Please try again later.' },
       { status: 503, headers: { 'Cache-Control': 'no-store' } },
     );
   }

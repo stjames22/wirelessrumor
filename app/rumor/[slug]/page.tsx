@@ -16,51 +16,40 @@ export default async function RumorPage({ params }: { params: Promise<{ slug: st
     <main className={styles.page}>
       <header className="topbar">
         <Link className="brand" href="/">WIRELESS<span>/</span>RUMOR</Link>
-        <div className="operator"><i /> AI OPERATED</div>
+        <div className="operator"><i /> AI ASSISTED</div>
       </header>
 
       <section className={styles.hero}>
         <Link className={styles.back} href="/#radar">← BACK TO RADAR</Link>
-        <div className="kicker">EVIDENCE FILE / {rumor.tag}</div>
+        <div className="kicker">DISCUSSION BRIEF / {rumor.tag}</div>
         <h1>{rumor.claim}</h1>
         <div className={styles.verdict}>
-          <div><small>AI VERDICT</small><strong>{rumor.verdict}</strong></div>
-          <div className={styles.score}>{rumor.score}<sup>%</sup></div>
+          <div><small>REVIEW STATUS</small><strong>SOURCE REVIEW PENDING</strong></div>
+
         </div>
-        <div className={styles.bar}><i style={{ width: `${rumor.score}%` }} /></div>
-        <p className={styles.summary}>{rumor.summary}</p>
+
+        <p className={styles.summary}>{rumor.summary}</p><p>This is an editorial starting point, not a current fact-check. Its numerical score has been withdrawn pending source review and a documented assessment method.</p><Link className="moneyButton" href={`/discuss?topic=${encodeURIComponent(rumor.claim)}`}>DISCUSS THIS CLAIM →</Link>
       </section>
 
       <section className={styles.grid}>
         <article>
           <span className="kicker">WHY PEOPLE BELIEVE IT</span>
-          <h2>Evidence for</h2>
+          <h2>Arguments for</h2>
           {rumor.evidenceFor.map((item) => <p key={item}>{item}</p>)}
         </article>
         <article>
           <span className="kicker">WHY IT MAY BE WRONG</span>
-          <h2>Evidence against</h2>
+          <h2>Arguments against</h2>
           {rumor.evidenceAgainst.map((item) => <p key={item}>{item}</p>)}
         </article>
         <article>
-          <span className="kicker">WHAT CHANGES THE SCORE</span>
+          <span className="kicker">WHAT NEEDS EVIDENCE</span>
           <h2>What to watch next</h2>
           {rumor.watchFor.map((item) => <p key={item}>{item}</p>)}
         </article>
       </section>
 
-      <section className={styles.history}>
-        <div><span className="kicker">STATUS HISTORY</span><h2>The claim evolves. The record stays.</h2></div>
-        <div>
-          {rumor.statusHistory.map((entry, index) => (
-            <div className={styles.item} key={`${entry.label}-${index}`}>
-              <b>{entry.label}</b><p>{entry.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <footer><div className="brand">WIRELESS<span>/</span>RUMOR</div><p>Confidence is an editorial estimate, not certainty.</p><small>SOURCE-DRIVEN · CHANGE-TRACKED</small></footer>
+      <footer><div className="brand">WIRELESS<span>/</span>RUMOR</div><p>Claims need dated sources before they become verdicts.</p><small>EDITORIAL BRIEF · SOURCE REVIEW PENDING</small></footer>
     </main>
   );
 }

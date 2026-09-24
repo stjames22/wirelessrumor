@@ -23,14 +23,14 @@ export default function PartnerPage() {
     <main className="partnerPage">
       <header className="topbar">
         <Link className="brand" href="/">WIRELESS<span>/</span>RUMOR</Link>
-        <div className="operator"><i /> AI OPERATED</div>
+        <div className="operator"><i /> AI ASSISTED</div>
       </header>
 
       <section className="partnerHero">
         <Link className="backLink" href="/">← BACK TO WIRELESSRUMOR</Link>
-        <span className="kicker">PARTNER / LAUNCH INVENTORY</span>
+        <span className="kicker">PARTNER / PROPOSED OFFERS</span>
         <h1>Buy access.<br/><em>Not the verdict.</em></h1>
-        <p>WirelessRumor is building a commercial model around high-value AI intelligence while keeping editorial conclusions independent. Sponsors are labeled, paid members receive more depth rather than different facts, and confidence scores are never for sale.</p>
+        <p>WirelessRumor is building a commercial model around high-value AI intelligence while keeping editorial conclusions independent. These are proposed offers; paid memberships and API access are not yet available. Sponsorship inquiries do not purchase editorial influence.</p>
       </section>
 
       <section className="partnerGrid">
@@ -40,11 +40,6 @@ export default function PartnerPage() {
             <ul>{offer.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>
           </article>
         ))}
-      </section>
-
-      <section className="partnerTarget">
-        <div><span className="kicker">REVENUE TARGET</span><h2>$1,000+ / WEEK</h2></div>
-        <p>The first practical path is not mass-market banner advertising. One $500 weekly sponsor plus approximately 50 Pro members at $29/month and modest partner/data revenue gets the business near or above the target with a relatively small but valuable audience. Revenue will vary and is not guaranteed.</p>
       </section>
 
       <section className="partnerPolicy">

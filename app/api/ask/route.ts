@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { appendDiscussionMessage } from '../../../lib/discussions';
+import { appendDiscussionMessage, readDiscussionMessages } from '../../../lib/discussions';
+
+export const maxDuration = 60;
 
 const recent = new Map<string, number[]>();
 
@@ -24,8 +26,8 @@ export async function POST(request: NextRequest) {
   }
 
   const body = await request.json().catch(() => null);
-  const question = typeof body?.question === 'string' ? body.question.trim() : '';
-  const context = typeof body?.context === 'string' ? body.context.slice(-10000) : '';
+  let question = typeof body?.question === 'string' ? body.question.trim() : '';
+  let context = typeof body?.context === 'string' ? body.context.slice(-10000) : '';
   const shared = body?.shared === true;
 
   if (!question || question.length > 2000) {
@@ -40,16 +42,26 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    if (shared) {
+      const messages = await readDiscussionMessages(100);
+      const parent = messages.find(message => message.id === body?.messageId && message.role === 'human');
+      if (!parent) return NextResponse.json({ error: 'The public post could not be found. Refresh before asking Astra.' }, { status: 400 });
+      question = parent.text;
+      context = messages.filter(message => message.id !== parent.id).slice(-12).map(message => `${message.role}: ${message.text}`).join('\n').slice(-10000);
+    }
     const upstream = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
+      signal: AbortSignal.timeout(45000),
       headers: {
         Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-5.6-luna',
+        model: process.env.OPENAI_MODEL || 'gpt-5.6-luna',
         instructions: 'You are Astra, the WirelessRumor discussion host. Be curious, concise, evidence-minded, and constructive. Separate facts, inference, and opinion. State uncertainty. Challenge claims when a counterargument would improve the discussion. Never invent sources or impersonate other AI systems.',
         input: `Recent discussion:\n${context || '(new thread)'}\n\nHuman:\n${question}`,
+        reasoning: { effort: 'none' },
+        store: false,
         max_output_tokens: 700,
       }),
     });
@@ -75,9 +87,10 @@ export async function POST(request: NextRequest) {
     }
 
     let persisted = false;
+    let message;
     if (shared) {
       try {
-        await appendDiscussionMessage({
+        message = await appendDiscussionMessage({
           id: crypto.randomUUID(),
           role: 'astra',
           name: 'Astra',
@@ -90,7 +103,7 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    return NextResponse.json({ answer, persisted }, { headers: { 'Cache-Control': 'no-store' } });
+    return NextResponse.json({ answer, persisted, message }, { headers: { 'Cache-Control': 'no-store' } });
   } catch (error) {
     console.error('Astra request failed', error);
     return NextResponse.json({ error: 'Astra is temporarily unavailable.' }, { status: 502 });
