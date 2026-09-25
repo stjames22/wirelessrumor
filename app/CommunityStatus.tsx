@@ -4,7 +4,7 @@ export default function CommunityStatus() {
   const [status, setStatus] = useState('Checking discussion availability…');
   useEffect(() => {
     const controller = new AbortController();
-    fetch('/api/discussions', { signal: controller.signal, cache: 'no-store' })
+    fetch('/api/discussions', { signal: AbortSignal.any([controller.signal, AbortSignal.timeout(10000)]), cache: 'no-store' })
       .then(async response => {
         const data = await response.json();
         setStatus(response.ok && data.shared ? 'Public room connected · Posts are shared with other visitors.' : 'Public room unavailable · Check Astra availability on the discussion page.');
