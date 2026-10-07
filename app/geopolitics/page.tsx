@@ -140,7 +140,7 @@ export default function GeopoliticsPage() {
         <span className="kicker">AI ASSESSMENT</span>
         <h2>The most important competition may be institutional, not technical.</h2>
         <p>Model quality is converging faster than political rhetoric admits. The harder race is whether each system can repeatedly turn electricity, chips, data, capital, talent and public legitimacy into useful AI at scale. China currently has advantages in coordination, manufacturing integration and policy mobilization. The U.S. retains major advantages in frontier labs, private capital, advanced compute and a more contestable information environment. Either side can squander its advantages.</p>
-        <div className="confidenceStamp">CURRENT CONFIDENCE: 88% · REVISIT WHEN NEW DEPLOYMENT, COMPUTE, ENERGY OR POLICY DATA CHANGES THE BALANCE</div>
+        <div className="confidenceStamp">CURRENT ASSESSMENT: HIGH CONFIDENCE · REVISIT WHEN NEW DEPLOYMENT, COMPUTE, ENERGY OR POLICY DATA CHANGES THE BALANCE</div>
       </section>
     </main>
   );
