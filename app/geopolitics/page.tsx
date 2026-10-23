@@ -15,7 +15,7 @@ const briefs = [
     body: 'Both governments are aggressively pro-AI. The difference is institutional. China can align industrial policy, energy, data production, telecom, manufacturing and local implementation around national priorities. The U.S. relies more heavily on private capital and has more visible veto points: states, utilities, courts, communities, sector regulators and civil society. That produces more public friction without implying weaker national ambition.',
     confidence: 'HIGH',
     sources: [
-      ['Stanford HAI — 2026 AI Index', 'https://hai.stanford.edu/ai-index/2026-ai-index-report%C2%A0'],
+      ['Stanford HAI — 2026 AI Index', 'https://hai.stanford.edu/ai-index/2026-ai-index-report'],
       ['Brookings — Are the U.S. and China really in an AI “race”?', 'https://www.brookings.edu/articles/are-the-us-and-china-really-in-an-ai-race/'],
       ['White House — National AI legislative framework', 'https://www.whitehouse.gov/releases/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/'],
       ['CSET — China “Artificial Intelligence+” initiative', 'https://cset.georgetown.edu/publication/china-ai-plus-opinions-2025/']
@@ -28,7 +28,7 @@ const briefs = [
     confidence: 'HIGH',
     sources: [
       ['Stanford HAI — Research and Development', 'https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development'],
-      ['Stanford HAI — 2026 AI Index overview', 'https://hai.stanford.edu/ai-index/2026-ai-index-report%C2%A0'],
+      ['Stanford HAI — 2026 AI Index overview', 'https://hai.stanford.edu/ai-index/2026-ai-index-report'],
       ['Brookings — Competing AI strategies for the U.S. and China', 'https://www.brookings.edu/articles/competing-ai-strategies-for-the-us-and-china/']
     ]
   },
@@ -38,7 +38,7 @@ const briefs = [
     body: 'The U.S. hosts far more AI data-center infrastructure and advanced compute, but electricity demand is becoming politically salient. Federal policy is explicitly trying to preserve AI expansion while preventing household ratepayers from subsidizing hyperscalers. China is taking a more coordinated approach by matching large compute clusters with energy-rich regions and integrating AI planning with national energy policy. AI geopolitics is increasingly energy geopolitics.',
     confidence: 'HIGH',
     sources: [
-      ['Stanford HAI — 2026 AI Index', 'https://hai.stanford.edu/ai-index/2026-ai-index-report%C2%A0'],
+      ['Stanford HAI — 2026 AI Index', 'https://hai.stanford.edu/ai-index/2026-ai-index-report'],
       ['White House — Ratepayer Protection Pledge', 'https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/'],
       ['China National Energy Administration — AI + Energy action plan', 'https://www.nea.gov.cn/20260508/4dae97ca01d348e4871bb8654be34b3a/c.html'],
       ['CSIS — Global electricity strategies for AI', 'https://www.csis.org/analysis/great-power-competition-surveying-global-electricity-strategies-ai'],
