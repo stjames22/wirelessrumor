@@ -42,13 +42,13 @@ export default function AskBox() {
         <input
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          placeholder="Ask the Rumor Machine anything about AI…"
-          aria-label="Ask the Rumor Machine"
+          placeholder="Paste an AI claim, headline, question, or link…"
+          aria-label="Check an AI claim with Astra"
           maxLength={MAX_QUESTION_CHARS}
         />
-        <button type="submit" disabled={loading}>{loading ? 'ANALYZING…' : 'ANALYZE →'}</button>
+        <button type="submit" disabled={loading}>{loading ? 'CHECKING…' : 'CHECK CLAIM →'}</button>
       </form>
-      {answer && <div className="aiAnswer"><small>WIRELESSRUMOR AI</small><p><AnswerText text={answer} citations={citations} /></p></div>}
+      {answer && <div className="aiAnswer"><small>ASTRA / CLAIM CHECK</small><p><AnswerText text={answer} citations={citations} /></p></div>}
       {error && <div className="aiAnswer error"><small>AI ENGINE</small><p>{error}</p></div>}
     </div>
   );
