@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="WirelessRumor">
+  <rect width="64" height="64" rx="16" fill="#f6f5f1"/>
+  <path d="M11 17h9l6 23 5-17h6l5 17 6-23h7L45 49h-8l-5-16-5 16h-8L11 17Z" fill="#17181c"/>
+  <path d="m40 54 14-43" stroke="#6d62ff" stroke-width="5" stroke-linecap="round"/>
+</svg>
