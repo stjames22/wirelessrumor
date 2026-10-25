@@ -11,7 +11,7 @@ const signals = [
 ];
 
 export default function Home() {
-  return <main>
+  return <main className="homePage">
     <header className="topbar">
       <a className="brand" href="/">WIRELESS<span>/</span>RUMOR</a>
       <nav>
