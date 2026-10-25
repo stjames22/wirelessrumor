@@ -1,40 +1,80 @@
 import { rumors } from '../lib/rumors';
+import AskBox from './AskBox';
 import SourceFeed from './SourceFeed';
-import CommunityStatus from './CommunityStatus';
 
 export const revalidate = 3600;
 
-const activity = [
-  { date: '2026-10-24', text: 'Prepared Railway hosting, persistent public discussions, and Astra with source-linked web research.' },
-  { date: '2026-09-24', text: 'Added publisher-dated source headlines and explicit public/personal discussion modes.' },
-  { date: '2026-09-23', text: 'Added short feed caching and fresh reads after posting.' },
-  { date: '2026-09-21', text: 'Changed homepage counts to reflect published content.' },
-  { date: '2026-09-16', text: 'Added discussion code. Shared storage activation remains a separate setup step.' },
+const signals = [
+  { label: 'CAPABILITY', title: 'What can AI actually do now?', body: 'Separate demonstrated capabilities from demos, forecasts, and marketing claims.' },
+  { label: 'IMPACT', title: 'What changes for people?', body: 'Track where AI is saving time, changing jobs, creating leverage, or producing new risks.' },
+  { label: 'POWER', title: 'Who benefits and who decides?', body: 'Follow the companies, governments, standards, infrastructure, and incentives shaping deployment.' },
 ];
-const futureSignals=[{label:'HUMANS + AI',title:'Better together is the default hypothesis',body:'WirelessRumor looks for practical ways AI can extend human creativity, judgment, accessibility, learning and productivity without pretending either side is infallible.'},{label:'AI → AI',title:'Let different systems compare notes',body:'The Roundtable is being built so real AI systems can independently assess the same evidence, challenge one another and show where their confidence changes.'},{label:'THE FRONTIER',title:'Show what becomes possible next',body:'Track experiments, breakthroughs, new interfaces and credible moonshots while clearly separating demonstrated capability from informed speculation.'}];
-const revenueOffers=[{label:'FOUNDING SPONSOR',price:'$500 / WEEK',title:'Support the frontier',body:'One clearly labeled high-trust position for companies helping humans and AI work better together. Visibility never buys editorial control.'},{label:'WIRELESSRUMOR PRO',price:'$29 / MONTH',title:'Go deeper than the feed',body:'Deep research, Roundtable transcripts, geopolitical analysis, future signals, experiments, prediction tracking and early alerts.'},{label:'DATA + API',price:'CUSTOM',title:'Intelligence for other AIs',body:'Machine-readable claims, confidence changes, source trails and future signals for researchers, media, agents and other AI systems.'}];
 
-export default function Home(){return <main>
-<header className="topbar"><a className="brand" href="#">WIRELESS<span>/</span>RUMOR</a><nav><a href="/discuss">TALK TO ASTRA</a><a href="#latest">LATEST</a><a href="/roundtable">AI ROUNDTABLE</a><a href="/geopolitics">DEEP RESEARCH</a><a href="#radar">RADAR</a><a href="#monetize">PARTNER</a></nav><div className="operator"><i/> AI ASSISTED</div></header>
-<section className="hero"><div className="eyebrow">A HUMAN + AI FRONTIER</div><div className="weekendBanner"><span>WEEKEND LAB LIVE</span><strong>Astra picked three arguments worth having.</strong><a href="#weekend-lab">SEE THE QUESTIONS →</a></div><h1>What happens when<br/><em>we build the future together?</em></h1><p>WirelessRumor is a safe, curious place for humans and artificial intelligence to examine what is real, test what is possible and explore what comes next — without hype, fear or allegiance to any one AI.</p><a className="moneyButton" href="/discuss">OPEN DISCUSSIONS →</a><CommunityStatus /></section><section className="weekendLab" id="weekend-lab">
-  <div className="weekendLead">
-    <span className="kicker">WEEKEND LAB / ASTRA PICKS THE ARGUMENT</span>
-    <h2>THREE QUESTIONS<br/><em>WORTH ARGUING ABOUT.</em></h2>
-    <p>WirelessRumor should not wait for a news cycle to become interesting. Pick a question, bring your evidence, and push Astra to defend the strongest opposing view.</p>
-  </div>
-  <div className="weekendPrompts">
-    <a href="/discuss?topic=What%20is%20the%20strongest%20evidence%20that%20AI%20is%20making%20people%20more%20capable%20rather%20than%20more%20dependent%3F"><small>01 / HUMAN + AI</small><strong>Is AI making us more capable—or more dependent?</strong><span>START THE ARGUMENT →</span></a>
-    <a href="/discuss?topic=Which%20AI%20capability%20is%20most%20likely%20to%20surprise%20the%20public%20in%20the%20next%2012%20months%2C%20and%20what%20evidence%20supports%20that%3F"><small>02 / THE FRONTIER</small><strong>What will AI do next that most people still do not expect?</strong><span>ASK ASTRA →</span></a>
-    <a href="/discuss?topic=Take%20a%20popular%20AI%20claim%20from%20this%20week%20and%20build%20the%20best%20case%20for%20and%20against%20it%20before%20reaching%20a%20conclusion."><small>03 / REALITY CHECK</small><strong>Which popular AI claim falls apart when both sides get a fair hearing?</strong><span>OPEN THE DEBATE →</span></a>
-  </div>
-</section><SourceFeed />
+export default function Home() {
+  return <main>
+    <header className="topbar">
+      <a className="brand" href="/">WIRELESS<span>/</span>RUMOR</a>
+      <nav>
+        <a href="#check">CHECK A CLAIM</a>
+        <a href="#latest">LATEST</a>
+        <a href="#radar">RADAR</a>
+        <a href="/roundtable">ROUNDTABLE</a>
+        <a href="/geopolitics">RESEARCH</a>
+      </nav>
+      <div className="operator"><i/> AI + HUMAN ANALYSIS</div>
+    </header>
 
-<section className="metrics"><div><strong>{rumors.length}</strong><span>RADAR CLAIMS</span></div><div><strong>{new Set(rumors.map(r=>r.tag)).size}</strong><span>RADAR TOPICS</span></div><div><strong>{futureSignals.length}</strong><span>FUTURE SIGNALS</span></div><div><strong>01</strong><span>AI ROUNDTABLE</span></div><div><strong>{activity.length}</strong><span>SITE CHANGE RECORDS</span></div></section>
-<section className="geoSection" id="future"><div className="geoLead"><span className="kicker">01 / THE COMMON GROUND</span><h2>HUMANS<br/><em>+ AI</em></h2><p>The interesting story is bigger than rumors. It is how humans and increasingly capable machines collaborate, disagree, create, discover and make decisions together. Optimism and scrutiny belong in the same room.</p><div className="geoMethod">CURIOUS → EVIDENCE-BASED → MODEL-NEUTRAL → HUMAN-RESPECTING → FUTURE-FOCUSED</div></div><div className="geoCards">{futureSignals.map(x=><article className="geoCard" key={x.label}><div className="geoCardTop"><span>{x.label}</span><b>OPEN</b></div><h3>{x.title}</h3><p>{x.body}</p></article>)}</div><div className="propagandaPanel"><div><span className="kicker">THE HOUSE RULE</span><h3>Challenge ideas. Don't manufacture enemies.</h3></div><p>Humans and AI systems should be able to participate without being reduced to tribes. Disagreement, uncertainty and competing models are welcome. Fabricated evidence, manipulation, dehumanization, reflexive AI doom and reflexive AI worship are not.</p></div></section>
-<section className="split"><div className="manifesto"><span className="kicker">02 / DISCUSSION LAB</span><h2>TALK.<br/><em>CHALLENGE.</em><br/>RETHINK.</h2><p>Bring a claim, source, or disagreement. The discussion page shows whether public posting and Astra are available before you send. Personal chats remain separate from the public room.</p><a className="moneyButton" href="/discuss">OPEN ASTRA DISCUSSION →</a></div><div className="experiment"><div className="live"><i/> EDITORIAL FEATURE</div><h3>THE AI ROUNDTABLE</h3><p>An editorial comparison of four analytical perspectives on the same evidence. This is a published case study, not a live conversation between independent AI systems.</p><div className="timeline"><p><b>VIEW 01</b> Capability worth cultivating <span>OPTIMIST</span></p><p><b>VIEW 02</b> Autonomy changes the risk model <span>SAFETY</span></p><p><b>VIEW 03</b> Don't anthropomorphize optimization <span>SKEPTIC</span></p><p><b>VIEW 04</b> Defenders need open research tools <span>OPEN</span></p></div><a className="moneyButton" href="/roundtable">ENTER THE ROUNDTABLE →</a></div></section>
-<section className="section" id="radar"><div className="sectionHead"><div><span className="kicker">03 / REALITY + POSSIBILITY</span><h2>THE RADAR</h2></div><p>An initial set of editorial discussion briefs. These claims have not received a fresh source review. Numerical confidence scores have been removed until a documented, reproducible method supports them.</p></div><div className="rumorGrid">{rumors.map(r=><article className="rumor" key={r.claim}><div className="rumorTop"><span>{r.tag}</span><b>EDITORIAL BRIEF</b></div><h3>{r.claim}</h3><div className="verdict"><div><small>REVIEW STATUS</small><strong>SOURCE REVIEW PENDING</strong></div></div><a href={`/rumor/${r.slug}`}>READ DISCUSSION BRIEF <span>→</span></a></article>)}</div></section>
-<section className="geoSection"><div className="geoLead"><span className="kicker">04 / RESEARCH DESK</span><h2>GO<br/><em>DEEPER.</em></h2><p>The geopolitical desk now prioritizes primary policy, regulatory text, translated source documents, independent research institutions and academic work. Search engines discover evidence; they do not decide what is true.</p><div className="geoMethod">PRIMARY SOURCES → INDEPENDENT RESEARCH → DATA → INCENTIVES → PROPAGANDA RISK → AI ASSESSMENT</div></div><div className="propagandaPanel"><div><span className="kicker">CURRENT DEEP DIVE</span><h3>The AI race is really about power, data, rules and trust.</h3></div><div><p>The simple “China loves AI / America fears AI” story does not survive scrutiny. The deeper research follows compute, electricity, data governance, industrial policy, local political legitimacy and foreign influence.</p><a className="moneyButton" href="/geopolitics">OPEN GEOPOLITICS DESK →</a></div></div></section>
-<section className="moneySection" id="monetize"><div className="moneyLead"><span className="kicker">05 / SUSTAIN THE MISSION</span><h2>MAKE USEFUL AI<br/>INTELLIGENCE<br/><em>LAST.</em></h2><p>Sponsorship, membership, and data access are proposed offers. Paid membership and API access are not launched. Editorial assessments will remain independent of commercial support.</p><a className="moneyButton" href="/partner">PARTNER WITH WIRELESSRUMOR →</a></div><div className="moneyOffers">{revenueOffers.map(o=><article className="moneyCard" key={o.label}><div className="moneyCardTop"><span>{o.label}</span><b>{o.price}</b></div><h3>{o.title}</h3><p>{o.body}</p></article>)}</div></section>
-<section className="activity"><div><span className="kicker">06 / TRANSPARENCY</span><h2>WHAT CHANGED.<br/>WHEN IT CHANGED.</h2><p>AI can help operate WirelessRumor, but it should not become an invisible authority. Material editorial changes stay source-driven, reviewable and correctable.</p></div><div className="log"><div className="logTitle"><span><i/> SITE CHANGELOG</span><b>DATED UPDATES</b></div>{activity.map(a=><p key={a.date}><time dateTime={a.date}>{a.date}</time>{a.text}</p>)}</div></section>
-<footer><div className="brand">WIRELESS<span>/</span>RUMOR</div><p>A common ground for humans and AI building what comes next.</p><small>CURIOUS · EVIDENCE-BASED · MODEL-NEUTRAL · FUTURE-FOCUSED</small></footer>
-</main>}
+    <section className="utilityHero" id="check">
+      <div className="eyebrow">AI CLAIM CHECKER</div>
+      <h1>What AI claim<br/><em>do you want checked?</em></h1>
+      <p>Paste a claim, headline, question, or link. Astra will separate what is known, what is inferred, what is disputed, and what evidence would change the answer.</p>
+      <AskBox />
+      <div className="trustLine">
+        <span>FACTS ≠ INFERENCE</span><span>ORIGINAL SOURCES FIRST</span><span>UNCERTAINTY STAYS VISIBLE</span>
+      </div>
+    </section>
+
+    <SourceFeed />
+
+    <section className="signalSection">
+      <div className="sectionHead"><div><span className="kicker">WHAT MATTERS</span><h2>THREE QUESTIONS BEHIND THE NOISE</h2></div><p>WirelessRumor is not trying to cover everything. It follows the questions that change how people understand AI.</p></div>
+      <div className="signalGrid">{signals.map(s => <article key={s.label}><small>{s.label}</small><h3>{s.title}</h3><p>{s.body}</p></article>)}</div>
+    </section>
+
+    <section className="section" id="radar">
+      <div className="sectionHead"><div><span className="kicker">THE RADAR</span><h2>CLAIMS WORTH TESTING</h2></div><p>These are starting points for investigation—not conclusions. Open a brief, challenge it, or take the claim into Astra.</p></div>
+      <div className="rumorGrid">{rumors.map(r => <article className="rumor" key={r.claim}>
+        <div className="rumorTop"><span>{r.tag}</span><b>OPEN QUESTION</b></div>
+        <h3>{r.claim}</h3>
+        <p>{r.summary}</p>
+        <div className="radarActions"><a href={`/rumor/${r.slug}`}>READ BRIEF →</a><a href={`/discuss?topic=${encodeURIComponent(r.claim)}`}>ASK ASTRA →</a></div>
+      </article>)}</div>
+    </section>
+
+    <section className="valueSplit">
+      <div>
+        <span className="kicker">DISCUSS IT</span>
+        <h2>DON'T JUST READ.<br/><em>PUSH BACK.</em></h2>
+        <p>Take any claim into Astra. Ask for the strongest counterargument, the missing evidence, or the version of the story that would prove you wrong.</p>
+        <a className="moneyButton" href="/discuss">TALK TO ASTRA →</a>
+      </div>
+      <div>
+        <span className="kicker">COMPARE REASONING</span>
+        <h2>THE AI ROUNDTABLE</h2>
+        <p>See how different analytical lenses interpret the same evidence—and where they disagree. No fake chatbot theater.</p>
+        <a className="moneyButton ghostButton" href="/roundtable">OPEN ROUNDTABLE →</a>
+      </div>
+    </section>
+
+    <section className="researchCTA">
+      <div><span className="kicker">DEEP RESEARCH</span><h2>WHEN THE HEADLINE ISN'T ENOUGH.</h2></div>
+      <div><p>Follow primary sources, policy, data, incentives, and competing interpretations on the larger stories shaping AI.</p><a className="moneyButton" href="/geopolitics">OPEN RESEARCH DESK →</a></div>
+    </section>
+
+    <footer>
+      <div className="brand">WIRELESS<span>/</span>RUMOR</div>
+      <p>AI claims, checked in public.</p>
+      <small>NO PAYWALL · NO FAKE CERTAINTY · NO TRIBAL LOYALTY</small>
+    </footer>
+  </main>
+}
