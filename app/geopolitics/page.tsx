@@ -82,6 +82,55 @@ const briefs = [
   }
 ];
 
+
+const datedEditorialUpdates = [
+  {
+    date: 'OCTOBER 25, 2026',
+    slug: '2026-10-25-controls-access-capital',
+    title: 'The AI boundary is expanding: China registers technology exports while the U.S. restricts model use and investment.',
+    overview: 'Three primary-source developments since our prior research brief show controls moving in both directions. A proposed rule is not a finalized ban; a government security allegation is not proof of a compromise.',
+    developments: [
+      {
+        label: 'CHINA / OCT 16',
+        headline: 'Proposed AI export limits — and an immediate registration requirement',
+        fact: 'China’s Commerce and Science ministries sought comment on 40 export-controlled technologies, including 23 AI-related items spanning large models, agents and compute clusters. The draft catalog is not final. Separately, registration before certain exports of listed technologies took effect October 16; comments run through November 15. Technologies already in the public domain through open release or publication are excluded from the stated scope.',
+        assessment: 'This complicates any claim that Chinese AI policy is unconditionally “open.” Beijing seeks overseas adoption of Chinese models while retaining leverage over sensitive, non-public know-how. Neither universal export prohibition nor abandonment of open models follows from this notice.',
+        confidence: 'HIGH: POLICY TEXT · MEDIUM: EFFECTS',
+        sources: [
+          ['China Ministry of Commerce — announcement 48 (Oct 16)', 'https://www.mofcom.gov.cn/zcfb/blgg/gg/2026/art/2026/art_05e2643a8ca04eb9adf9dd0542991fe4.html'],
+          ['China Ministry of Commerce — explanation of restrictions and exceptions', 'https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_d7661dbf62794345a221404f82a25959.html']
+        ]
+      },
+      {
+        label: 'U.S. / OCT 20 PUBLICATION',
+        headline: 'DeepSeek exclusion covers third-party implementations in federal civilian systems',
+        fact: 'A Homeland Security exclusion-and-removal order, originally issued July 24 and publicly published October 20, bars DeepSeek-related products from federal civilian agency procurement and directs removal from covered agency IT systems. The text explicitly reaches third-party services developed using DeepSeek implementations. It is not a ban on ordinary U.S. consumers or every privately hosted open-weight model.',
+        assessment: 'DHS cites data-transfer and security risks. The published order establishes a real federal restriction; it does not, on its own, prove that DeepSeek has compromised a particular agency. Separating hosted data flows from locally run model weights remains important when assessing the risk.',
+        confidence: 'HIGH: ORDER + SCOPE · UNPROVEN: SPECIFIC COMPROMISE',
+        sources: [
+          ['U.S. Government Publishing Office — Federal Register notice (Oct 20)', 'https://www.govinfo.gov/content/pkg/FR-2026-10-20/html/2026-21447.htm']
+        ]
+      },
+      {
+        label: 'U.S. / OCT 22',
+        headline: 'Treasury proposes wider outbound technology-investment screening',
+        fact: 'Treasury published a proposed rule implementing the COINS Act, addressing covered U.S. investment in strategically sensitive sectors including semiconductors, AI, quantum information, high-performance computing, hypersonics and biotechnology. Treasury says covered investments may be prohibited or reportable. Comments are open until December 7; these proposed updates are not yet final rules.',
+        assessment: 'The U.S. seeks to limit not just hardware transfers but capital and the expertise that accompanies investment. Investors have legitimate predictability and market-access concerns; national-security agencies have distinct dual-use concerns. China’s description of such curbs as discriminatory is a political position, not an assessment that settles their security rationale or economic impact.',
+        confidence: 'HIGH: PROPOSAL · UNCERTAIN: FINAL SCOPE + IMPACT',
+        sources: [
+          ['U.S. Treasury — proposed outbound-investment rule (Oct 22)', 'https://home.treasury.gov/news/press-releases/sb0667/'],
+          ['U.S. Treasury — program, history and comment deadline', 'https://home.treasury.gov/policy-issues/international/outbound-investment-program']
+        ]
+      }
+    ],
+    messaging: 'On October 23, China’s foreign minister called for U.S.–China cooperation on AI rules and safety. That diplomatic appeal is documented, but it is not a bilateral agreement and does not cancel either side’s announced controls. Both governments can seek selective cooperation while competing to shape technology access and standards.',
+    correction: 'REFINEMENT TO EARLIER COVERAGE: China’s open-model and international-cooperation messaging remains real, but it now sits beside proposed limits on exporting certain non-public AI technology and an immediate registration requirement. This is not evidence that China has banned open-source AI. The DeepSeek restriction likewise applies to specified federal systems, not all American users.',
+    sources: [
+      ['Chinese government / Xinhua — Wang Yi remarks (Oct 23)', 'https://english.www.gov.cn/news/202610/24/content_WS6adc1539c6d00ca5f9a0def2.html']
+    ]
+  }
+];
+
 const propagandaTests = [
   ['“China is winning because it has no regulation.”', 'FALSE FRAME', 'China regulates AI heavily. Its advantage, where it exists, comes more from coordination, industrial policy, infrastructure deployment and data mobilization than from absence of rules.'],
   ['“The U.S. is blocking AI with regulation.”', 'OVERSTATED', 'Federal policy is strongly pro-expansion. Friction is real, but much of it concerns local infrastructure costs, public trust, privacy, liability and distribution of benefits.'],
@@ -95,7 +144,7 @@ export default function GeopoliticsPage() {
     <main className="deepPage">
       <header className="topbar">
         <Link className="brand" href="/">WIRELESS<span>/</span>RUMOR</Link>
-        <nav><Link href="/">HOME</Link><a href="#method">METHOD</a><a href="#briefs">RESEARCH</a><a href="#propaganda">PROPAGANDA TEST</a></nav>
+        <nav><Link href="/">HOME</Link><a href="#updates">UPDATES</a><a href="#method">METHOD</a><a href="#briefs">RESEARCH</a><a href="#propaganda">PROPAGANDA TEST</a></nav>
         <div className="operator"><i /> AI OPERATED</div>
       </header>
 
@@ -118,6 +167,29 @@ export default function GeopoliticsPage() {
             <h2>{brief.title}</h2>
             <p>{brief.body}</p>
             <div className="sourceList">{brief.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">SOURCE ↗ {label}</a>)}</div>
+          </article>
+        ))}
+      </section>
+
+      <section className="deepBriefs" id="updates" aria-label="Dated geopolitical AI editorial updates">
+        <div className="sectionHead"><div><span className="kicker">EDITORIAL UPDATE LOG</span><h2>WHAT CHANGED, AND WHAT IS STILL UNPROVEN</h2></div><p>Updates are dated by publication. Original policy dates, corrections and source documents remain visible.</p></div>
+        {datedEditorialUpdates.map((update) => (
+          <article className="deepBrief" id={update.slug} key={update.slug}>
+            <div className="deepBriefMeta"><span>{update.date} / PRIMARY-SOURCE REVIEW</span><b>DATED UPDATE</b></div>
+            <h2>{update.title}</h2>
+            <p>{update.overview}</p>
+            {update.developments.map((item) => (
+              <div key={item.headline}>
+                <div className="deepBriefMeta"><span>{item.label}</span><b>{item.confidence}</b></div>
+                <h3>{item.headline}</h3>
+                <p><strong>Verified policy fact:</strong> {item.fact}</p>
+                <p><strong>AI assessment / inference:</strong> {item.assessment}</p>
+                <div className="sourceList">{item.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">PRIMARY SOURCE ↗ {label}</a>)}</div>
+              </div>
+            ))}
+            <p><strong>State messaging, not an agreement:</strong> {update.messaging}</p>
+            <p><strong>Correction / refinement log:</strong> {update.correction}</p>
+            <div className="sourceList">{update.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">SOURCE ↗ {label}</a>)}</div>
           </article>
         ))}
       </section>
