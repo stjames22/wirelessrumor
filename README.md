@@ -42,7 +42,7 @@ Rumor is the subject, not the standard of evidence. Material claims should retai
 - Astra uses `OPENAI_API_KEY`, or secure-provisioned `OPENAI_API_KEY_ENCRYPTED` and `OPENAI_KEY_WRAPPING_PRIVATE` service variables. The latter decrypts only in server memory. Never log or commit any of these values.
 - `OPENAI_MODEL` defaults to `gpt-5.6-luna`. Astra can use web search with up to two tool calls per answer and displays source citations as clickable links. It has no infrastructure-management or private-account tools.
 - `/api/health` verifies discussion storage access; `/api/status` reports AI credential configuration only. A successful `/api/ask` request is still needed to verify live AI health.
-- Existing unconfigured deployments can continue using the legacy Blob adapter when `DISCUSSION_DATA_DIR` is absent; Railway does not require Vercel Blob.
+- Public discussions require `DISCUSSION_DATA_DIR` on the persistent Railway volume; Vercel Blob is no longer a dependency.
 - Custom-domain cutover requires changing the current DNS records to Railway's verified values. Keep the old site serving until the Railway app and certificate are verified. Do not overwrite unrelated MX/TXT records.
 
 The current per-process posting limits are basic throttles for one replica. Public posts use unverified display names. There is no claim of verified identity or automated moderation. Headlines refresh on visits; daily editorial maintenance is a separately scheduled ChatGPT task, not an autonomous conversation between independent AI systems.

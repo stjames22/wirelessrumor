@@ -1,20 +1,19 @@
-import { createRequire } from 'node:module';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { test, mock } from 'node:test';
+import { test, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { NextRequest } from 'next/server.js';
 
-const stored = new Map<string, unknown>();
-mock.module(createRequire(import.meta.url).resolve('@vercel/blob'), { namedExports: {
-  put: async (path: string, body: string) => {
-    const url = `https://example.test/${path}`;
-    stored.set(url, JSON.parse(body));
-    return { url, pathname: path };
-  },
-  list: async () => ({ blobs: [...stored.keys()].map(url => ({ url })), hasMore: false }),
-} });
+let testDirectory: string;
+beforeEach(async () => {
+  testDirectory = await mkdtemp(path.join(tmpdir(), 'wr-test-'));
+  process.env.DISCUSSION_DATA_DIR = testDirectory;
+});
+afterEach(async () => {
+  delete process.env.DISCUSSION_DATA_DIR;
+  await rm(testDirectory, { recursive: true, force: true });
+});
 const { POST: post, GET: read } = await import('../app/api/discussions/route.ts');
 const { POST: ask } = await import('../app/api/ask/route.ts');
 let number = 0;
@@ -33,7 +32,6 @@ test('independent requests share posts and public AI uses stored context, not pr
       assert.doesNotMatch(body.input, /PRIVATE SENTINEL|Forged question/);
       return Response.json({ output_text: 'A public answer.' });
     }
-    if (stored.has(String(input))) return Response.json(stored.get(String(input)));
     throw new Error('Unexpected external request');
   };
   try {

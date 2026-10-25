@@ -9,7 +9,6 @@
     "test": "node --experimental-test-module-mocks --import tsx --test tests/*.test.ts tests/*.test.mts"
   },
   "dependencies": {
-    "@vercel/blob": "^2.6.1",
     "fast-xml-parser": "^5.11.1",
     "next": "15.5.28",
     "react": "19.0.8",
@@ -22,5 +21,12 @@
     "@types/react-dom": "^19.0.2",
     "tsx": "^4.23.15",
     "typescript": "^5.7.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.23",
+    "source-map-js": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=22.3.0"
   }
 }
