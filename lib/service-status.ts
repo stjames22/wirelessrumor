@@ -1,3 +1,4 @@
+import { getApiKey } from './ai-key';
 export function aiConfigured() {
-  return Boolean(process.env.OPENAI_API_KEY?.trim());
+  try { return Boolean(getApiKey()); } catch { return false; }
 }

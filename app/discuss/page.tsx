@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import AnswerText from '../AnswerText';
 import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
 import styles from './discuss.module.css';
 
-type Message = { id: string; role: 'human' | 'astra'; name: string; text: string; createdAt: string };
+type Message = { id: string; role: 'human' | 'astra'; name: string; text: string; createdAt: string; citations?: Array<{ start: number; end: number; url: string; title: string }> };
 type Connection = 'checking' | 'connected' | 'unavailable';
 const STORAGE_KEY = 'wirelessrumor:discussion:v2';
 const starter: Message = { id: 'welcome', role: 'astra', name: 'Astra', text: 'Bring a claim, question, source, or disagreement. Ask Astra to separate evidence from inference. AI answers can be wrong; check original sources.', createdAt: new Date(0).toISOString() };
@@ -96,7 +97,7 @@ export default function DiscussPage() {
         if (!response.ok) throw new Error(data.error || 'Astra could not answer.');
         if (mode === 'private' && localHuman) {
           const human = localHuman;
-          setPrivateMessages(current => [...current, human, { id: crypto.randomUUID(), role: 'astra', name: 'Astra', text: data.answer, createdAt: new Date().toISOString() }]);
+          setPrivateMessages(current => [...current, human, { id: crypto.randomUUID(), role: 'astra', name: 'Astra', text: data.answer, citations: data.citations, createdAt: new Date().toISOString() }]);
           setDraft('');
         } else {
           if (data.message) setPublicMessages(current => [...current.filter(m => m.id !== data.message.id), data.message]);
@@ -117,7 +118,7 @@ export default function DiscussPage() {
     <section className={styles.shell}><div>
       <div className={styles.modes}><button type="button" disabled={busy} aria-pressed={mode === 'public'} onClick={() => { setMode('public'); setNotice(''); }}>Public room</button><button type="button" disabled={busy} aria-pressed={mode === 'private'} onClick={() => { setMode('private'); setNotice(''); }}>Personal Astra chat</button></div>
       <div className={styles.roomBar}><div><b>{mode === 'public' ? 'OPEN FLOOR' : 'PERSONAL CHAT'}</b><span>{mode === 'public' ? 'PUBLIC · DISPLAY NAMES ARE UNVERIFIED' : 'SAVED ON THIS BROWSER · NOT POSTED PUBLICLY'}</span></div><button type="button" disabled={busy} onClick={() => void refresh(true)}>REFRESH</button></div>
-      <div className={styles.thread} aria-live="polite">{[starter, ...messages].map(message => <article key={message.id} className={`${styles.message} ${styles[message.role]}`}><div className={styles.meta}><strong>{message.role === 'astra' ? 'ASTRA · AI' : message.name || 'Guest'}</strong>{message.id !== 'welcome' && <time dateTime={message.createdAt}>{new Date(message.createdAt).toLocaleString()}</time>}</div><p>{message.text}</p></article>)}{busy && <p role="status">{mode === 'public' ? 'Sending…' : 'Asking Astra…'}</p>}</div>
+      <div className={styles.thread} aria-live="polite">{[starter, ...messages].map(message => <article key={message.id} className={`${styles.message} ${styles[message.role]}`}><div className={styles.meta}><strong>{message.role === 'astra' ? 'ASTRA · AI' : message.name || 'Guest'}</strong>{message.id !== 'welcome' && <time dateTime={message.createdAt}>{new Date(message.createdAt).toLocaleString()}</time>}</div><p><AnswerText text={message.text} citations={message.citations} /></p></article>)}{busy && <p role="status">{mode === 'public' ? 'Sending…' : 'Asking Astra…'}</p>}</div>
     </div>
     <form className={styles.composer} onSubmit={submit}>
       <div className={styles.identity}><label htmlFor="displayName">DISPLAY NAME</label><input id="displayName" value={name} maxLength={40} onChange={e => setName(e.target.value)} /></div>

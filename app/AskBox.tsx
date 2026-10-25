@@ -1,5 +1,6 @@
 'use client';
 
+import AnswerText from './AnswerText';
 import { FormEvent, useState } from 'react';
 
 const MAX_QUESTION_CHARS = 2000;
@@ -7,6 +8,7 @@ const MAX_QUESTION_CHARS = 2000;
 export default function AskBox() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
+  const [citations, setCitations] = useState<Array<{ start: number; end: number; url: string; title: string }>>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -26,6 +28,7 @@ export default function AskBox() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Analysis failed');
       setAnswer(data.answer);
+      setCitations(data.citations || []);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Analysis failed');
     } finally {
@@ -45,7 +48,7 @@ export default function AskBox() {
         />
         <button type="submit" disabled={loading}>{loading ? 'ANALYZING…' : 'ANALYZE →'}</button>
       </form>
-      {answer && <div className="aiAnswer"><small>WIRELESSRUMOR AI</small><p>{answer}</p></div>}
+      {answer && <div className="aiAnswer"><small>WIRELESSRUMOR AI</small><p><AnswerText text={answer} citations={citations} /></p></div>}
       {error && <div className="aiAnswer error"><small>AI ENGINE</small><p>{error}</p></div>}
     </div>
   );

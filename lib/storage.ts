@@ -17,7 +17,7 @@ export const storageNamespaces = {
 } as const;
 
 export const storageStatus = {
-  provider: 'Vercel Blob',
-  provisioned: false,
-  note: 'Runtime adapter intentionally disabled until a Blob store/token is attached to the WirelessRumor Vercel project. Keeping the namespace contract here avoids coupling editorial code to a personal drive while preserving a deployable site.',
-} as const;
+  provider: 'Railway persistent volume',
+  provisioned: Boolean(process.env.DISCUSSION_DATA_DIR),
+  note: 'Public discussions use the mounted Railway volume. Editorial content is versioned in Git.',
+};

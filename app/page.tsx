@@ -5,6 +5,7 @@ import CommunityStatus from './CommunityStatus';
 export const revalidate = 3600;
 
 const activity = [
+  { date: '2026-10-24', text: 'Prepared Railway hosting, persistent public discussions, and Astra with source-linked web research.' },
   { date: '2026-09-24', text: 'Added publisher-dated source headlines and explicit public/personal discussion modes.' },
   { date: '2026-09-23', text: 'Added short feed caching and fresh reads after posting.' },
   { date: '2026-09-21', text: 'Changed homepage counts to reflect published content.' },

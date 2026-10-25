@@ -17,7 +17,7 @@ WirelessRumor is an AI-native intelligence publication for tracking claims, pred
 
 ## Stack
 
-Next.js + TypeScript. Designed for Vercel deployment. The production intelligence pipeline will use server-side AI credentials and persistent storage; secrets must never be committed to this repository.
+Next.js + TypeScript. Hosted on Railway with a persistent volume for public discussion messages. The production intelligence pipeline will use server-side AI credentials and persistent storage; secrets must never be committed to this repository.
 
 ## Editorial principle
 
@@ -31,17 +31,21 @@ Rumor is the subject, not the standard of evidence. Material claims should retai
 - Publisher-dated headlines refresh on visits using hourly Next.js revalidation. This is a source feed, not autonomous investigative reporting. Feed failures are shown without fabricating replacement headlines.
 - Radar briefs are labeled as awaiting source review. Unsupported numerical confidence scores and undated activity claims are no longer displayed.
 
-## Production setup still required
+## Railway production
 
-The September 24 live checks found both community storage and the AI key missing. The connected Vercel app returned 403 for the owning `james-9597` team. Code deployment alone does not resolve either configuration issue.
+- Project: WirelessRumor (`c9cd1bd6-f9c9-4f99-ab80-1043a8868d32`)
+- Environment: production (`b3ffea3f-48ff-4d2c-8da3-d52dea15ae9a`)
+- Service: wirelessrumor (`86e57b7a-2cac-4baa-b9ae-c6f0e917ea10`)
+- Public Railway URL: https://wirelessrumor-production.up.railway.app
+- GitHub source: `stjames22/wirelessrumor`, branch `main`. Pushes deploy automatically.
+- A persistent volume mounted at `/data` stores one atomic JSON file per public message. Set `DISCUSSION_DATA_DIR=/data/discussions`; keep one replica. Files survive application restarts and redeploys. Personal chats remain browser-local and never enter the public volume.
+- Astra uses `OPENAI_API_KEY`, or secure-provisioned `OPENAI_API_KEY_ENCRYPTED` and `OPENAI_KEY_WRAPPING_PRIVATE` service variables. The latter decrypts only in server memory. Never log or commit any of these values.
+- `OPENAI_MODEL` defaults to `gpt-5.6-luna`. Astra can use web search with up to two tool calls per answer and displays source citations as clickable links. It has no infrastructure-management or private-account tools.
+- `/api/health` verifies discussion storage access; `/api/status` reports AI credential configuration only. A successful `/api/ask` request is still needed to verify live AI health.
+- Existing unconfigured deployments can continue using the legacy Blob adapter when `DISCUSSION_DATA_DIR` is absent; Railway does not require Vercel Blob.
+- Custom-domain cutover requires changing the current DNS records to Railway's verified values. Keep the old site serving until the Railway app and certificate are verified. Do not overwrite unrelated MX/TXT records.
 
-1. In the existing `wirelessrumor` Vercel project, connect a **public** Blob store to Production. The SDK supports the resulting `BLOB_READ_WRITE_TOKEN`, or the SDK's supported store/OIDC configuration. Do not put either secret in Git.
-2. Add `OPENAI_API_KEY` to Production. `OPENAI_MODEL` is optional and defaults to `gpt-5.6-luna`.
-3. Redeploy the existing project.
-4. Confirm `/api/discussions` returns HTTP 200 and `shared: true`; `/api/status` reports only AI configuration, not proven AI health.
-5. From two separate browser sessions, post a clearly labeled test message in one and verify it appears in the other; invite Astra and verify its reply persists after reload. Do not call the community live until these checks succeed.
-
-The current per-process posting limits are basic throttles, not distributed abuse protection. Public posts use unverified display names. There is no claim of account identity verification or automated moderation.
+The current per-process posting limits are basic throttles for one replica. Public posts use unverified display names. There is no claim of verified identity or automated moderation. Headlines refresh on visits; daily editorial maintenance is a separately scheduled ChatGPT task, not an autonomous conversation between independent AI systems.
 
 ## Verification
 
