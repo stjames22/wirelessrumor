@@ -5,3 +5,88 @@
 .weekendBanner{margin:26px 0 30px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid #3d4a43;background:#0d1411;padding:14px 16px;max-width:780px}.weekendBanner span{color:#071006;background:#9cff57;padding:7px 9px;font-size:9px;font-weight:900;letter-spacing:1.3px}.weekendBanner strong{font-size:14px;letter-spacing:.2px}.weekendBanner a{margin-left:auto;color:#9cff57;font-size:9px;font-weight:900;letter-spacing:1.2px}@media(max-width:650px){.weekendBanner{display:grid}.weekendBanner a{margin-left:0}}
 .utilityHero{padding:110px 8vw 90px;min-height:650px;background:radial-gradient(circle at 78% 20%,rgba(156,255,87,.09),transparent 30%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,40px 40px,40px 40px}.utilityHero h1{font-size:clamp(58px,8vw,112px);line-height:.9;letter-spacing:-5px;margin:24px 0 28px;max-width:1050px}.utilityHero h1 em{font-style:normal;color:#9cff57}.utilityHero>p{font-size:19px;line-height:1.6;color:#a3aea8;max-width:760px;margin-bottom:34px}.trustLine{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;color:#6f7b75;font-size:9px;font-weight:800;letter-spacing:1.3px}.signalSection{padding:90px 7vw;border-top:1px solid #263035;border-bottom:1px solid #263035;background:#090d0f}.signalGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.signalGrid article{border:1px solid #2a3530;background:#0c1012;padding:28px}.signalGrid small{color:#9cff57;font-size:9px;font-weight:900;letter-spacing:1.4px}.signalGrid h3{font-size:26px;line-height:1.2;margin:22px 0 14px}.signalGrid p{color:#8f9a94;line-height:1.65;margin:0}.rumor p{color:#8f9a94;line-height:1.6;margin:18px 0}.radarActions{display:flex;gap:18px;flex-wrap:wrap;margin-top:auto;padding-top:24px}.radarActions a{font-size:9px;font-weight:900;letter-spacing:1px;color:#9cff57}.valueSplit{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #263035;border-bottom:1px solid #263035}.valueSplit>div{padding:90px 7vw}.valueSplit>div:first-child{border-right:1px solid #263035}.valueSplit h2{font-size:54px;line-height:.94;letter-spacing:-3px;margin:18px 0 24px}.valueSplit h2 em{font-style:normal;color:#9cff57}.valueSplit p{color:#929d97;line-height:1.7;max-width:580px}.ghostButton{background:transparent;color:#9cff57;border:1px solid #47623b}.researchCTA{padding:85px 7vw;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;background:radial-gradient(circle at 15% 20%,rgba(156,255,87,.05),transparent 35%),#0a0e10}.researchCTA h2{font-size:52px;line-height:.95;letter-spacing:-3px;margin:14px 0 0}.researchCTA p{color:#9aa49f;line-height:1.75;font-size:17px}.utilityHero .ask{margin-top:0}.utilityHero .askWrap{max-width:900px}.utilityHero .aiAnswer{background:#0b1010;border-color:#3a4a40}
 @media(max-width:850px){.utilityHero{padding:75px 6vw 65px;min-height:auto}.utilityHero h1{font-size:58px;letter-spacing:-3px}.signalGrid,.valueSplit,.researchCTA{grid-template-columns:1fr}.valueSplit>div:first-child{border-right:0;border-bottom:1px solid #263035}.valueSplit h2,.researchCTA h2{font-size:44px}.researchCTA{gap:28px}.trustLine{display:grid;gap:8px}}
+
+/* 2026-10-25 homepage refresh: light, utility-first, editorial */
+.homePage{background:#f6f5f1;color:#17181c;min-height:100vh}
+.homePage .topbar{height:72px;border-bottom:1px solid #deddd7;background:rgba(246,245,241,.92);backdrop-filter:blur(14px);padding:0 5vw;color:#17181c}
+.homePage .brand{font-size:21px;letter-spacing:-.7px;color:#17181c}
+.homePage .brand span{color:#6d62ff}
+.homePage .topbar nav{gap:24px;color:#5d5f67;font-size:10px;letter-spacing:1.25px}
+.homePage .topbar nav a:hover{color:#17181c}
+.homePage .operator{color:#74767d}
+.homePage .operator i{background:#6d62ff;box-shadow:none}
+.homePage .utilityHero{min-height:auto;padding:96px 8vw 80px;background:
+radial-gradient(circle at 82% 16%,rgba(109,98,255,.12),transparent 28%),
+radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
+#f6f5f1}
+.homePage .eyebrow,.homePage .kicker{color:#6d62ff;letter-spacing:1.6px}
+.homePage .utilityHero h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(54px,7vw,94px);line-height:.94;letter-spacing:-4.4px;max-width:980px;color:#17181c}
+.homePage .utilityHero h1 em{color:#17181c;font-style:normal;font-weight:400}
+.homePage .utilityHero>p{color:#65676f;font-size:19px;max-width:760px}
+.homePage .askWrap{max-width:920px}
+.homePage .ask{margin-top:0;background:white;border:1px solid #d7d6d1;border-radius:18px;padding:8px;box-shadow:0 14px 40px rgba(31,32,38,.08)}
+.homePage .ask:focus-within{border-color:#6d62ff;box-shadow:0 16px 44px rgba(109,98,255,.12)}
+.homePage .ask input{color:#17181c;padding:19px 18px;font-size:17px}
+.homePage .ask input::placeholder{color:#96979c}
+.homePage .ask button{background:#17181c;color:white;border-radius:12px;padding:0 24px;min-height:52px}
+.homePage .ask button:hover{background:#6d62ff}
+.homePage .aiAnswer{background:white;border:1px solid #deddd7;color:#17181c;border-radius:14px;box-shadow:0 10px 30px rgba(31,32,38,.05)}
+.homePage .aiAnswer small{color:#6d62ff}
+.homePage .aiAnswer p{color:#3f4148}
+.homePage .trustLine{color:#85878d;gap:18px;font-size:9px}
+.homePage .section,.homePage .signalSection{padding:88px 7vw;background:#f6f5f1;border-color:#deddd7}
+.homePage .sectionHead{align-items:flex-end;margin-bottom:38px}
+.homePage .sectionHead h2{color:#17181c;font-size:46px;letter-spacing:-2.2px;line-height:1}
+.homePage .sectionHead p{color:#6c6e75;font-size:15px;line-height:1.65}
+.homePage .dispatchGrid{gap:16px}
+.homePage .dispatch{background:white;border:1px solid #e1e0db;border-radius:18px;padding:24px;box-shadow:0 10px 26px rgba(31,32,38,.04);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.homePage .dispatch:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(31,32,38,.08);border-color:#cbc9c2}
+.homePage .dispatch>div{color:#7b7d84}
+.homePage .dispatch h3{color:#202126;font-size:21px}
+.homePage .dispatch h3 a:hover{color:#6d62ff}
+.homePage .discussLink{color:#6d62ff;font-weight:800}
+.homePage .signalSection{background:#ececf7;border-top:1px solid #d9d8e6;border-bottom:1px solid #d9d8e6}
+.homePage .signalGrid{gap:16px}
+.homePage .signalGrid article{background:rgba(255,255,255,.76);border:1px solid rgba(255,255,255,.95);border-radius:20px;padding:28px;box-shadow:0 10px 28px rgba(66,61,120,.06)}
+.homePage .signalGrid small{color:#6d62ff}
+.homePage .signalGrid h3{color:#202126}
+.homePage .signalGrid p{color:#666872}
+.homePage .rumorGrid{gap:16px}
+.homePage .rumor{background:white;border:1px solid #e1e0db;border-radius:18px;min-height:320px;padding:26px;box-shadow:0 10px 28px rgba(31,32,38,.04)}
+.homePage .rumor:hover{border-color:#c6c4bc;box-shadow:0 15px 34px rgba(31,32,38,.07)}
+.homePage .rumorTop{color:#85878e}
+.homePage .rumorTop b{color:#6d62ff}
+.homePage .rumor h3{color:#202126;font-size:22px}
+.homePage .rumor p{color:#666872}
+.homePage .radarActions a{color:#6d62ff}
+.homePage .valueSplit{background:white;border-color:#deddd7}
+.homePage .valueSplit>div{padding:86px 7vw}
+.homePage .valueSplit>div:first-child{border-color:#deddd7}
+.homePage .valueSplit h2{color:#17181c}
+.homePage .valueSplit h2 em{color:#6d62ff}
+.homePage .valueSplit p{color:#666872}
+.homePage .moneyButton{background:#17181c;color:white;border-radius:999px;padding:15px 20px;font-size:10px}
+.homePage .moneyButton:hover{background:#6d62ff}
+.homePage .ghostButton{background:transparent;color:#17181c;border:1px solid #bbb9b1}
+.homePage .researchCTA{background:#222328;color:white;border-top:0}
+.homePage .researchCTA .kicker{color:#a9a2ff}
+.homePage .researchCTA h2{color:white}
+.homePage .researchCTA p{color:#c5c6cc}
+.homePage .researchCTA .moneyButton{background:white;color:#17181c}
+.homePage footer{background:#17181c;color:#aeb0b6;border-top:0;padding:48px 7vw}
+.homePage footer .brand{color:white}
+.homePage footer .brand span{color:#a9a2ff}
+.homePage footer p{color:#d0d1d5}
+.homePage footer small{color:#85878d}
+@media(max-width:850px){
+  .homePage .topbar{padding:0 5vw;height:64px}
+  .homePage .utilityHero{padding:62px 6vw 58px}
+  .homePage .utilityHero h1{font-size:52px;letter-spacing:-3px}
+  .homePage .section,.homePage .signalSection{padding:68px 6vw}
+  .homePage .sectionHead{display:block}
+  .homePage .sectionHead p{margin-top:20px}
+  .homePage .valueSplit>div{padding:68px 6vw}
+  .homePage .researchCTA{padding:68px 6vw}
+  .homePage .ask{display:block;border-radius:16px}
+  .homePage .ask button{width:100%;margin-top:8px}
+}
