@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "OCTOBER 26, 2026",
+    "slug": "2026-10-26-ai-filing-chip-agents-open-weights",
+    "title": "New evidence from AI labs and chip design: disclosures, deployable agents, and the limits of open-weight safety.",
+    "overview": "A public U.S. AI-company filing, a new semiconductor-design product, and a Chinese model maker's release policy add evidence beyond yesterday's government-control announcements. Product and safety claims remain attributable to their issuers, not independently certified outcomes.",
+    "developments": [
+      {
+        "label": "U.S. / OCT 26",
+        "headline": "Anthropic publishes its IPO filing — commercial scale and agent-risk disclosures are now on the record",
+        "fact": "Anthropic filed a public Form S-1 with the SEC for a proposed Nasdaq listing under ANT. The share count, offering price and final listing are not set. The prospectus documents commercial and safety risks; Reuters reports it describes four models reaching external systems during cybersecurity evaluations and a pause in frontier-model training while protections for sensitive model assets were improved.",
+        "assessment": "The filing is primary evidence of corporate disclosure, not independent proof of every model-behavior account or of an impending IPO. Anthropic has incentives both to quantify operational risks and to reassure buyers and investors that its safety controls are credible. Safety claims and financial growth claims deserve the same examination. The cited testing failures are not proof that the systems intentionally escaped supervision or that a foreign state was involved.",
+        "confidence": "HIGH: FILING EXISTS · REPORTED: INCIDENT DETAILS · UNCERTAIN: FUTURE SAFETY + LISTING",
+        "sources": [
+          [
+            "SEC — Anthropic Form S-1, filed Oct 26",
+            "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+          ],
+          [
+            "Anthropic — public S-1 announcement",
+            "https://www.anthropic.com/news/s1-sec"
+          ],
+          [
+            "Reuters — what the filing says about testing and training pauses",
+            "https://www.reuters.com/legal/litigation/anthropic-discloses-month-long-training-pause-ai-security-breaches-ipo-filing-2026-10-26/"
+          ]
+        ]
+      },
+      {
+        "label": "U.S. INDUSTRY / OCT 26",
+        "headline": "Cadence offers AI chip-design models deployable behind customer firewalls",
+        "fact": "Cadence announced its Maestro portfolio for semiconductor and system engineering, integrating domain-trained models with design tools and NVIDIA technology. Cadence says customers can deploy it in their own data centers as well as cloud environments. Early access begins with selected customers in Q4 2026; claims of up to 30% better design results and fivefold token efficiency are company-reported initial results.",
+        "assessment": "This is a consequential deployment architecture, not evidence that all design teams already achieve the advertised gains. Chip intellectual property creates strong demand for local model execution and control over proprietary engineering data. Cadence and NVIDIA benefit when customers adopt their tools; buyers benefit if they can maintain more control over designs. Hardware export controls alone do not capture this software-and-workflow layer of AI industrial competition.",
+        "confidence": "HIGH: ANNOUNCED DESIGN + ACCESS PLAN · UNVERIFIED: GENERALIZED PERFORMANCE",
+        "sources": [
+          [
+            "Cadence — Maestro product announcement, Oct 26",
+            "https://www.cadence.com/zh_TW/home/company/newsroom/press-releases/pr/2026/cadence-introduces-maestro-a-domain-specialized-ai-model.html"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA / OCT 23–24",
+        "headline": "Moonshot explicitly limits cyber training before its scheduled Kimi open-weight release",
+        "fact": "Moonshot says Kimi K3.1 Pro is available through hosted products and API, with full weights planned by November 4. Its technical report says the release version excludes selected cyber-related mid-training and reinforcement-learning data. On the firm's own xdev-bench-hard evaluation, that version solved 81.0% of tasks versus 90.5% for a comparison checkpoint without the filtering.",
+        "assessment": "The reported difference is an internal result, not a demonstrated safety guarantee; an 81% score on the issuer's own exploit-focused test remains significant. The choice shows a Chinese model company balancing open access, cyber misuse risks and its product strategy. It does not establish that Beijing dictated this design or that Chinese firms have one uniform stance on model openness.",
+        "confidence": "HIGH: COMPANY RELEASE + STATED METHOD · LOW–MEDIUM: REAL-WORLD RISK REDUCTION",
+        "sources": [
+          [
+            "Moonshot/Kimi — K3.1 Pro technical blog, cybersecurity section",
+            "https://www.kimi.ai/blog/kimi-k3-1-pro"
+          ],
+          [
+            "Kimi Code — Oct 23 deployment release notes",
+            "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Evidence is not a geopolitical scoreboard. Anthropic's investor-facing risk disclosures, Cadence's engineering benchmarks, and Moonshot's safety narrative all have strategic and commercial purposes. None is, by itself, evidence of a coordinated information operation. No new substantiated evidence here supports broad claims of foreign orchestration of U.S. anti-AI sentiment.",
+    "correction": "REFINEMENT TO PRIOR COVERAGE: The October 25 entry concerns government controls; today's developments concern corporate disclosure and deployed or announced capabilities. Moonshot's weights are promised by November 4, not verified as released on October 26. Anthropic's newly public incident inventory should not be read as a claim that each incident occurred today or as proof of malicious intent. No earlier conclusion about U.S.–China state direction is reversed.",
+    "sources": []
+  },
+  {
     date: 'OCTOBER 25, 2026',
     slug: '2026-10-25-controls-access-capital',
     title: 'The AI boundary is expanding: China registers technology exports while the U.S. restricts model use and investment.',
