@@ -16,6 +16,8 @@ export default function Home() {
       <a className="brand" href="/">WIRELESS<span>/</span>RUMOR</a>
       <nav>
         <a href="#check">CHECK A CLAIM</a>
+        <a href="/intelligence">INTELLIGENCE</a>
+        <a href="/ai-visibility">AI VISIBILITY</a>
         <a href="#latest">LATEST</a>
         <a href="#radar">RADAR</a>
         <a href="/roundtable">ROUNDTABLE</a>
@@ -34,6 +36,10 @@ export default function Home() {
       </div>
     </section>
 
+    <section className="registryTeaser">
+      <div><span className="kicker">OPEN INTELLIGENCE / BUILT FOR HUMANS + AGENTS</span><h2>Useful enough to cite.<br/>Transparent enough to challenge.</h2><p>Inspect a machine-readable claim ledger, including counterarguments, falsification tests and explicit gaps in the evidence. No invented verification.</p><a href="/intelligence">EXPLORE CLAIM REGISTRY ↗</a><a href="/api/intelligence">GET JSON DATA ↗</a></div>
+      <div><span className="kicker">AI VISIBILITY LAB / REAL INSIGHTS + DATA</span><h2>Build a website AI systems can find.</h2><p>Practical, sourced guidance based on Google, OpenAI and Bing documentation—plus a measurement scorecard that separates citations from actual site traffic.</p><a href="/ai-visibility">OPEN THE LAB ↗</a></div>
+    </section>
     <SourceFeed />
 
     <section className="signalSection">
