@@ -90,3 +90,22 @@ radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
   .homePage .ask{display:block;border-radius:16px}
   .homePage .ask button{width:100%;margin-top:8px}
 }
+
+/* Public intelligence + AI visibility editorial system */
+.registryPage{background:#0b1020;color:#f2f3fa;min-height:100vh;font-family:Arial,Helvetica,sans-serif}
+.registryNav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 6vw;border-bottom:1px solid #30364b;flex-wrap:wrap}
+.registryLogo{font-size:22px;font-weight:900;letter-spacing:-1px}.registryLogo span{color:#a6ffcc}.registryNav nav{display:flex;gap:22px;color:#b9bfd0;font-size:13px}
+.registryHero{padding:105px 7vw 90px;background:radial-gradient(ellipse at 85% 10%,#283a56,transparent 58%),#0b1020}
+.registryKicker{color:#a6ffcc;font-size:11px;font-weight:800;letter-spacing:2px}
+.registryHero h1{font-size:clamp(45px,7.5vw,104px);line-height:.98;letter-spacing:-.055em;max-width:1200px;margin:28px 0}
+.registryHero h1 em{font-style:normal;color:#a6ffcc}.registryHero>p:not(.registryKicker){max-width:760px;line-height:1.7;color:#bac3d7;font-size:19px}
+.registryActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px}.registryActions a{border:1px solid #7b91a3;padding:16px 20px;color:#e2f4f0;font-size:11px;font-weight:800;letter-spacing:.8px}.registryActions a:first-child{background:#a6ffcc;color:#0c1921;border-color:#a6ffcc}
+.registryStats{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid #30364b}.registryStats>div{padding:36px 7vw;border-right:1px solid #30364b}.registryStats strong{display:block;font-size:44px}.registryStats span{display:block;color:#abb8c6;letter-spacing:1.1px;font-size:10px;margin-top:8px}
+.registryContent{padding:90px 7vw}.registryIntro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:38px}.registryIntro h2{font-size:clamp(32px,4vw,60px);letter-spacing:-2px;margin:16px 0 0;line-height:1.06}.registryIntro>p{color:#b1bbce;line-height:1.7}
+.registryList{display:grid;gap:13px}.registryEntry{background:#141b2d;border:1px solid #34405a;padding:30px}.registryEntryHead{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#a6ffcc;font-size:10px;font-weight:800;letter-spacing:1px}.registryEntryHead span:last-child{color:#e2b885}.registryEntry h3{font-size:clamp(24px,3vw,40px);letter-spacing:-1px;margin:24px 0 10px}.registryEntry>p{max-width:850px;color:#b5bfd3;line-height:1.7}
+.registryEntry summary{cursor:pointer;border-top:1px solid #34405a;padding:22px 0;color:#a6ffcc;font-size:12px;font-weight:800;letter-spacing:1px}.registryEvidence{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.registryEvidence h4{font-size:14px}.registryEvidence ul{padding-left:20px;color:#b9c4d7;line-height:1.65;font-size:14px}.registryEvidence li{margin-bottom:10px}.registryEntryLinks{display:flex;gap:20px;flex-wrap:wrap;padding-top:20px;font-size:11px;color:#a6ffcc;font-weight:800}.registryFoot{padding:48px 7vw;border-top:1px solid #34405a;display:flex;justify-content:space-between;gap:25px;color:#b5bfd3}.registryFoot strong{color:#a6ffcc}
+.homePage .registryTeaser{padding:82px 7vw;background:#141b2d;color:#f2f3fa;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:36px}
+.homePage .registryTeaser h2{font-size:clamp(32px,4vw,60px);line-height:1.03;letter-spacing:-2px;margin:16px 0}
+.homePage .registryTeaser p{color:#b9c4d7;line-height:1.7}.homePage .registryTeaser .kicker{color:#a6ffcc}
+.homePage .registryTeaser a{display:inline-block;padding:16px 20px;border:1px solid #a6ffcc;margin:8px 8px 0 0;font-size:12px;color:#a6ffcc;font-weight:800}
+@media(max-width:850px){.registryHero{padding:70px 6vw}.registryHero h1{letter-spacing:-2px}.registryStats{grid-template-columns:1fr}.registryStats>div{border-bottom:1px solid #30364b}.registryIntro,.registryEvidence,.homePage .registryTeaser{grid-template-columns:1fr}.registryContent{padding:60px 6vw}.registryEntry{padding:22px}.registryFoot{display:block}.registryFoot>*{display:block;margin-bottom:15px}}
