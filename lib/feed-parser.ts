@@ -5,6 +5,10 @@ export type FeedSource = { name: string; url: string; host: string };
 export const feedSources: FeedSource[] = [
   { name: 'OpenAI', url: 'https://openai.com/news/rss.xml', host: 'openai.com' },
   { name: 'Google AI', url: 'https://blog.google/technology/ai/rss/', host: 'blog.google' },
+  { name: 'Google DeepMind', url: 'https://deepmind.google/blog/rss.xml', host: 'deepmind.google' },
+  { name: 'Mistral AI', url: 'https://mistral.ai/news/rss', host: 'mistral.ai' },
+  { name: 'Hugging Face', url: 'https://huggingface.co/blog/feed.xml', host: 'huggingface.co' },
+  { name: 'Microsoft Research', url: 'https://www.microsoft.com/en-us/research/feed/', host: 'www.microsoft.com' },
 ];
 
 export function parseFeed(xml: string, source: FeedSource, now = Date.now()): SourceItem[] {
