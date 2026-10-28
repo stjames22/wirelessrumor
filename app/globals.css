@@ -109,3 +109,66 @@ radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
 .homePage .registryTeaser p{color:#b9c4d7;line-height:1.7}.homePage .registryTeaser .kicker{color:#a6ffcc}
 .homePage .registryTeaser a{display:inline-block;padding:16px 20px;border:1px solid #a6ffcc;margin:8px 8px 0 0;font-size:12px;color:#a6ffcc;font-weight:800}
 @media(max-width:850px){.registryHero{padding:70px 6vw}.registryHero h1{letter-spacing:-2px}.registryStats{grid-template-columns:1fr}.registryStats>div{border-bottom:1px solid #30364b}.registryIntro,.registryEvidence,.homePage .registryTeaser{grid-template-columns:1fr}.registryContent{padding:60px 6vw}.registryEntry{padding:22px}.registryFoot{display:block}.registryFoot>*{display:block;margin-bottom:15px}}
+
+
+/* WirelessRumor 2026-10-28: editorial intelligence front page */
+.homePage{background:#080c13;color:#f5f4ef}
+.homePage .topbar{background:rgba(7,11,18,.94);border-color:#29323c;color:#f5f4ef}
+.homePage .topbar .brand{color:#f5f4ef}
+.homePage .topbar .brand span{color:#eaff75}
+.homePage .topbar nav{color:#b5becb}
+.homePage .topbar nav a:hover{color:#eaff75}
+.homePage .operator{color:#9ca9b8}
+.homePage .operator i{background:#eaff75}
+.frontHero{background:radial-gradient(ellipse at 76% 25%,#1b3150 0%,transparent 44%),radial-gradient(ellipse at 14% 85%,#242a21 0%,transparent 42%),#080c13;overflow:hidden}
+.frontHeroInner{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.7fr);gap:5vw;align-items:stretch;padding:86px 6vw 70px}
+.frontIndex{display:flex;align-items:center;gap:13px;color:#eaff75;font-weight:800;letter-spacing:2px;font-size:10px}
+.frontIndex span:last-child{color:#81909c}.pulseDot{height:9px;width:9px;border-radius:50%;background:#eaff75;box-shadow:0 0 20px #eaff75}
+.frontHero h1{font-size:clamp(58px,7.5vw,128px);line-height:.87;letter-spacing:-.075em;margin:37px 0 29px;font-weight:900;color:#f5f4ef}
+.frontHero h1 em{font-style:normal;color:#eaff75}
+.frontHeroCopy>p{font-size:clamp(17px,1.4vw,22px);line-height:1.55;color:#aebac8;max-width:710px}
+.frontActions{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}
+.frontActions a{display:inline-flex;gap:22px;align-items:center;justify-content:space-between;background:#eaff75;color:#101711;padding:19px 23px;font-weight:900;font-size:11px;letter-spacing:1px}
+.frontActions a+a{background:transparent;color:#f5f4ef;border:1px solid #526273}
+.frontActions a:hover{transform:translateY(-2px)}
+.frontBrief{border:1px solid #344b5a;background:linear-gradient(155deg,#24384d,#0e1723 64%);padding:26px;display:flex;flex-direction:column;min-height:500px;position:relative;overflow:hidden}
+.briefHead,.briefBottom{display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:10px;font-weight:900;letter-spacing:1.2px;color:#aebdca}
+.briefHead{border-bottom:1px solid #536474;padding-bottom:22px}
+.briefGlyph{flex:1;min-height:220px;display:flex;align-items:center;justify-content:center;position:relative;font-size:clamp(100px,15vw,220px);font-weight:900;letter-spacing:-.2em;line-height:1;color:#eaff75;text-shadow:0 0 60px #d4ff4933}
+.briefGlyph b{color:#f6f5ef;font-size:.7em}.briefGlyph i{position:absolute;width:220px;height:220px;border:1px solid #90a6b455;border-radius:50%;transform:rotate(-20deg) scaleX(1.3)}
+.briefBottom{padding:18px 0;border-top:1px solid #536474}.briefBottom a{color:#eaff75;text-align:right}
+.frontTicker{border-top:1px solid #3a444c;border-bottom:1px solid #3a444c;padding:18px 6vw;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#aebbc6;font-size:10px;font-weight:900;letter-spacing:1.5px}
+.frontTicker span:before{content:"✳";color:#eaff75;margin-right:9px}
+.homePage #latest{background:#f1f2ee;color:#121b20;padding:86px 6vw}
+.homePage #latest .sectionHead h2{font-size:clamp(36px,5vw,70px);color:#121b20}
+.homePage #latest .sectionHead p,.homePage #latest>p{color:#56616a}
+.homePage #latest a{color:inherit}
+.homePage #latest .dispatch{border-radius:0;border:1px solid #d3dadb;background:#fff;box-shadow:none;padding:28px}
+.homePage #latest .dispatch h3{font-size:clamp(22px,2.1vw,34px);line-height:1.16}
+.homePage #latest .dispatch .discussLink{color:#425c7b}
+.homePage #latest .kicker{color:#384f6d}
+.conversationFeature{padding:100px 6vw;background:radial-gradient(ellipse at 80% 20%,#202c46,transparent 60%),#0a1019;display:grid;grid-template-columns:1fr 1fr;gap:6vw;border-bottom:1px solid #34404e}
+.conversationIntro h2,.claimUtility h2{font-size:clamp(43px,5vw,76px);letter-spacing:-.055em;line-height:.97;margin:24px 0;color:#f5f4ef}
+.conversationIntro h2 em,.claimUtility h2 em{color:#eaff75;font-style:normal}
+.conversationIntro p,.claimUtility p{font-size:18px;color:#b6c1cd;line-height:1.7;max-width:600px}
+.conversationFeature .kicker,.claimUtility .kicker{color:#eaff75}
+.conversationFeature .moneyButton{background:#eaff75;color:#101711;border-radius:0;padding:19px 23px}
+.conversationPrompts{display:grid;gap:12px}
+.conversationPrompts article{border:1px solid #455569;background:#141f2c;padding:27px}
+.conversationPrompts small{color:#eaff75;font-size:10px;letter-spacing:2px}
+.conversationPrompts h3{font-size:clamp(22px,2.2vw,32px);line-height:1.2;margin:16px 0 25px}
+.conversationPrompts a{color:#d2dfef;font-size:11px;font-weight:900;letter-spacing:1px}
+.claimUtility{padding:88px 6vw;display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center;background:#0e1722}
+.claimUtility .ask{margin-top:0}.claimUtility .askWrap{max-width:none}
+.claimUtility .trustLine{color:#a8b8c5}
+.claimUtility .aiAnswer{background:#19242d}
+.homePage .signalSection,.homePage .section:not(#latest){background:#0b111a;color:#f5f4ef;border-color:#2f3a45}
+.homePage .section:not(#latest) .sectionHead h2,.homePage .signalSection .sectionHead h2{color:#f5f4ef}
+.homePage .section:not(#latest) .sectionHead p,.homePage .signalSection .sectionHead p{color:#aab8c3}
+.homePage .signalGrid article,.homePage .rumor{border-radius:0;background:#17222e;border:1px solid #344453;box-shadow:none}
+.homePage .signalGrid h3,.homePage .rumor h3{color:#f5f4ef}
+.homePage .signalGrid p,.homePage .rumor p{color:#b7c2cc}
+.homePage .signalGrid small,.homePage .rumorTop b,.homePage .radarActions a{color:#eaff75}
+.homePage .registryTeaser{background:#111d2a;color:#f5f4ef}
+@media(max-width:950px){.frontHeroInner{grid-template-columns:1fr}.frontBrief{min-height:330px}.conversationFeature,.claimUtility{grid-template-columns:1fr}.frontHero h1{font-size:clamp(53px,10vw,96px)}}
+@media(max-width:650px){.frontHeroInner{padding:65px 6vw 45px}.frontHero h1{font-size:clamp(49px,13vw,75px);letter-spacing:-.065em}.frontIndex{flex-wrap:wrap}.frontBrief{padding:18px;min-height:300px}.briefGlyph{min-height:140px;font-size:120px}.briefGlyph i{height:140px;width:140px}.frontTicker{justify-content:flex-start;gap:13px}.conversationFeature,.claimUtility{padding:66px 6vw}.conversationIntro h2,.claimUtility h2{font-size:43px}.frontActions a{width:100%}.homePage #latest{padding:66px 6vw}}
