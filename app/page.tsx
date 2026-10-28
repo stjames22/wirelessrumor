@@ -45,6 +45,14 @@ export default function Home() {
       <div className="frontTicker"><span>AI CAPABILITIES</span><span>MODEL COMPETITION</span><span>CHIPS + COMPUTE</span><span>GEOPOLITICS</span><span>THE PUBLIC DEBATE</span></div>
     </section>
 
+    <section className="designNote" aria-labelledby="design-note-title">
+      <h2 id="design-note-title">Why WirelessRumor looks this way</h2>
+      <div className="designNoteCopy">
+        <p>I wanted this to feel like an intelligence desk: dark navy and near-black to quiet the noise and keep the evidence in focus. Electric lime marks discovery — a signal worth following.</p>
+        <p>The purpose is simple: readable AI analysis that starts with sources, makes room for doubt, and opens into conversations. Follow the evidence. Bring your own questions.</p>
+      </div>
+    </section>
+
     <SourceFeed />
 
     <section className="conversationFeature" id="community">

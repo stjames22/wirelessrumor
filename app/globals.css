@@ -112,6 +112,12 @@ radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
 
 
 /* WirelessRumor 2026-10-28: editorial intelligence front page */
+.homePage .designNote{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:5vw;padding:38px 6vw 42px;background:#0e1722;border-bottom:1px solid #34404e}
+.designNote h2{margin:0;padding-left:16px;border-left:3px solid #eaff75;align-self:start;color:#f5f4ef;font-size:clamp(21px,2vw,28px);line-height:1.2;letter-spacing:-.03em;max-width:310px}
+.designNoteCopy{max-width:780px;min-width:0}
+.designNoteCopy p{margin:0;color:#b6c1cd;font-size:16px;line-height:1.65}
+.designNoteCopy p+p{margin-top:12px}
+@media(max-width:650px){.homePage .designNote{grid-template-columns:1fr;gap:22px;padding:30px 6vw 34px}.designNote h2{max-width:none}}
 .homePage{background:#080c13;color:#f5f4ef}
 .homePage .topbar{background:rgba(7,11,18,.94);border-color:#29323c;color:#f5f4ef}
 .homePage .topbar .brand{color:#f5f4ef}
