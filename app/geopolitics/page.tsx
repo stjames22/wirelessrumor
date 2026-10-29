@@ -85,6 +85,77 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "OCTOBER 29, 2026",
+    "slug": "2026-10-29-test-labs-robots-chatbot-guardrails",
+    "title": "The U.S. is moving AI-era controls beyond chips: electronics test labs, robotics supply chains and chatbot design.",
+    "overview": "Three distinct actions show that the contest over AI deployment reaches certification infrastructure, embodied machines and user-facing safeguards. An FCC decision, a White House negotiation directive and a New York law have different scopes and effective dates. None proves universal surveillance, an immediate robotics tariff or a nationwide chatbot ban.",
+    "developments": [
+      {
+        "label": "U.S. FCC / OCT 29 ADOPTION",
+        "headline": "FCC votes to move U.S.-bound electronics testing out of non-reciprocal economies",
+        "fact": "On October 29 the Federal Communications Commission voted to stop recognizing equipment test labs, certification bodies and accreditors in countries that do not grant reciprocal recognition to U.S. institutions, including mainland China. Its October draft and meeting notice set a transition ending December 1, 2028. This expands the narrower 2025 exclusion of certain state-linked labs; it does not immediately ban Chinese-made electronics or revoke already issued authorizations. FCC chair Brendan Carr says roughly 82% of covered electronics were tested in China in 2025. Reuters reported the adoption; the final FCC order text should be checked once released.",
+        "assessment": "This is both a security and trade-governance decision. Authorities reasonably want oversight of labs handling confidential product details; reciprocity also redistributes business toward U.S. and partner-country providers. The chairman's percentage is an agency-reported figure, not an independently audited prevalence estimate. Geographic location does not by itself demonstrate that an individual lab engaged in spying or falsified tests. Manufacturers and U.S. buyers could face relocation and capacity costs, while Chinese private laboratories have interests distinct from Beijing's.",
+        "confidence": "HIGH: VOTE REPORTED + FCC OFFICIAL DRAFT · MEDIUM: AGENCY MARKET-SHARE FIGURE · UNPROVEN: LAB-SPECIFIC ESPIONAGE",
+        "sources": [
+          [
+            "FCC — Oct 29 meeting item, official circulated draft (ET Docket 24-136)",
+            "https://docs.fcc.gov/public/attachments/DOC-425721A1.pdf"
+          ],
+          [
+            "FCC / Federal Register — published Oct 29 meeting notice (primary agency agenda)",
+            "https://www.govinfo.gov/content/pkg/FR-2026-10-29/html/2026-22080.htm"
+          ],
+          [
+            "Reuters — Oct 29 report confirming commission vote",
+            "https://www.reuters.com/business/media-telecom/fcc-votes-ban-all-chinese-labs-testing-us-electronics-2026-10-29/"
+          ]
+        ]
+      },
+      {
+        "label": "WHITE HOUSE / OCT 28 PROCLAMATION",
+        "headline": "Robotics-import national-security finding starts negotiations, not new tariffs",
+        "fact": "In an October 28 Section 232 proclamation, President Trump accepted a Commerce Department finding that dependence on imported robotics, industrial machinery and related components threatens U.S. national security. He directed Commerce and the U.S. Trade Representative to negotiate with trading partners and report within 180 days. The proclamation does not itself impose a new tariff, quota or blanket import prohibition, and it is not directed solely at China.",
+        "assessment": "Connected industrial equipment can create cybersecurity and data-exposure risks, but a national-security finding is not evidence that every imported robot has a backdoor. Washington also wants to expand domestic manufacturing and bargaining leverage; U.S. factories still rely on imported machinery, and suppliers in allied economies have their own interests. The broader AI implication is competition over who produces, certifies and operates embodied systems—not proof that particular autonomous capabilities have already been deployed at scale.",
+        "confidence": "HIGH: PROCLAMATION AND ITS PRESENT LEGAL SCOPE · UNCERTAIN: NEGOTIATED OUTCOME, LATER TARIFFS",
+        "sources": [
+          [
+            "White House — Oct 28 Section 232 robotics and machinery proclamation (primary text)",
+            "https://www.whitehouse.gov/presidential-actions/2026/10/adjusting-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/"
+          ],
+          [
+            "Reuters — Oct 28 report on decision and tariff distinction",
+            "https://www.reuters.com/world/china/trump-says-imported-robotics-pose-national-security-risks-does-not-impose-2026-10-28/"
+          ]
+        ]
+      },
+      {
+        "label": "NEW YORK / OCT 28 SIGNING",
+        "headline": "A state imposes specific restrictions on AI companions used by minors",
+        "fact": "New York's official legislative record shows Governor Kathy Hochul signed S9051B/A10379C on October 28. Effective January 1, 2027, the law restricts specified companion-chatbot behaviors for minors, including fabricated human relationships, harmful encouragement and sexualized interactions, and requires age-assurance safeguards, including a non-government-ID option. The state attorney general may enforce violations. It is not a national ban on all conversational AI, and it is separate from New York's earlier companion disclosure and crisis-intervention rules.",
+        "assessment": "Protecting children from manipulative systems is a legitimate policy objective, but the law's effectiveness has not yet been measured. Broad descriptions of emotional responsiveness could create enforcement uncertainty, while age checks create privacy tradeoffs that the text seeks to limit through data-minimization rules. Safety advocates, state lawmakers, model companies, youth users and privacy organizations have overlapping but nonidentical incentives. The measure underscores that the United States is not a single, uniformly deregulated AI jurisdiction.",
+        "confidence": "HIGH: SIGNED LEGISLATIVE RECORD AND EFFECTIVE DATE · UNCERTAIN: IMPLEMENTATION AND MEASURED SAFETY EFFECT",
+        "sources": [
+          [
+            "New York State Senate — S9051B, signed Oct 28; enacted text and effective date",
+            "https://www.nysenate.gov/legislation/bills/2025/S9051"
+          ],
+          [
+            "IAPP — Oct 28 independent legal-policy coverage",
+            "https://iapp.org/news/a/new-york-s-governor-signs-youth-ai-chatbot-safety-bill"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The FCC's security warnings, the White House's industrial-security claims and politicians' child-safety language are statements of policy rationale, not automatic proof of the magnitude of risk. China also has industrial and sovereignty incentives when objecting to U.S. controls. No new, independently corroborated information-operation campaign is established by these actions. The policy record supports competition over market access and institutional control, not a single centralized narrative shared by every U.S. or Chinese actor.",
+    "correction": "REFINEMENT TO OCT 28 COVERAGE: Prior chip-transit and HBM assessments remain unchanged, including unknown Malaysia shipment destinations and unconfirmed CXMT yield figures. Today's FCC measure targets the location of device testing and certification; it is not a newly announced semiconductor export ban. The October 28 robotics proclamation directs negotiations without immediate tariffs. New York's companion rule takes effect January 1, 2027, rather than banning all chatbots on signing.",
+    "sources": [
+      [
+        "White House — Oct 28 official robotics fact sheet",
+        "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/"
+      ]
+    ]
+  },
+  {
     "date": "OCTOBER 28, 2026",
     "slug": "2026-10-28-chip-transit-memory-bottlenecks",
     "title": "Malaysia's chip seizure and an HBM production gap show where AI export controls meet physical constraints.",
