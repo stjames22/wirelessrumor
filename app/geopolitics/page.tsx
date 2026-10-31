@@ -85,6 +85,72 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "OCTOBER 31, 2026",
+    "slug": "2026-10-31-web-training-preferences",
+    "title": "Who controls the training data? Four rival AI providers back one publisher opt-out, but verification is still missing.",
+    "overview": "A material October 30 data-governance development merits an October 31 update: a new individual IETF draft proposes one website-level training preference, with public support from OpenAI, Google, Microsoft and Anthropic. Their commitments and rollout dates differ. This is neither an adopted IETF standard nor an enforceable legal ban on crawling, and it says nothing about Chinese providers' compliance.",
+    "developments": [
+      {
+        "label": "IETF INTERNET-DRAFT + PROVIDER ANNOUNCEMENTS / OCT 30",
+        "headline": "A shared AI-training preference gains four prominent backers; real-world compliance remains unproven",
+        "fact": "On October 30, Anthropic-affiliated author Kevin Kelley submitted individual IETF Internet-Draft draft-kelley-aipref-training-preference-signal-00. It proposes a cross-provider robots.txt policy token, __usage_ai-training, so website operators can express a preference against using specified content to change generative-model parameters. The draft explicitly separates permission to train from permission to crawl, and the IETF says the proposal has no formal standards standing. OpenAI has pledged adoption in the coming months, Google plans support in 2027, and Kelley says Anthropic has begun implementation. These are stated implementation plans, not independent tests that all products already comply.",
+        "assessment": "Publishers and independent sites benefit if they can refuse training without giving up traditional search discovery; frontier labs benefit from a simpler, reputation-improving framework amid disputes over consent, licensing and copyright. But a voluntary signal can be ignored, cannot undo past data use, and is not proof of consent or effective enforcement. Large companies may be better able to implement common controls than smaller developers; non-participants, including Chinese AI firms, have made no commitment through this announcement. It would be misleading to describe this as an international treaty, a binding anti-scraping rule, or a new U.S.-China AI restriction.",
+        "confidence": "HIGH: DRAFT AND PUBLISHED COMMITMENTS · MEDIUM: IMPLEMENTATION TIMELINES · UNVERIFIED: CROSS-PROVIDER COMPLIANCE",
+        "sources": [
+          [
+            "IETF Datatracker — October 30 individual draft and standards-status warning",
+            "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/00/"
+          ],
+          [
+            "IETF mailing-list archive — Kevin Kelley's October 30 explanation and Anthropic implementation statement",
+            "https://mailarchive.ietf.org/arch/msg/ai-control/mddjatOxSR0h6GmLRBWlc839c7w/"
+          ],
+          [
+            "OpenAI — October 30 shared preference commitment",
+            "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+          ],
+          [
+            "Google Search Central — October 30 announcement and intended support",
+            "https://developers.google.com/search/blog/2026/10/ai-training-control"
+          ]
+        ]
+      },
+      {
+        "label": "MICROSOFT BING / OCT 30 PRIMARY ANNOUNCEMENT",
+        "headline": "Training and AI-answer grounding become separate publisher choices—with a 2027 transition date",
+        "fact": "Microsoft announced that from February 1, 2027 it will begin honoring the shared robots.txt training preference on recrawl, plus Microsoft-specific page-level training and AI-grounding preferences. Its planned grounding choices distinguish Microsoft-operated answer products from third-party grounding services. Microsoft says NoArchive and NoCache will stop counting as training or grounding preferences after March 1, 2027, making that a transition deadline for sites relying on them. The controls concern use of content, not guaranteed indexing, payment or traffic; Microsoft warns that opting out of grounding reduces visibility in AI-generated experiences.",
+        "assessment": "The distinction between training and answer-time grounding matters: a site may wish to appear in AI answers with attribution but exclude its work from model training. Microsoft has an incentive to preserve Bing's discoverable web and its commercial grounding products while answering publisher pressure; site owners have a different interest in attribution, traffic and enforceable control. The announced dates and semantics are documented, but a future rollout is not a verified production capability. The opt-out may shift bargaining power only if independent checks show providers actually honor it.",
+        "confidence": "HIGH: MICROSOFT'S PUBLISHED POLICY + DATES · NOT YET VERIFIED: IMPLEMENTATION OR PUBLISHER OUTCOMES",
+        "sources": [
+          [
+            "Microsoft Bing — October 30 training and grounding controls, migration dates and limitations",
+            "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+          ],
+          [
+            "IETF — proposed training-preference mechanism, not a finalized standard",
+            "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/00/"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The corporate phrase 'publisher choice' is a stated product and public-relations objective, not evidence that content owners can enforce those choices against every developer. The four companies are competitors with shared incentives to avoid fragmented regulation and litigation; publishers, search engines, model developers and independent scrapers do not share one interest. No verified evidence from these announcements supports claims of a coordinated foreign information operation, a change in Chinese state censorship policy, or any new semiconductor restriction. Confidence is HIGH on the public statements and LOW on unsupported geopolitical extrapolations.",
+    "correction": "NO REVERSAL OF OCT 30: That edition covered OpenAI's model-behavior specification and agent monitoring; this separate October 30 development concerns web-content training preferences. Clarification: a robots.txt training preference does not itself block web crawling, remove previously trained content or create binding legal protection. Microsoft says its older NoArchive/NoCache signals will cease serving this purpose after March 1, 2027; earlier publisher controls should not be mistaken for permanent cross-provider guarantees.",
+    "sources": [
+      [
+        "OpenAI — first-party implementation timing and continued crawler-specific controls",
+        "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+      ],
+      [
+        "Google — first-party timing and interaction with Google-Extended",
+        "https://developers.google.com/search/blog/2026/10/ai-training-control"
+      ],
+      [
+        "Microsoft — separate choices for training and AI grounding",
+        "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+      ]
+    ]
+  },
+  {
     "date": "OCTOBER 30, 2026",
     "slug": "2026-10-30-certification-agent-oversight-ai-factories",
     "title": "New pressure points: China's laboratory-response warning, OpenAI's agent controls, and AI manufacturing on the ground.",
