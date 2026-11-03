@@ -85,6 +85,76 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 3, 2026",
+    "slug": "2026-11-03-agent-identity-national-security",
+    "title": "From permission to action: Hong Kong opens a rulemaking conversation for AI agents, while OpenAI expands its U.S. security role.",
+    "overview": "Two primary-source announcements from November 2, not covered in the November 2 optics editorial, show the governance problem moving from chatbot outputs to autonomous decisions. Hong Kong's monetary authority is exploring how to identify and authorize financial agents; OpenAI has named a former U.S. Army secretary to advise its national-security work. A separate November 3 report on Nvidia cloud-access conditions remains unconfirmed, not a new U.S. export rule.",
+    "developments": [
+      {
+        "label": "HONG KONG MONETARY AUTHORITY / NOV 2 PRIMARY ANNOUNCEMENT",
+        "headline": "Project SAGE asks who an AI financial agent is, who authorized it, and who is liable",
+        "fact": "On November 2, the Hong Kong Monetary Authority launched Project SAGE (Securing Agentic Finance with Governance and Enablement) and an expert group of financial, technical, professional and academic participants. The published work areas include testing AI-agent payments and procurement, exploring agent identity and delegated authority ('Know Your Agent'), interoperability, and legal duties including liability and consumer protection. HKMA also published a discussion paper to seek industry feedback on banks' use of agentic AI. These are a launched project and consultation, not enforceable final KYA standards or evidence of autonomous-agent transactions already operating at scale.",
+        "assessment": "The practical issue is authorization: a model that can pay, move funds or contract needs verifiable scope and revocation, not just fluent output. HKMA wants innovation and Hong Kong's financial-hub advantage while protecting payments and trust; banks and technology vendors seek workable interoperability but have divergent interests in who bears failure costs. Hong Kong is a distinct regulator and financial jurisdiction: its consultation should not be presented as a new mainland China-wide rule. The actual safeguards and adoption rate are not yet independently measurable.",
+        "confidence": "HIGH: OFFICIAL SAGE LAUNCH AND SCOPE · MEDIUM: SIGNIFICANCE FOR AGENT GOVERNANCE · UNPROVEN: REAL-WORLD ADOPTION OR EFFECTIVENESS",
+        "sources": [
+          [
+            "HKMA — November 2 Project SAGE launch and four work areas",
+            "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-4/"
+          ],
+          [
+            "HKMA — November 2 FinTech Week regulatory initiatives",
+            "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-3/"
+          ]
+        ]
+      },
+      {
+        "label": "U.S. MODEL DEVELOPER / NOV 2 OFFICIAL COMPANY STATEMENT",
+        "headline": "OpenAI creates a national-security advisory role; 'democratic AI' is its stated objective, not an audit result",
+        "fact": "OpenAI announced November 2 that former U.S. Secretary of the Army Dan Driscoll will join as Senior Counselor for National Security Modernization, advising the company and public/private partners on AI applications in U.S. and allied defense and cyber-security institutions. OpenAI describes the role as advancing 'democratic AI' and understanding operational requirements. The statement establishes an appointment and declared priorities; it does not document a new government procurement contract, a deployed military capability, successful safeguards or independent oversight.",
+        "assessment": "The move reflects a commercial lab seeking institutional adoption and public-sector influence, and defense organizations seeking faster data analysis and operational support. Those interests sometimes align on security and sometimes conflict over transparency, vendor independence, surveillance boundaries and democratic accountability. OpenAI's values language deserves the same evidentiary scrutiny as Chinese official claims of 'responsible' or 'open' AI. The test is enforceable conditions, audits, measurable performance and remedy when systems fail—not executive framing. This appointment alone does not establish censorship, surveillance or misuse.",
+        "confidence": "HIGH: APPOINTMENT AS ANNOUNCED · MEDIUM: STRATEGIC IMPLICATIONS · UNVERIFIED: DEPLOYMENT OR GOVERNANCE RESULTS",
+        "sources": [
+          [
+            "OpenAI — November 2 appointment announcement (interested-party primary source)",
+            "https://openai.com/index/dan-driscoll-joins-openai/"
+          ],
+          [
+            "OpenAI — August 18 oversight initiative (prior stated commitments, not outcomes)",
+            "https://openai.com/index/strengthening-democratic-oversight-in-national-security/"
+          ]
+        ]
+      }
+    ],
+    "messaging": "A November 3 Financial Times report, citing people familiar with the matter, says Nvidia has verbally asked data-center partners to direct at least 51% of their compute services to non-Chinese buyers; Reuters explicitly said it could not independently verify the report. That is a potentially important CLOUD-ACCESS claim, not a publicly confirmed Nvidia contract term or new U.S. export regulation. Neither the reported threshold nor its enforcement has been established through a published primary document. Separately, Reuters reports that Chinese financial regulator Xiao Yuanqi warned at a November 3 Hong Kong summit of concentrated AI investment and crowding-out risks; the HKMA confirms the summit, not an enacted policy response. China-based officials and Hong Kong regulators are not a single voice; neither are U.S. security agencies and private AI firms. No new covert propaganda or coordinated information operation is established by these public statements or the press report. Confidence: HIGH that the official SAGE/OpenAI announcements occurred, MEDIUM that the financial-regulator remarks were accurately reported, and LOW on the specific Nvidia quota until primary documentation emerges.",
+    "correction": "ADDITIVE REFINEMENT TO NOV 1–2: The November 1 Nvidia intelligence allegations remain allegations and must not be conflated with the new, separately reported Nvidia customer-mix restriction. The November 2 optical merger remains a signed proposal, not a closed acquisition. SAGE is a Hong Kong consultation, not a binding mainland-wide rule; OpenAI's hire is not a deployed military system. No prior factual claim is retracted. Reassess Nvidia's reported 51% threshold if Nvidia, affected partners or regulators publish verifiable terms.",
+    "sources": [
+      [
+        "HKMA — Project SAGE launch, November 2",
+        "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-4/"
+      ],
+      [
+        "OpenAI — national-security adviser announcement, November 2",
+        "https://openai.com/index/dan-driscoll-joins-openai/"
+      ],
+      [
+        "Financial Times — November 3 Nvidia 51% customer-mix report (anonymous-source reporting, not verified rule)",
+        "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+      ],
+      [
+        "Reuters — November 3 notes it could not verify Nvidia report",
+        "https://www.reuters.com/world/asia-pacific/nvidia-orders-data-centre-clients-reduce-china-exposure-ft-reports-2026-11-03/"
+      ],
+      [
+        "Reuters — November 3 Chinese financial regulator comments (reported speech)",
+        "https://www.reuters.com/business/finance/ai-investment-is-becoming-overly-concentrated-chinese-official-says-2026-11-03/"
+      ],
+      [
+        "HKMA — November 3 summit event confirmation",
+        "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261103-4/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 2, 2026",
     "slug": "2026-11-02-optical-ai-supply-chain",
     "title": "The AI bottleneck moves beyond chips: Marvell and Lumentum propose a $115 billion optical-connectivity merger.",
