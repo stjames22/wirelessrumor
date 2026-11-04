@@ -85,6 +85,85 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 4, 2026",
+    "slug": "2026-11-04-bank-agent-oversight-tencent-hy4-amd-compute",
+    "title": "AI moves from model demos to accountable actions: U.S. bank examiners address agents, Tencent launches Hy4, and AMD reports a fast-growing compute business.",
+    "overview": "Two November 4 primary announcements and AMD's November 3 SEC-filed earnings release show three different dimensions of AI deployment: who is allowed to act in a bank, which Chinese model capabilities are accessible today, and how AI hardware spending is translating into revenue. An examiner framework is not a binding AI regulation; a company model launch is not proof of claimed safety or benchmark leadership; and data-center sales are not a measure of geopolitical supremacy.",
+    "developments": [
+      {
+        "label": "UNITED STATES / OCC BULLETIN NOV 4 / SUPERVISORY GUIDANCE",
+        "headline": "Bank supervisors are told to assess an AI agent's authority and consequences, not simply its model sophistication",
+        "fact": "On November 4 the U.S. Office of the Comptroller of the Currency issued Bulletin 2026-54 and an examiner framework for bank use of what the agency calls 'super intelligence' (its broad policy term for technologies including AI, not a claim that superhuman AGI has been achieved). The document instructs examiners to consider the material consequences of an agent's actions, transferred agency, human oversight, bank size and complexity. It explicitly says the framework establishes no new enforceable standards or bank supervisory expectations and does not require a separate AI risk appetite. This is examiner guidance, not a new law, certification, or proof that bank agents are safe.",
+        "assessment": "An agent with modest language capabilities but permission to initiate payments may warrant more control than a frontier model used only for research. The OCC is signaling technology-neutral supervision and flexibility, which can reduce compliance friction; depositors, customers and prudential supervisors still need verifiable authorization, incident handling and accountability. Banks and vendors benefit from operational autonomy, but may bear different costs when actions go wrong. Actual examination practices and consumer outcomes remain to be measured. Unlike Hong Kong's November 2 Project SAGE consultation, this is an issued U.S. examiner resource, not a joint cross-border standard.",
+        "confidence": "HIGH: ISSUED FRAMEWORK AND NONBINDING SCOPE · MEDIUM: PRACTICAL SIGNAL · UNKNOWN: IMPACT ON BANK OPERATIONS",
+        "sources": [
+          [
+            "OCC — November 4 Bulletin 2026-54, scope, applicability and explicit nonbinding statement",
+            "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html"
+          ],
+          [
+            "OCC — November 4 news release on examiner framework",
+            "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-97.html"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA / TENCENT ISSUER ANNOUNCEMENT NOV 4 / MODEL ACCESS",
+        "headline": "Tencent offers Hy4 through products and APIs; the newest weights and safety documentation are still promised",
+        "fact": "Tencent announced Hy4 on November 4, claiming expanded multimodal, computer-use, coding and financial-workflow skills. Tencent says Hy4 is already offered in its hosted TokenHub and WorkBuddy/CodeBuddy ecosystems, with additional API distribution planned. It says model weights and system cards for this release will be published in the coming days. Tencent calls Hy4 'open-source' in its announcement, but that label should not be mistaken for independently verified availability of the November 4 model weights today; the separate Hy4 Preview weights were released in August. Tencent says offensive exploit-training material was excluded and its own security labs saw no significant offensive-cyber warning in the areas tested. The test methods, broad safety claims and company-run performance comparisons have not been independently validated here.",
+        "assessment": "The same model can expand workplace access while concentrating sensitive workflow data inside a vendor's ecosystem; hosted access and open weights offer different forms of user control. Tencent has incentives to win enterprise adoption, promote Chinese model competitiveness and reassure regulators about dual-use risks. Defensive-only curation is a claimed safeguard, not a guarantee against misuse, and 'open' branding should be evaluated against actual downloadable artifacts, licenses and the scope of Chinese technology-export controls. China's Commerce Ministry has clarified that some externally accessible API or SaaS uses are distinct from transfers of restricted nonpublic technology, but the proposal and interim registration measures still have separate legal scopes. No evidence here establishes state direction of Tencent's particular training choices.",
+        "confidence": "HIGH: ISSUER ANNOUNCED PRODUCT AND ACCESS PLAN · PENDING: NEW MODEL WEIGHTS / SYSTEM CARD · UNVERIFIED: BENCHMARK AND SAFETY RESULTS",
+        "sources": [
+          [
+            "Tencent — November 4 Hy4 company release via PR Newswire (issuer claims, not independent audit)",
+            "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml"
+          ],
+          [
+            "Tencent — August 28 Hy4 Preview open-weight release (earlier version, not proof of November weights)",
+            "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+          ],
+          [
+            "China MOFCOM — October clarification on proposed technology controls and APIs",
+            "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_74bf283f105a4b19a11f7430df3671ae.html"
+          ]
+        ]
+      },
+      {
+        "label": "UNITED STATES / AMD NOV 3 SEC-FILED EARNINGS / DEPLOYED COMPUTE",
+        "headline": "AMD's data-center sales rose 97% year over year, but the industry's forward-looking deployment claims need separate checks",
+        "fact": "AMD's November 3 quarterly release, furnished with its SEC Form 8-K, reports $13.377 billion company revenue and $8.5 billion data-center segment revenue in Q3 2026, the latter up 97% year over year. AMD attributes the growth to EPYC processors and Instinct MI450 GPUs. It says Anthropic, Meta, Microsoft, OpenAI and Oracle are running workloads on early Helios rack-scale systems, and forecasts approximately $17 billion total company revenue for Q4. The filing verifies AMD's disclosure and figures as reported; the deployment scale, relative performance and future forecast are company statements, not independent field measurements. Its data-center category includes CPUs as well as accelerators, so it is not a pure AI-chip revenue tally.",
+        "assessment": "Substantial reported hardware revenue supports the narrower conclusion that AI infrastructure spending is becoming real business for multiple suppliers, not that any vendor's performance claims are universally achieved. AMD and its customers want alternatives to Nvidia's ecosystem and leverage over pricing; investors want growth and may discount concentration, subsidy and financing risks. The timing of a corporate earnings report should not be confused with a new U.S. semiconductor export decision. No new export rule is substantiated by this release, and the previously reported Nvidia 51% non-Chinese customer-share policy remains unconfirmed absent published primary terms.",
+        "confidence": "HIGH: FILED FINANCIAL DISCLOSURE · COMPANY-REPORTED: CUSTOMER DEPLOYMENTS · UNCERTAIN: PERFORMANCE, SCALE AND FORECASTS",
+        "sources": [
+          [
+            "AMD — November 3 Form 8-K earnings exhibit (SEC-filed issuer financial release)",
+            "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm"
+          ],
+          [
+            "AMD — November 3 Form 8-K cover filing",
+            "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/amd-20261103.htm"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Three different interested parties are framing the same shift toward acting, deployed AI: OCC officials emphasize adaptable risk supervision, Tencent promotes an open and safe Chinese model ecosystem, and AMD emphasizes growth from AI infrastructure. Each document is primary evidence for what its issuer did or said, but not neutral verification of every safety, economic or geopolitical claim. There is no evidence in these records of a coordinated U.S.–China messaging campaign. A comparison of Chinese and American 'openness' must specify whether it concerns hosted access, downloadable weights, regulated cross-border technology transfers or government oversight.",
+    "correction": "REFINEMENT TO OCT 25, OCT 26 AND NOV 3: China's October 16 technology-export proposals and interim registration are not blanket bans on Chinese-hosted model APIs; MOFCOM explicitly distinguishes services from exports involving covered nonpublic technology. The October 26 Moonshot planned release does not establish that Tencent's November 4 weights are available; Hy4 Preview is a different version. The November 3 Nvidia 51% cloud-customer condition remains third-party reporting, not a verified regulation. Hong Kong Project SAGE remains consultation, whereas the OCC document is U.S. nonbinding examiner guidance. No prior item is erased.",
+    "sources": [
+      [
+        "OCC — November 4 examiner guidance",
+        "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html"
+      ],
+      [
+        "Tencent — November 4 Hy4 company announcement",
+        "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml"
+      ],
+      [
+        "AMD — November 3 SEC-furnished financial release",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 3, 2026",
     "slug": "2026-11-03-agent-identity-national-security",
     "title": "From permission to action: Hong Kong opens a rulemaking conversation for AI agents, while OpenAI expands its U.S. security role.",
