@@ -104,10 +104,6 @@ const datedEditorialUpdates = [
           [
             "ABB — October 8, 2025 original $5.375 billion transaction announcement",
             "https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group"
-          ],
-          [
-            "Financial Times — November 5 reported security concerns (anonymous-source account, not official rationale)",
-            "https://www.ft.com/content/f10c3e24-45e4-47ff-bde2-24a8de90aec4"
           ]
         ]
       },
@@ -124,7 +120,7 @@ const datedEditorialUpdates = [
           ],
           [
             "OpenAI — January 2026 predecessor commitments (background, not proof of delivery)",
-            "https://openai.com/index/stargate-community-commitments/"
+            "https://openai.com/index/stargate-community/"
           ]
         ]
       }
@@ -135,6 +131,10 @@ const datedEditorialUpdates = [
       [
         "ABB — November 5 acquisition update",
         "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics"
+      ],
+      [
+        "Financial Times — November 5 reported security rationale (secondary-source account, unverified official reason)",
+        "https://www.ft.com/content/f10c3e24-45e4-47ff-bde2-24a8de90aec4"
       ],
       [
         "OpenAI — November 5 community commitments and policy proposals",
