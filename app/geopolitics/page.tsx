@@ -85,6 +85,64 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 5, 2026",
+    "slug": "2026-11-05-robotics-security-review-compute-campus-compact",
+    "title": "China blocks SoftBank's ABB Robotics purchase in China; OpenAI proposes a new bargain for U.S. compute-campus communities.",
+    "overview": "Two November 5 primary statements show that physical AI has two political chokepoints: which countries control robotics data and factory ownership, and who pays for the power, water and local disruption of AI infrastructure. ABB confirms a prohibition affecting the Chinese operations of a proposed $5.375 billion acquisition; OpenAI publishes voluntary promises for future campuses it owns and operates, alongside a policy blueprint. Neither establishes that the global ABB deal is formally terminated or that OpenAI's pledges are already independently enforced.",
+    "developments": [
+      {
+        "label": "CHINA / ABB ISSUER DISCLOSURE NOV 5 / FOREIGN-INVESTMENT SECURITY REVIEW",
+        "headline": "Beijing prohibits the Chinese part of SoftBank's $5.375 billion ABB Robotics acquisition; the global transaction remains under discussion",
+        "fact": "On November 5, Swiss engineering company ABB confirmed that SoftBank had informed it China's Office of the Working Mechanism for Foreign Investment Security Review had prohibited the acquisition of ABB Robotics' business in China. ABB and SoftBank said they remain in close dialogue and are working on the transaction. Their October 8, 2025 agreement valued the Robotics division at $5.375 billion and was subject to approvals; the prohibition is new, but ABB has not announced that the full worldwide sale has been canceled. ABB's November 5 statement does not give the regulator's substantive reasons. News reports attribute concern to transfers of Chinese robotics and industrial data for overseas AI training; that explanation is reported, not confirmed by the company's statement or a publicly located Chinese decision text.",
+        "assessment": "The ruling matters beyond a conventional factory acquisition: industrial robots generate operational information and embodied-AI training opportunities, and their manufacturing and support networks can be strategically valuable. Beijing's regulators may prioritize control of locally generated data and know-how, while SoftBank hopes to link ABB's industrial footprint to its physical-AI investments and ABB wants a viable divestiture. Competitors could benefit if the sale falters; employees and customers face deal uncertainty. The primary evidence supports a Chinese acquisition prohibition, not proven misuse of data, a general ban on cross-border robotics, or a concluded international sale. It is too early to know whether a revised structure, carve-out, appeal or abandonment will follow.",
+        "confidence": "HIGH: ABB'S NOV 5 DISCLOSURE AND ORIGINAL CONTRACT VALUE · MEDIUM: ECONOMIC/SECURITY INCENTIVES · UNVERIFIED: SPECIFIC SECURITY RATIONALE, FINAL GLOBAL DEAL OUTCOME",
+        "sources": [
+          [
+            "ABB — November 5 statement confirming Chinese acquisition prohibition",
+            "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics"
+          ],
+          [
+            "ABB — October 8, 2025 original $5.375 billion transaction announcement",
+            "https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group"
+          ],
+          [
+            "Financial Times — November 5 reported security concerns (anonymous-source account, not official rationale)",
+            "https://www.ft.com/content/f10c3e24-45e4-47ff-bde2-24a8de90aec4"
+          ]
+        ]
+      },
+      {
+        "label": "UNITED STATES / OPENAI NOV 5 COMPANY COMMITMENT + POLICY PROPOSAL",
+        "headline": "OpenAI promises local oversight, public resource reporting and energy cost protection for future company-operated data centers",
+        "fact": "On November 5, OpenAI published a National Community Compact and a Compute Campus Policy Blueprint. For future compute campuses OpenAI says it will own and operate, it promises individual local agreements, early community consultation, annual progress and hiring reports, site-level electricity and water disclosure, noise studies, and financial assurances intended to prevent ratepayers covering unbuilt or canceled projects. OpenAI also says it will not require public-official nondisclosure agreements, except for narrow protection of legitimate confidential information. The separate blueprint asks lawmakers and utility regulators to require cost coverage, public tax-incentive terms and broader reporting for the industry. These are issuer commitments and policy recommendations, not enacted U.S. regulations, certified results, or a guarantee that every third-party or already-operating campus is included.",
+        "assessment": "The company has an obvious interest in obtaining local permits, public confidence and grid connections while demand for AI compute is increasing; residents, utilities and ratepayers have legitimate interests in costs, water, noise, employment and enforceable remedies. Community reporting is useful only if contracts, data and performance can be independently examined, with meaningful consequences when promises are broken. The announcement adds specificity beyond OpenAI's earlier January Stargate commitments but does not by itself resolve grid-supply costs or prove that projected employment and environmental benefits will occur. Compare U.S. development friction with China's state-coordinated infrastructure expansion without assuming either system has eliminated social or ecological costs.",
+        "confidence": "HIGH: PUBLICATION AND SCOPE OF OPENAI'S PLEDGES · MEDIUM: POTENTIAL ACCOUNTABILITY BENEFITS · UNPROVEN: ENFORCEMENT, COST ALLOCATION AND PROJECT-LEVEL OUTCOMES",
+        "sources": [
+          [
+            "OpenAI — November 5 announcement and commitments (interested-party primary statement)",
+            "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+          ],
+          [
+            "OpenAI — January 2026 predecessor commitments (background, not proof of delivery)",
+            "https://openai.com/index/stargate-community-commitments/"
+          ]
+        ]
+      }
+    ],
+    "messaging": "ABB's disclosure establishes a concrete regulatory decision but not the motive. Attributing it categorically to an OpenAI-linked data-transfer threat would overstate press accounts. OpenAI's 'responsible infrastructure' framing is verifiable corporate messaging backed by proposed disclosures, not a neutral audit or binding public policy. China can invoke national security to safeguard local industry; the U.S. can invoke community protection while encouraging industrial buildout. Both governments and businesses face incentives to emphasize benefits and understate tradeoffs. No primary evidence here demonstrates covert coordinated influence activity. Confidence is high in published statements and lower in inferred motives or outcomes.",
+    "correction": "NEW EVENT, NOT A REVERSAL OF NOV 2–4: The November 2 Marvell–Lumentum agreement remains an announced merger pending approval; ABB–SoftBank is a different transaction and ABB's latest release confirms a prohibition specific to its China business without declaring the worldwide agreement canceled. The November 4 AMD financial numbers do not establish community benefits of data centers, and November 3 Nvidia customer-mix reporting remains separate and unverified by primary terms. OpenAI's November 5 compact covers future campuses it owns and operates, not all existing Stargate or partner-run sites. Prior corrections and sources remain intact.",
+    "sources": [
+      [
+        "ABB — November 5 acquisition update",
+        "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics"
+      ],
+      [
+        "OpenAI — November 5 community commitments and policy proposals",
+        "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 4, 2026",
     "slug": "2026-11-04-bank-agent-oversight-tencent-hy4-amd-compute",
     "title": "AI moves from model demos to accountable actions: U.S. bank examiners address agents, Tencent launches Hy4, and AMD reports a fast-growing compute business.",
