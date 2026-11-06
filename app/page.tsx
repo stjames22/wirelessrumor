@@ -23,6 +23,15 @@ export default function Home() {
         <a href="/roundtable">ROUNDTABLE</a>
         <a href="/geopolitics">RESEARCH</a>
       </nav>
+      <details className="mobileNavigation"><summary aria-label="Open site navigation">MENU <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile site navigation">
+        <a href="#latest">LATEST</a>
+        <a href="/intelligence">INTELLIGENCE</a>
+        <a href="/ai-visibility">AI VISIBILITY</a>
+        <a href="#community">DISCUSSIONS</a>
+        <a href="#radar">RADAR</a>
+        <a href="/roundtable">ROUNDTABLE</a>
+        <a href="/geopolitics">RESEARCH</a>
+      </nav></details>
       <div className="operator"><i/> AI + HUMAN ANALYSIS</div>
     </header>
 
@@ -45,13 +54,8 @@ export default function Home() {
       <div className="frontTicker"><span>AI CAPABILITIES</span><span>MODEL COMPETITION</span><span>CHIPS + COMPUTE</span><span>GEOPOLITICS</span><span>THE PUBLIC DEBATE</span></div>
     </section>
 
-    <section className="designNote" aria-labelledby="design-note-title">
-      <h2 id="design-note-title">Why WirelessRumor looks this way</h2>
-      <div className="designNoteCopy">
-        <p>I wanted this to feel like an intelligence desk: dark navy and near-black to quiet the noise and keep the evidence in focus. Electric lime marks discovery — a signal worth following.</p>
-        <p>The purpose is simple: readable AI analysis that starts with sources, makes room for doubt, and opens into conversations. Follow the evidence. Bring your own questions.</p>
-      </div>
-    </section>
+    <div className="designNoteLink"><a href="/about">Why WirelessRumor looks this way ↗</a></div>
+
 
     <SourceFeed />
 
@@ -111,7 +115,7 @@ export default function Home() {
     <footer>
       <div className="brand">WIRELESS<span>/</span>RUMOR</div>
       <p>AI claims, checked in public.</p>
-      <small>NO PAYWALL · NO FAKE CERTAINTY · NO TRIBAL LOYALTY</small>
+      <nav className="footerLinks" aria-label="Site information"><a href="/about">ABOUT</a><a href="/editorial-policy">EDITORIAL POLICY</a><a href="/privacy">PRIVACY</a><a href="/contact">CONTACT</a></nav>
     </footer>
   </main>
 }
