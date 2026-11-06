@@ -1,6 +1,8 @@
 import { rumors } from '../lib/rumors';
 import AskBox from './AskBox';
 import SourceFeed from './SourceFeed';
+import type { Metadata } from 'next';
+export const metadata: Metadata = { alternates: {canonical:'https://wirelessrumor.com/'} };
 
 export const revalidate = 3600;
 
