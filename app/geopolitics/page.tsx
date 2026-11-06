@@ -85,6 +85,55 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+      "date": "NOVEMBER 6, 2026",
+      "slug": "2026-11-06-cyber-model-access-and-scope",
+      "title": "A frontier cyber model reaches vetted defenders, raising a new AI question: who gets access to offensive capability?",
+      "overview": "OpenAI's November 5 release of GPT-6 Cyber is a material change in access to advanced AI-assisted vulnerability research. Its company-published benchmarks and disclosed security work suggest improved capabilities, while access remains restricted and published evaluations do not establish safe behavior on every real network. The distinction matters internationally: software supply chains are shared across borders, but access to top cyber-capable models and the ability to monitor use are increasingly controlled by vendors.",
+      "developments": [
+          {
+              "label": "UNITED STATES / NOV 5 OFFICIAL MODEL RELEASE + SYSTEM CARD / VERIFIED-DEFENDER ACCESS",
+              "headline": "OpenAI begins restricted deployment of GPT-6 Cyber and assigns it a 'Critical' cybersecurity capability rating",
+              "fact": "On November 5, OpenAI introduced GPT-6 Cyber to selected approved Daybreak Red customers through the API and Codex. The company's system card classifies the model as Critical in cybersecurity under OpenAI's own Preparedness Framework, not a government classification or evidence of general autonomous superintelligence. OpenAI reports a 48.5% success rate on ExploitGym versus 32.1% for GPT-5.6 Cyber, and says an out-of-scope honeypot was not exploited in any graded trials when deployment safety instructions were enabled (0.07% of trials without them). OpenAI attributes 81 novel high-severity Firefox findings and work on 948 Linux local privilege-escalation exploits to the research program. Mozilla's Firefox 159 security advisory independently lists multiple high-severity findings credited to an OpenAI researcher, corroborating part of the vulnerability-disclosure record; it does not independently certify all OpenAI totals or the model's claimed field reliability.",
+              "assessment": "A major cyber-capable model is now distributed through a permissioned access tier rather than made generally downloadable. Defenders could benefit from faster discovery and patching, but publishers, maintainers and infrastructure operators may face more findings than they can triage. OpenAI has commercial and reputation incentives to stress improved scope adherence and a defender-first release; its limited-access design also gives the company oversight and a market advantage. Security teams want useful capability, governments want to limit misuse of dual-use tools, and open-model advocates may contest private gatekeeping. The 100% in-scope result is an observed result in one company-defined evaluation, not a blanket safety guarantee. The security of deployed systems depends on independent validation, disclosure coordination, prompt patching, sandboxing and authorization enforcement, not solely on the model's stated intentions.",
+              "confidence": "HIGH: NOV 5 RELEASE, PUBLISHED CARD, RESTRICTED ACCESS, MOZILLA ADVISORY · COMPANY-REPORTED: BENCHMARKS AND AGGREGATE FINDINGS · UNKNOWN: GENERALIZED FIELD SAFETY AND LONG-TERM DISTRIBUTION",
+              "sources": [
+                  [
+                      "OpenAI — November 5 GPT-6 Cyber release and access policy",
+                      "https://openai.com/index/introducing-gpt-6-cyber/"
+                  ],
+                  [
+                      "OpenAI — November 5 GPT-6 Cyber system card, methods and alignment limitations",
+                      "https://deploymentsafety.openai.com/gpt-6-cyber"
+                  ],
+                  [
+                      "Mozilla — Firefox 159 security advisory with independently published credits and fixes",
+                      "https://www.mozilla.org/en-US/security/advisories/mfsa2026-118/"
+                  ],
+                  [
+                      "OpenAI — November 4 Linux research methodology and disclosure status",
+                      "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+                  ]
+              ]
+          }
+      ],
+      "messaging": "This is evidence of a U.S. company's restricted model rollout, not evidence of new U.S. federal export controls or an official position on China. In the broader U.S.–China competition, AI capability and access control can be strategic at the same time; statements about cyber defense and national security from any vendor or government should be evaluated against demonstrated safeguards and actual distribution rules. No primary source here establishes a new Chinese response to this launch.",
+      "correction": "ADDITION TO OCT 29–30 SAFETY COVERAGE: OpenAI's earlier general agent-monitoring announcements did not establish that all later models were safe. The November 5 system card supplies a concrete, narrow alignment test, alongside other tests showing residual errors. Do not turn the single 0%-observed out-of-scope rate into a claim of universal compliance. NOV 5 ROBOTICS/COMPUTE UPDATE REMAINS DISTINCT. Reports of a November 5 Nvidia H200 stockpile in Hong Kong were reviewed but not included as a verified government restriction without a matching official import decision.",
+      "sources": [
+          [
+              "OpenAI — GPT-6 Cyber official launch",
+              "https://openai.com/index/introducing-gpt-6-cyber/"
+          ],
+          [
+              "Mozilla — Firefox 159 security advisory (October 27)",
+              "https://www.mozilla.org/en-US/security/advisories/mfsa2026-118/"
+          ],
+          [
+              "OpenAI — GPT-6 Cyber system card",
+              "https://deploymentsafety.openai.com/gpt-6-cyber"
+          ]
+      ]
+  },
+  {
     "date": "NOVEMBER 5, 2026",
     "slug": "2026-11-05-robotics-security-review-compute-campus-compact",
     "title": "China blocks SoftBank's ABB Robotics purchase in China; OpenAI proposes a new bargain for U.S. compute-campus communities.",
