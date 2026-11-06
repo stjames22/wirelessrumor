@@ -178,3 +178,41 @@ radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
 .homePage .registryTeaser{background:#111d2a;color:#f5f4ef}
 @media(max-width:950px){.frontHeroInner{grid-template-columns:1fr}.frontBrief{min-height:330px}.conversationFeature,.claimUtility{grid-template-columns:1fr}.frontHero h1{font-size:clamp(53px,10vw,96px)}}
 @media(max-width:650px){.frontHeroInner{padding:65px 6vw 45px}.frontHero h1{font-size:clamp(49px,13vw,75px);letter-spacing:-.065em}.frontIndex{flex-wrap:wrap}.frontBrief{padding:18px;min-height:300px}.briefGlyph{min-height:140px;font-size:120px}.briefGlyph i{height:140px;width:140px}.frontTicker{justify-content:flex-start;gap:13px}.conversationFeature,.claimUtility{padding:66px 6vw}.conversationIntro h2,.claimUtility h2{font-size:43px}.frontActions a{width:100%}.homePage #latest{padding:66px 6vw}}
+
+
+/* Nov 2026 accessibility and editorial consistency */
+.homePage .mobileNavigation{display:none}
+.homePage .designNoteLink{padding:14px 6vw;background:#101b27;border-bottom:1px solid #344555}
+.homePage .designNoteLink a{color:#d6e3b0;font-size:12px;letter-spacing:.06em}
+.homePage #latest{background:#101a27;color:#f1f5fa}
+.homePage #latest .sectionHead h2{color:#f3f5f8}
+.homePage #latest .sectionHead p,.homePage #latest>p{color:#b3c2d2}
+.homePage #latest .dispatch{background:#192737;border-color:#3d5162;color:#f3f5f8}
+.homePage #latest .dispatch h3,.homePage #latest .dispatch h3 a{color:#f3f5f8}
+.homePage #latest .dispatch>div{color:#b6c7d6}
+.homePage #latest .dispatch .discussLink{color:#eaff75}
+.homePage #latest .kicker{color:#eaff75}
+.homePage .footerLinks{display:flex;gap:18px;flex-wrap:wrap;font-size:11px;font-weight:800;letter-spacing:.06em}
+.homePage .footerLinks a:hover,.homePage .footerLinks a:focus-visible{color:#eaff75;text-decoration:underline}
+.homePage .ask input{min-width:0;width:100%}
+.homePage .ask{min-width:0}
+@media(max-width:1100px){
+ .homePage .topbar{gap:14px}
+ .homePage .topbar>nav{display:none}
+ .homePage .mobileNavigation{display:block;position:relative;margin-left:auto}
+ .homePage .mobileNavigation summary{display:flex;gap:10px;align-items:center;cursor:pointer;list-style:none;border:1px solid #667888;padding:12px 16px;color:#f5f5f3;background:#14202b;font-size:12px;font-weight:900;letter-spacing:1px}
+ .homePage .mobileNavigation summary::-webkit-details-marker{display:none}
+ .homePage .mobileNavigation[open] nav{display:flex;flex-direction:column;gap:0;position:absolute;top:calc(100% + 12px);right:0;min-width:min(320px,85vw);max-height:75vh;overflow:auto;padding:9px;border:1px solid #536879;background:#101c29;box-shadow:0 20px 45px #0009;z-index:50}
+ .homePage .mobileNavigation nav a{display:block;padding:14px;color:#edf3f8;border-bottom:1px solid #344858;font-size:12px}
+ .homePage .mobileNavigation nav a:hover,.homePage .mobileNavigation nav a:focus-visible{color:#eaff75;background:#223446;outline:2px solid #eaff75;outline-offset:-2px}
+ .homePage .operator{display:none}
+ /* Interior pages retain usable wrapping navigation, even where legacy CSS hides it. */
+ .topbar:not(.homePage .topbar){height:auto;min-height:70px;flex-wrap:wrap;padding-block:12px}
+ .topbar:not(.homePage .topbar) nav{display:flex;flex-wrap:wrap;gap:12px}
+}
+@media(max-width:650px){
+ .homePage .topbar .brand{font-size:18px}
+ .homePage .mobileNavigation summary{padding:10px}
+ .homePage .ask input{font-size:14px;padding:14px 11px}
+ .homePage .footerLinks{margin-top:20px}
+}
