@@ -216,3 +216,12 @@ radial-gradient(circle at 22% 0%,rgba(126,210,255,.12),transparent 26%),
  .homePage .ask input{font-size:14px;padding:14px 11px}
  .homePage .footerLinks{margin-top:20px}
 }
+
+
+.infoPage{min-height:100vh;background:radial-gradient(ellipse at 100% 0%,#20374c,transparent 50%),#0b1119;color:#edf4fa;padding:32px max(6vw,20px) 100px}
+.infoPage nav{margin-bottom:80px;color:#eaff75;font-size:13px;font-weight:900;letter-spacing:.08em}
+.infoPage h1{font-size:clamp(46px,6vw,82px);letter-spacing:-.06em;line-height:1;max-width:930px;margin:28px 0 42px}
+.infoPage h2{font-size:clamp(24px,3vw,38px);letter-spacing:-.04em;margin-top:55px}
+.infoPage p{font-size:clamp(17px,1.5vw,20px);line-height:1.8;color:#c0cfdb;max-width:820px}
+.infoPage a{color:#eaff75;text-decoration:underline;text-underline-offset:4px}
+.infoPage a:focus-visible{outline:2px solid #eaff75;outline-offset:4px}
