@@ -85,6 +85,80 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 7, 2026",
+    "slug": "2026-11-07-public-lands-data-center-cost-review",
+    "title": "U.S. AI data-center expansion meets a new public-lands challenge—and a test of who pays for the grid.",
+    "overview": "Two November 6 primary-source releases sharpen the infrastructure debate without establishing a new AI ban or enacted rate rule. A Senate oversight letter demands an accounting of federal public-land data-center proposals; separately, a bill sponsor has publicized new scenario models of a previously introduced bipartisan measure that would change how large loads pay for transmission. The immediate change is public scrutiny and evidence about possible costs, not a completed policy reversal.",
+    "developments": [
+      {
+        "label": "UNITED STATES / NOV 6 SENATE OVERSIGHT LETTER + PUBLIC-LAND PERMIT RECORD",
+        "headline": "Senator requests a federal inventory of AI data-center projects on public land by November 20",
+        "fact": "On November 6, Senator Martin Heinrich, the ranking Democrat on the Senate Energy and Natural Resources Committee, wrote to Bureau of Land Management Director Steve Pearce asking for the legal authorities, locations, developers, acreage, environmental-review plans and public-comment opportunities for data-center proposals on federal land. His letter points to the Townsite Data Center near Boulder City, Nevada: BLM's own July 20 notice confirms its June approval of a project covering 88.5 acres. Boulder City confirmed that the Interior Board of Land Appeals granted a stay on September 1 amid an environmental-review challenge. The stay paused the approval during appeal; it did not finally cancel the project. Heinrich cites press reporting about at least 15 other proposals; those aggregate counts are not verified by the public BLM inventory requested in his letter. The November 20 date is the senator's requested response deadline, not a new statutory prohibition.",
+        "assessment": "The federal administration's prior approval expresses a pro-buildout interest in compute capacity and speed; land managers and developers also face legal review, environmental impact and multiple-use constraints. Residents and conservation groups seek public participation, water and electricity scrutiny, and distinct impact analysis for data centers rather than solar farms. An oversight request could expose the actual pipeline but does not prove that every contemplated site is suitable, approved or halted. Watch BLM's response and the appeals process before drawing conclusions about the government's next move.",
+        "confidence": "HIGH: LETTER, BLM APPROVAL AND CITY STAY NOTICE · REPORTED, NOT AUDITED: NATIONAL PROPOSAL COUNT · UNKNOWN: BLM RESPONSE AND FINAL APPEAL OUTCOME",
+        "sources": [
+          [
+            "Senate Energy and Natural Resources Committee — November 6 letter and questions",
+            "https://www.energy.senate.gov/press/dem/heinrich-demands-answers-on-trump-administrations-push-to-build-data-centers-on-public-lands/"
+          ],
+          [
+            "BLM — July 20 announcement of June Townsite approval and 88.5-acre footprint",
+            "https://www.blm.gov/announcement/approved-decision-townsite-data-center"
+          ],
+          [
+            "Boulder City — September 1 official notice of Interior Board of Land Appeals stay",
+            "https://www.flybvu.com/m/newsflash/Home/Detail/534"
+          ]
+        ]
+      },
+      {
+        "label": "UNITED STATES / NOV 6 SPONSOR UPDATE + NOV 2 ORIGINAL RESEARCH",
+        "headline": "A bipartisan permitting bill gets new cost forecasts; projected household savings are not realized savings",
+        "fact": "On November 6, Senator Heinrich published a synthesis of analyses of the Bipartisan American Affordability and Jobs Act, introduced on September 30—not newly enacted this week. Rhodium Group models $50–$78 less per household in annual electricity bills by 2040 versus its baseline if the studied provisions are implemented. Grid Strategies estimates roughly $55 billion in transmission cost allocations to data centers over ten years, about $35 billion more than its current-policy scenario. SEIA models faster solar deployment and lower pollution. These are scenario-dependent calculations published by the analysts and promoted by a bill sponsor, not observed household bill reductions, settled regulatory tariffs, or independent proof of a particular company's costs. Rhodium also projects more LNG exports, an important trade-off in the larger permitting package.",
+        "assessment": "The bill seeks to speed some energy infrastructure while making large data-center customers bear more associated grid expenses. Sponsors favor a bargain between expansion and ratepayer protection; utilities, data-center developers, clean-energy advocates and residents have different stakes in rate design, capital costs and the mix of new generation. SEIA is a solar-industry trade association, Rhodium is an economic research firm, and Grid Strategies is a power-sector consultancy; their original reports are evidence of models and assumptions, not neutral forecasts of guaranteed outcomes. Congressional support, FERC implementation and eventual rate effects remain uncertain.",
+        "confidence": "HIGH: SEPT 30 BILL AND NOV 6 SPONSOR RELEASE · MODELED, CONDITIONAL: DOLLAR ESTIMATES · UNKNOWN: PASSAGE, RULEMAKING AND REAL CUSTOMER BILLS",
+        "sources": [
+          [
+            "Senator Heinrich — November 6 synthesis citing the original analyses",
+            "https://www.heinrich.senate.gov/newsroom/press-releases/new-data-heinrichs-bipartisan-american-affordability-and-jobs-act-will-hold-data-centers-accountable-lower-electricity-bills-by-50-78-annually-save-54-billion-in-health-related-costs-and-lead-to-cleaner-air-and-healthier-communities"
+          ],
+          [
+            "Rhodium Group — November 2 modeling of consumer bills and broader energy trade-offs",
+            "https://rhg.com/research/baaja-us-energy-system-impacts/"
+          ],
+          [
+            "Grid Strategies — November 2 transmission-cost modeling and funding disclosure",
+            "https://gridstrategiesllc.com/grid-funding-from-data-centers-in-baaja/"
+          ],
+          [
+            "SEIA — November 2 industry modeling of electricity and health impacts",
+            "https://seia.org/research-resources/baaja-impact-on-the-electricity-sector/"
+          ],
+          [
+            "Bipartisan Senate sponsors — September 30 introduction, not passage",
+            "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-lee-capito-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Federal AI-expansion messaging emphasizes competitiveness and construction speed; the senator's oversight framing emphasizes public resources and accountability; the bill sponsor and commissioned or industry-connected researchers emphasize potential savings. Each has incentives and should be judged against issued legal documents, actual approvals, disclosed assumptions and subsequent results. This U.S. land-and-power dispute is not evidence that China has changed semiconductor export policy or that either government has ended its AI industrial strategy. There is no primary evidence here of a coordinated foreign influence operation.",
+    "correction": "NEW NOV 6 OVERSIGHT AND RESEARCH, NOT A RETROACTIVE REVISION: The November 5 OpenAI campus compact described voluntary commitments for future company-operated sites; it did not impose transmission rates or govern BLM's existing Townsite approval. The Senate measure was introduced September 30, and its projected 2040 savings should not be reported as current rate reductions. The September 1 Townsite stay is temporary and not a final merits judgment. Earlier November 3 Nvidia customer-mix reporting and November 6 model-access coverage remain distinct; no new verified chip-export restriction is inferred.",
+    "sources": [
+      [
+        "BLM — original Townsite data-center approval record",
+        "https://www.blm.gov/announcement/approved-decision-townsite-data-center"
+      ],
+      [
+        "Senate committee — November 6 request for BLM project inventory",
+        "https://www.energy.senate.gov/press/dem/heinrich-demands-answers-on-trump-administrations-push-to-build-data-centers-on-public-lands/"
+      ],
+      [
+        "Rhodium Group — underlying energy-system estimates",
+        "https://rhg.com/research/baaja-us-energy-system-impacts/"
+      ]
+    ]
+  },
+  {
       "date": "NOVEMBER 6, 2026",
       "slug": "2026-11-06-cyber-model-access-and-scope",
       "title": "A frontier cyber model reaches vetted defenders, raising a new AI question: who gets access to offensive capability?",
