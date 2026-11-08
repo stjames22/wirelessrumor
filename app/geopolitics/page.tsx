@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 8, 2026",
+    "slug": "2026-11-08-wuzhen-open-ai-governance-actions",
+    "title": "China's Wuzhen summit puts open-AI cooperation into written proposals; access, data sovereignty and enforcement remain unresolved.",
+    "overview": "The November 3–5 Wuzhen summit produced documents more specific than China's November 1 pre-summit openness messaging. The World Internet Conference's AI committee set out 18 voluntary action proposals, and the Cyberspace Administration of China published a separate eight-part intelligent-internet cooperation initiative on November 4. These are newly issued policy advocacy documents, not treaties, implemented compute pools, binding international standards or evidence that China has removed its technology-export controls.",
+    "developments": [
+      {
+        "label": "CHINA / NOV 3–5 WUZHEN SUMMIT / WORLD INTERNET CONFERENCE ORIGINAL 18-POINT TEXT",
+        "headline": "A global open-AI initiative proposes shared compute, model access and risk controls—but does not deliver them yet",
+        "fact": "The World Internet Conference (WIC) AI committee's initiative, presented at the November 3–5 summit and confirmed in its November 5 closing coverage, contains 18 recommendations across openness, safety, governance and inclusion. Its original text calls for shared compute pools, high-quality data sets, tiered disclosure of model weights/code/data, an open-source seed fund, licensing and fine-tuning access for small companies, risk-tiered safeguards, traceability and international benchmark coordination. The WIC website carries an early November 2 document date; the public summit presentation occurred afterward. The text does not name funded compute capacity, an operating seed fund, enforceable obligations, national signatories or a timetable for implementation. Attendance from 138 countries and regions reported by Chinese state media must not be confused with 138 governments endorsing these proposals.",
+        "assessment": "This is more concrete agenda-setting than an 'open AI' slogan, but success depends on financing, licensing, privacy, independent safety evaluations and who allocates access to compute and datasets. Chinese model developers and sponsors benefit from international distribution and influence over interoperability norms; users in smaller markets could gain choice and lower costs if proposals become real. National governments and commercial providers also have incentives to retain control over sensitive technology, data and infrastructure. The issuer's aspirations are primary evidence of its agenda, not independent proof of participation or delivered benefits.",
+        "confidence": "HIGH: ISSUER DOCUMENT AND 18 PROPOSALS · NOT ESTABLISHED: FUNDING, ADOPTION, GOVERNMENT ENDORSEMENTS OR DEPLOYMENT",
+        "sources": [
+          [
+            "World Internet Conference — original 18-point initiative and official downloadable text",
+            "https://cn.wicinternet.org/2026-11/02/content_39081991.htm"
+          ],
+          [
+            "WIC — original three-page initiative (Chinese PDF)",
+            "https://cn.wicinternet.org/pdf/%E3%80%8A%E6%90%BA%E6%89%8B%E6%9E%84%E5%BB%BA%E5%85%A8%E7%90%83%E5%BC%80%E6%94%BE%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%A1%8C%E5%8A%A8%E5%80%A1%E8%AE%AE%E3%80%8B.pdf"
+          ],
+          [
+            "Chinese state news service — November 5 summit closing and presentation chronology",
+            "https://www.yungang.gov.cn/ygqrmzfz/gwy/202611/c6f3294c92984fe3993bf04ab137662f.shtml"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA / NOV 4 CYBERSPACE ADMINISTRATION PRIMARY PUBLICATION / AI AGENTS AND DATA FLOWS",
+        "headline": "A separate eight-point intelligent-internet initiative targets agent interoperability and conditional cross-border data sharing",
+        "fact": "On November 4, China's Cyberspace Administration (CAC) published its 'Intelligent Internet Innovation and Development Cooperation Initiative.' It proposes international standards for agents' interfaces, discovery, negotiation, execution and traceability; cooperation on 5G-A/6G and intelligent-computing infrastructure; and more efficient cross-border data flows subject to national legal differences, security and compliance. It also recommends safeguards for data poisoning and uncontrolled agent behavior. The language invites coordination; it is not an announced finalized standard, new data-transfer permission or a binding international agreement.",
+        "assessment": "Agent interoperability could reduce dependence on a few closed platforms, while traceability and data-localization preferences can create new gatekeepers. CAC's text expressly preserves different national digital-sovereignty policies. That limits how far general openness promises can be read as unrestricted cross-border access. A useful test is whether countries and companies publish compatible technical specifications, offer interoperable working deployments and allow independently auditable rights and incident handling.",
+        "confidence": "HIGH: CAC DOCUMENT AND ITS PROPOSALS · UNKNOWN: INTERNATIONAL ACCEPTANCE, IMPLEMENTATION AND CROSS-BORDER ACCESS",
+        "sources": [
+          [
+            "Cyberspace Administration of China — November 4 eight-point cooperation initiative (Chinese original)",
+            "https://www.cac.gov.cn/2026-11/04/c_1795548985565845.htm"
+          ],
+          [
+            "China MOFCOM — October 16 technology-export consultation and separate interim registration measures",
+            "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_74bf283f105a4b19a11f7430df3671ae.html"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The WIC and CAC documents are first-party evidence for Chinese ambitions to influence global norms and encourage adoption of Chinese-compatible open ecosystems; they are not neutral measurements of openness. China is also consulting on technology export restrictions and applying separate interim registration measures. MOFCOM distinguishes relevant transfers of controlled nonpublic know-how from ordinary access to publicly hosted services; neither a blanket ban on all Chinese model APIs nor unrestricted technology access follows. The U.S. likewise promotes international AI adoption while limiting certain chip exports and security-sensitive model access. Firms on both sides benefit from favorable definitions of 'open,' while governments benefit from strategic control. No primary record reviewed here establishes a coordinated covert propaganda operation.",
+    "correction": "FOLLOW-UP TO NOVEMBER 1, NOT A REVERSAL: The November 1 article described pre-summit political messaging; the original 18-point WIC text and the CAC's eight-point proposal are newly available, distinct documents. The WIC issuer page is dated November 2, the summit presentation took place November 3–4, and the November 5 closing report confirms the result; this November 8 editorial is publication of analysis, not the date of those events. Voluntary proposals do not establish that compute pools or a seed fund exist. China's October 16 export catalogue additions remain a consultation with separate interim registration obligations. The November 4 Tencent Hy4 announcement is a different model-access issue and does not prove availability of new weights.",
+    "sources": [
+      [
+        "World Internet Conference — original 18-point AI initiative",
+        "https://cn.wicinternet.org/2026-11/02/content_39081991.htm"
+      ],
+      [
+        "Cyberspace Administration of China — November 4 eight-point proposal",
+        "https://www.cac.gov.cn/2026-11/04/c_1795548985565845.htm"
+      ],
+      [
+        "China MOFCOM — stated scope of proposed technology controls and interim registration",
+        "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_74bf283f105a4b19a11f7430df3671ae.html"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 7, 2026",
     "slug": "2026-11-07-public-lands-data-center-cost-review",
     "title": "U.S. AI data-center expansion meets a new public-lands challenge—and a test of who pays for the grid.",
