@@ -85,6 +85,60 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 9, 2026",
+    "slug": "2026-11-09-us-china-export-control-stays",
+    "title": "Washington and Beijing extend targeted export-control pauses; the AI supply-chain truce has limits.",
+    "overview": "Two government documents published November 9 extend narrow trade-control suspensions into January 2027. The U.S. Bureau of Industry and Security (BIS) has kept its proposed automatic 50-percent-affiliate end-user restrictions on hold. China's Commerce Ministry and Customs Administration have continued suspending six specified 2025 export-control notices involving sensitive materials and related technology. These are operative timing decisions, not repeals of existing AI-chip restrictions, a new bilateral AI agreement or evidence that all critical minerals can flow without licenses.",
+    "developments": [
+      {
+        "label": "UNITED STATES / NOV 9 FEDERAL REGISTER / BIS FINAL STAY",
+        "headline": "The U.S. extends its 50-percent-affiliates export-control stay to January 10, 2027",
+        "fact": "BIS document 2026-22793 (91 FR 70789), filed for public inspection November 5 and published effective November 9, extends the suspension of the 'Expansion of End-User Controls to Cover Affiliates of Certain Listed Entities' rule through January 10, 2027. That previously adopted rule would automatically extend certain Entity List and related end-user restrictions to foreign entities owned at least 50 percent, directly or indirectly and individually or in aggregate, by covered listed parties. The stay delays that additional automatic ownership-based coverage; it does not remove restrictions on already-listed entities, suspend other export rules or give Chinese buyers unrestricted access to advanced U.S. AI chips. BIS did not address the rule's earlier public comments in this narrow extension.",
+        "assessment": "A temporary stay gives exporters and counterparties more certainty for the next two months and keeps space for U.S.–China trade talks, while also postponing an enforcement expansion that would make it harder for listed entities to operate through affiliates. U.S. security agencies prioritize closing diversion pathways; commercial suppliers and their customers value predictable access and workable screening rules. The official document proves the legal timing change—not that sensitive chips will become available or that diversion risks are resolved.",
+        "confidence": "HIGH: FEDERAL REGISTER FINAL RULE AND EFFECTIVE DATE · UNCERTAIN: JANUARY POLICY, REAL-WORLD DIVERSION EFFECTS",
+        "sources": [
+          [
+            "U.S. Federal Register — BIS final stay, published November 9 (91 FR 70789)",
+            "https://www.federalregister.gov/d/2026-22793"
+          ],
+          [
+            "U.S. Federal Register — 2025 one-year stay and underlying scheduled reinstatement",
+            "https://www.federalregister.gov/d/2025-19846"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA / NOV 9 MOFCOM + CUSTOMS ANNOUNCEMENT NO. 58 / EFFECTIVE NOV 11",
+        "headline": "China continues suspending six specified 2025 export-control notices through January 10",
+        "fact": "China's Ministry of Commerce and General Administration of Customs published joint Announcement No. 58 on November 9, saying that implementation of joint 2025 notices Nos. 55, 56, 57 and 58 and ministry notices Nos. 61 and 62 will remain suspended from November 11, 2026, through January 10, 2027. Those cited 2025 notices include controls concerning specified rare-earth-related items, equipment and technology. The announcement is a brief extension of the existing pause; it does not say that older controls, general licensing obligations, separate AI-technology export rules or other trade measures have been canceled.",
+        "assessment": "The timing aligns with Washington's affiliates-rule reprieve, an observable diplomatic symmetry—not proof of an unpublished quid pro quo or a permanent settlement. Beijing benefits from preserving leverage over mineral and technology supply chains while encouraging trade and portraying itself as a predictable partner; downstream manufacturers benefit from less immediate uncertainty. Material availability will still depend on the exact controlled item, applicable older measures, licenses and actual shipments. This matters to AI infrastructure indirectly through the broader industrial supply chain, not as a documented change in permissions for AI model weights or Nvidia processors.",
+        "confidence": "HIGH: JOINT MINISTRY NOTICE, SIX IDENTIFIED MEASURES AND DATES · UNPROVEN: SHIPMENT IMPACT, BILATERAL CONDITIONS",
+        "sources": [
+          [
+            "China Ministry of Commerce + Customs — November 9 Announcement No. 58 (Chinese primary text)",
+            "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html"
+          ],
+          [
+            "China MOFCOM — 2025 explanation of U.S. affiliates-rule suspension in trade negotiations",
+            "https://www.mofcom.gov.cn/syxwfb/art/2025/art_b558dcb5391f49ad809f068868746296.html"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Both governments can describe these stays as stability without abandoning strategic control. The U.S. extends a specific ownership-based end-user enforcement pause but retains other AI-chip controls; China extends specific critical-material controls while keeping the legal ability to regulate strategic exports. Manufacturers, chip suppliers and cloud providers favor supply continuity; national-security agencies and domestic competitors have incentives to preserve leverage and mitigate diversion. The two government notices are primary proof of their respective decisions, not independent evidence of each side's motive, a reciprocal bargain, new AI model access, or implementation outcomes.",
+    "correction": "PRECISE SCOPE / NOVEMBER 8 CONTINUITY: The November 8 report on China's open-AI and agent-governance proposals concerned nonbinding ambitions. Today's two documents are legally effective or dated government actions—but neither creates an open-model treaty. The Chinese extension starts November 11, whereas the U.S. rule takes effect November 9; both specify January 10, 2027 as the stay endpoint. A previous deadline warning that the U.S. affiliates rule would automatically resume November 10 is superseded by the November 9 published BIS stay. Earlier separate reporting on China's October 16 AI-technology export consultation, interim registrations, U.S. DeepSeek federal-system exclusions and chip-specific restrictions is unchanged.",
+    "sources": [
+      [
+        "U.S. Bureau of Industry and Security — November 9 federal rule",
+        "https://www.federalregister.gov/d/2026-22793"
+      ],
+      [
+        "China MOFCOM and Customs — November 9 joint announcement No. 58",
+        "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 8, 2026",
     "slug": "2026-11-08-wuzhen-open-ai-governance-actions",
     "title": "China's Wuzhen summit puts open-AI cooperation into written proposals; access, data sovereignty and enforcement remain unresolved.",
