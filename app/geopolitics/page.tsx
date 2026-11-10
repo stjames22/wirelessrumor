@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 10, 2026",
+    "slug": "2026-11-10-gemini-carbon-public-rollout-agent-swarm",
+    "title": "Google broadens Gemini 4 Carbon access and previews multi-agent teams; availability is real, capability claims still need scrutiny.",
+    "overview": "Google's November 10 announcements move Gemini 4 Carbon beyond the limited cybersecurity-defender release announced in late October: paid developers and enterprises can now access it through Google's API, and AI Ultra subscribers are receiving access through consumer and developer products. Google also began previewing /swarm agent orchestration in Antigravity. This is a documented vendor rollout, not a release of open weights, proof of unrestricted global availability, or independent confirmation that the model's advertised benchmarks translate to every real deployment.",
+    "developments": [
+      {
+        "label": "MODEL ACCESS / GOOGLE PRIMARY ANNOUNCEMENTS / NOV 10",
+        "headline": "Carbon expands from restricted cyber testing to paid API and Ultra-tier availability",
+        "fact": "Google announced on November 10 that Gemini 4 Carbon is available through the paid Gemini API in Google AI Studio and Gemini for business, with rollout to Google AI Ultra subscribers in Antigravity, the Gemini app and AI Mode in Search. Google says Carbon had initially gone to selected cybersecurity defenders through its Fairwind program approximately two weeks earlier. The public API introductory prices are $2 per million input tokens and $10 per million output tokens through November 30; Google states they rise to $4 and $20 respectively after that date. Researcher and unrestricted cyber-defender access remain separate application/selection programs. The vendor's announcement does not establish a public model-weights release or free-tier access.",
+        "assessment": "The change materially broadens who can build with a frontier model, but access still depends on payment, product tier, rollout and platform decisions. That can accelerate useful software and research while concentrating control over pricing, telemetry and use restrictions with the provider. Google's actual public availability announcement is stronger evidence of distribution than benchmark marketing, though we have not independently completed a paid API call or tested regional entitlement.",
+        "confidence": "HIGH: DATED GOOGLE ACCESS TERMS AND PRICES · NOT VERIFIED: INDIVIDUAL ACCOUNT ENTITLEMENTS OR INDEPENDENT DEPLOYMENT RESULTS",
+        "sources": [
+          [
+            "Google — November 10 release and access/pricing terms",
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+          ],
+          [
+            "Google — November 10 developer availability notice",
+            "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/"
+          ]
+        ]
+      },
+      {
+        "label": "DEPLOYED AGENT CAPABILITIES / ANTIGRAVITY PREVIEW / NOV 10",
+        "headline": "Google previews /swarm orchestration; safety and performance figures remain bounded tests",
+        "fact": "The Google Antigravity team announced a November 10 preview of /swarm, which coordinates workers in isolated git worktrees, a shared message board and separate verifier agents; the team says it is rolling out across the Antigravity app and CLI. Google reports that Carbon led several agent benchmarks and that its safeguards blocked 99% of trajectories from one adaptive red-team agent in specified simulated attack environments, with a 0.8% per-attempt breach rate in that setup. Those results are Google's account of chosen evaluations and do not prove zero real-world failures, comprehensive prompt-injection immunity or autonomous success on arbitrary customer codebases. Antigravity also cautions that swarms consume quota faster than ordinary chat.",
+        "assessment": "Multi-agent collaboration may turn frontier capabilities into repeatable software tasks, but execution traces, test isolation, quota cost and production error rates matter more than a demonstration alone. Google benefits from subscription uptake and API consumption; enterprises benefit if auditable verified work offsets operational risk, while security teams need independent adversarial testing. Google's model assessments and demos are informative but interested-party evidence; this preview is not an industry standard or a government-endorsed safety certification.",
+        "confidence": "HIGH: ANNOUNCED PREVIEW AND DOCUMENTED VENDOR TEST PARAMETERS · UNCERTAIN: GENERALIZATION, COST PER VERIFIED TASK AND MISUSE RESISTANCE IN PRODUCTION",
+        "sources": [
+          [
+            "Google Antigravity — November 10 /swarm preview and limitations",
+            "https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity/"
+          ],
+          [
+            "Google DeepMind — public model benchmark table and methodology link",
+            "https://deepmind.google/models/gemini/"
+          ],
+          [
+            "Google — safeguard testing and published caveats",
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+          ]
+        ]
+      }
+    ],
+    "messaging": "A U.S. lab is simultaneously extending paid frontier access and retaining selective cyber access controls; those are commercial and safety choices, not proof that the U.S. opposes AI expansion. China's recent Wuzhen open-compute and model-sharing proposals describe a different public posture, but remain largely proposals and coexist with domestic data and export rules. Google seeks developer adoption, platform revenue and confidence in safeguards; customers seek reliable access and verifiable outcomes; governments seek security without losing competitiveness. Neither a corporate benchmark nor a government slogan establishes which governance system performs better in practice.",
+    "correction": "CHRONOLOGY AND EVIDENCE SCOPE: Carbon's limited defender release dates to late October; November 10 is the broader paid-product rollout, not the model's first announcement. /swarm is explicitly a preview, not a general availability guarantee. Google's cited safety rates apply to named tests, not all real attacks. The November 6 OpenAI GPT-6 Cyber report concerned a separate model and restricted program; the November 8 Wuzhen proposals were not implemented access agreements. No new U.S. semiconductor restriction or China export-control reversal is established by this model launch; yesterday's November 9 export-control-stay report remains unchanged.",
+    "sources": [
+      [
+        "Google — primary release announcement, November 10",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+      ],
+      [
+        "Google Antigravity — /swarm preview, November 10",
+        "https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity/"
+      ],
+      [
+        "Google DeepMind — Gemini 4 performance disclosures",
+        "https://deepmind.google/models/gemini/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 9, 2026",
     "slug": "2026-11-09-us-china-export-control-stays",
     "title": "Washington and Beijing extend targeted export-control pauses; the AI supply-chain truce has limits.",
