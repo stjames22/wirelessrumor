@@ -85,6 +85,76 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 11, 2026",
+    "slug": "2026-11-11-h200-procurement-healthcare-agents",
+    "title": "Chinese university H200 procurement raises export-control questions as Google previews governed healthcare agents.",
+    "overview": "A November 11 investigation, checked against an October 21 Chinese university procurement award and U.S. export-control texts, documents a Chinese supplier's award for two Nvidia H200 cards to a university on Washington's Entity List. Separately, Google's November 10 first-party announcement introduces a preview healthcare agent that can query clinical and insurance systems under organizational permissions. The first item is evidence of a procurement award, not proof of an unlawful export or delivered hardware; the second is a vendor preview, not independently verified clinical deployment or an official privacy certification.",
+    "developments": [
+      {
+        "label": "CHINA–U.S. SEMICONDUCTORS / OCT 21 PRIMARY PROCUREMENT RECORD / NOV 11 INVESTIGATION",
+        "headline": "A blacklisted Chinese university posted an award for two H200 chips—delivery and export route remain unverified",
+        "fact": "Northwestern Polytechnical University's School of Management posted an October 21 award for two Nvidia H200 141G PCIe accelerator cards, naming Shaanxi Bosuan Network Technology as the supplier at RMB 437,350 each (RMB 874,700 total). The original Chinese university notice is first-party procurement evidence for the award. Reuters reported the record on November 11 after reviewing 26 procurement and company documents, and separately reported contracts to rent access to H200 and older Nvidia-powered computing. U.S. BIS's Entity List continues to identify Northwestern Polytechnical University with a presumption-of-denial license review policy; BIS's January 13 H200 policy allows some China exports on a case-by-case basis subject to screening, not a blanket exception for listed entities. Neither the university award nor Reuters' wider record review independently establishes chip delivery, the chips' origin, actual server locations, a granted or denied license, or a particular party's export-law violation.",
+        "assessment": "This is a concrete test of the gap between export rules and observed procurement channels, particularly domestic resale and rented compute. Washington seeks to constrain military-linked end-users, while Nvidia and other chip sellers have commercial incentives to preserve lawful market access and U.S. technology influence. Chinese buyers and suppliers have incentives to diversify procurement and secure compute; university researchers have varied civilian and dual-use goals. A dated award does not identify the actual end-use or demonstrate unlawful conduct by Nvidia, the intermediary, or the university. Reuters' wider records add investigative reporting, but our direct check independently confirms only the named October award and existing U.S. regulatory framework.",
+        "confidence": "HIGH: PRIMARY OCT 21 AWARD AND OFFICIAL BIS ENTITY-LIST STATUS · REUTERS-REPORTED: ADDITIONAL RENTALS AND 26 DOCUMENTS · NOT ESTABLISHED: DELIVERY, ORIGIN, LICENSE PATH OR VIOLATION",
+        "sources": [
+          [
+            "Northwestern Polytechnical University School of Management — October 21 H200 award (Chinese original)",
+            "https://som.nwpu.edu.cn/info/1013/88690.htm"
+          ],
+          [
+            "U.S. BIS — official Entity List, Northwestern Polytechnical University entry",
+            "https://www.bis.gov/node/17028"
+          ],
+          [
+            "U.S. BIS — January 13 H200 export-license review policy",
+            "https://media.bis.gov/sites/default/files/documents/DoC%20Revises%20License%20Review%20Policy%20for%20Semiconductors%20Exports.pdf"
+          ],
+          [
+            "Reuters — November 11 original investigation into procurement records",
+            "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/"
+          ]
+        ]
+      },
+      {
+        "label": "MODEL DEPLOYMENT + DATA GOVERNANCE / GOOGLE NOV 10 PRIMARY RELEASE / HEALTHCARE PREVIEW",
+        "headline": "Google previews Gemini for healthcare with role-limited connectors; privacy and clinical outcomes need outside testing",
+        "fact": "Google Cloud announced Gemini for healthcare on November 10 and said it became available in preview that day. The product combines healthcare-specific agent skills with connectors for electronic health records, claims, coverage policies and administrative systems. Google's documentation says the agent inherits user identities and source-system permissions, provides audit logs and supporting citations, and supports HIPAA compliance; it describes Epic and Oracle Health record access as read-only. The launch announcement names healthcare organizations in an early partner and customer ecosystem. Google describes a preview and design controls, not general availability, completed independent certification, documented clinical accuracy or measured patient-outcome improvements. Product claims about what data remain inside an enterprise environment and how model training is handled are Google statements, not independent audits.",
+        "assessment": "The practical shift is from answering health questions toward coordinating workflow steps across sensitive records and insurer decisions. Hospitals, clinicians, patients and payers may benefit from less manual document assembly, but automated synthesis can misstate a medication history, misinterpret a benefit, or reinforce denial incentives without effective human review. Google wants cloud adoption and enterprise platform revenue; healthcare organizations want efficiency under regulatory, security and clinical-accountability constraints. Role-based access and read-only connectors reduce some risks but do not alone prove data minimization, safe decision-making or legal compliance in a specific deployment. Watch independent clinical evaluations, actual rollout scope, privacy contract terms and oversight of coverage decisions.",
+        "confidence": "HIGH: NOV 10 GOOGLE ANNOUNCEMENT AND PREVIEW STATUS · VENDOR-ASSERTED: PERMISSION MODEL, HIPAA SUPPORT AND BENEFITS · UNVERIFIED: REAL-WORLD ACCURACY, AUDIT RESULTS AND OUTCOMES",
+        "sources": [
+          [
+            "Google Cloud — November 10 CEO announcement and healthcare-agent design",
+            "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare/"
+          ],
+          [
+            "Google Cloud Press Corner — November 10 preview and named partner ecosystem",
+            "https://www.googlecloudpresscorner.com/2026-11-10-Google-Cloud-Launches-Gemini-for-Healthcare"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The procurement award and U.S. licensing texts describe a security-control problem, not evidence that China formally overturned American rules or that any named company knowingly bypassed them. The U.S. state and security advocates emphasize end-use controls; chip vendors emphasize legal sales and influence; Chinese institutions emphasize access to compute. Google, meanwhile, frames permissioned healthcare agents as an answer to fragmented data, and its commercial interest should be weighed against clinicians' and patients' interests in independently tested safety and governance. China's recent Wuzhen openness proposals do not settle this enforcement issue, and Google's preview does not prove U.S. healthcare AI is unregulated. The conclusions here are editorial inference, not outputs from independent AI models.",
+    "correction": "EVIDENCE LIMITS AND CONTINUITY: The university's H200 award is dated October 21; what is new on November 11 is Reuters' original investigative reporting and our direct source verification. A procurement award is not the same as confirmed physical receipt, a proven U.S. export violation, or an official BIS enforcement finding. The January 13 licensing flexibility for certain China-bound H200 shipments is distinct from the listed-entity restrictions and from the November 9 affiliates-rule stay; earlier November 9 coverage remains unchanged. Google's November 10 healthcare preview is a separate product from its November 10 Carbon API rollout and Antigravity /swarm preview, and no broad availability or verified clinical outcome should be inferred.",
+    "sources": [
+      [
+        "University — October 21 H200 award notice",
+        "https://som.nwpu.edu.cn/info/1013/88690.htm"
+      ],
+      [
+        "BIS — entity-list status and H200 policy context",
+        "https://www.bis.gov/node/17028"
+      ],
+      [
+        "Reuters — November 11 independent investigation based on procurement records",
+        "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/"
+      ],
+      [
+        "Google Cloud — November 10 healthcare-agent preview and safeguards",
+        "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 10, 2026",
     "slug": "2026-11-10-gemini-carbon-public-rollout-agent-swarm",
     "title": "Google broadens Gemini 4 Carbon access and previews multi-agent teams; availability is real, capability claims still need scrutiny.",
