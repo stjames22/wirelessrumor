@@ -85,6 +85,72 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 12, 2026",
+    "slug": "2026-11-12-nvidia-leadership-china-chip-oversight",
+    "title": "Nvidia changes leadership as China-chip scrutiny intensifies; calls for tighter controls are not new export law.",
+    "overview": "Nvidia's November 12 announcement confirms founder Jensen Huang has resigned as CEO, president and director; finance chief Colette Kress is interim CEO, and Harvey Jones chairs the board. That confirmed corporate transition comes amid a documented board investigation and congressional scrutiny of access to advanced chips. The resignation notice does not give a reason. Legislators' November 12 calls for stronger export limits are political positions, not an enacted law, a new BIS rule or proof that anyone violated one.",
+    "developments": [
+      {
+        "label": "U.S. AI SEMICONDUCTOR INDUSTRY / NOV 12 NVIDIA PRIMARY RELEASE",
+        "headline": "Nvidia confirms a CEO change; the company says its product roadmap continues",
+        "fact": "Nvidia announced on November 12 that Jensen Huang resigned as its president, chief executive officer and director, effective immediately. Its chief financial officer Colette Kress will serve as interim CEO while retaining the finance role; the board named Harvey C. Jones chair and launched a permanent-CEO search. Nvidia said its operations, customer commitments and product roadmap should continue without interruption; that is a forward-looking company assurance, not an independently verified operating outcome. The release states no reason for Huang's departure. The board announced a foreign-intelligence-related inquiry on November 8 and identified outside counsel on November 10, but those statements report an investigation rather than a finding of a compromise or misconduct.",
+        "assessment": "This is a material change in the leadership of the dominant supplier of advanced AI accelerators, making succession, continuity and corporate governance immediate questions for customers, developers and shareholders. Nvidia has incentives to reassure investors and protect supplier relationships. Its board has a separate duty to investigate security concerns, while customers have incentives to avoid unexpected disruption. Linking the resignation causally to allegations about foreign intelligence would go beyond what the company's primary announcement establishes. An investigation is not a finding, and reported personal conduct does not establish an export-control violation.",
+        "confidence": "HIGH: NVIDIA NOV 12 CONFIRMS RESIGNATION, INTERIM CEO AND BOARD CHAIR · UNVERIFIED: CAUSE, SECURITY BREACH OR FUTURE BUSINESS CONTINUITY",
+        "sources": [
+          [
+            "Nvidia Newsroom — November 12 CEO transition (company primary release)",
+            "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+          ],
+          [
+            "Nvidia Newsroom — November 8 board investigation statement",
+            "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+          ],
+          [
+            "Nvidia Newsroom — November 10 independent-director counsel statement",
+            "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA–U.S. AI CHIP POLICY / NOV 12 REPORTED CONGRESSIONAL REMARKS / NOV 5 PRIMARY LETTER",
+        "headline": "US congressional leaders sharpen chip-export rhetoric; there is no verified new restriction",
+        "fact": "Reuters reported on November 12 that House Speaker Mike Johnson said Congress was developing a consensus in favor of limiting semiconductor exports to China. The November 5 public release from three House committee chairs independently documents their request for a closed-door briefing with Huang about reported foreign-intelligence concerns and Nvidia's security practices; it requested a November 18 meeting or an alternative date. Reuters separately reports Chairman Brian Mast expects testimony within a week. The initial congressional letter and the later press remarks document oversight and political pressure, not a committee finding, newly adopted statute, newly added Entity List designation, or fresh export-license rule.",
+        "assessment": "Security-focused legislators argue tighter controls reduce the risk that advanced computing reaches Chinese military-linked users. Technology exporters and cloud providers have commercial incentives to preserve lawful sales and global influence; researchers and customers seeking compute have different incentives to preserve access. Political pressure may change later rules but cannot substitute for a published action by Congress or BIS. The November 11 university H200 procurement award discussed in WirelessRumor's previous update likewise does not prove a physical shipment, illicit diversion or misconduct by Nvidia. Look next for an actual hearing, documented findings and original regulatory text rather than treating allegations as established facts.",
+        "confidence": "HIGH: NOV 5 COMMITTEE REQUEST IS PUBLIC · REUTERS-REPORTED: NOV 12 JOHNSON/MAST REMARKS · NOT ESTABLISHED: NEW LAW, BIS RULE OR ENFORCEMENT FINDING",
+        "sources": [
+          [
+            "U.S. House Foreign Affairs Committee — November 5 letter request",
+            "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
+          ],
+          [
+            "Reuters — November 12 remarks from Speaker Johnson and Chairman Mast",
+            "https://www.reuters.com/world/china/speaker-johnson-says-congress-developing-consensus-limiting-chip-exports-china-2026-11-12/"
+          ],
+          [
+            "U.S. BIS — existing H200 review policy (separate from today's political statements)",
+            "https://media.bis.gov/sites/default/files/documents/DoC%20Revises%20License%20Review%20Policy%20for%20Semiconductors%20Exports.pdf"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The documented event is a Nvidia leadership transition, not a proof of espionage. Congressional oversight has legitimate national-security aims; export controls can also carry costs for innovation, commerce and international research. Nvidia's continuity messaging serves legitimate investor and customer needs but should be tested against operating outcomes. Claims by lawmakers, companies, governments and their critics receive the same evidentiary standard. The connections and incentive analysis here are WirelessRumor editorial inference, not the output of independently queried AI models.",
+    "correction": "CHRONOLOGY AND SCOPE: Nvidia's board publicly announced an investigation November 8 and retained external counsel November 10; its November 12 CEO-transition release does not state the reason for the resignation or establish any finding. The congressional committee's briefing request was published November 5; the reported Speaker Johnson remarks are November 12. No new export-control measure was verified in this review. Do not conflate this story with the November 11 Chinese university procurement award, the November 9 U.S.–China suspension extensions, or the January H200 license-review policy. Earlier reporting and corrections remain unchanged.",
+    "sources": [
+      [
+        "Nvidia — November 12 announcement",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      ],
+      [
+        "U.S. House committee — original November 5 request",
+        "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
+      ],
+      [
+        "Reuters — November 12 contemporaneous statements",
+        "https://www.reuters.com/world/china/speaker-johnson-says-congress-developing-consensus-limiting-chip-exports-china-2026-11-12/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 11, 2026",
     "slug": "2026-11-11-h200-procurement-healthcare-agents",
     "title": "Chinese university H200 procurement raises export-control questions as Google previews governed healthcare agents.",
