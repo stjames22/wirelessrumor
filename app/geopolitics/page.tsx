@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 13, 2026",
+    "slug": "2026-11-13-house-chip-oversight-claude-52-access",
+    "title": "House committees press Nvidia and Commerce for answers; Anthropic's new frontier models split general access from verified high-risk access.",
+    "overview": "A November 12 second set of U.S. House committee letters turns earlier Nvidia-related questions into direct appearance requests to the former CEO, company counsel and the export-control regulator. Separately, Anthropic's November 9 release of Claude Fable 5.2 and Mythos 5.2 offers a concrete contrast between generally available frontier computing and vetted access to dual-use cyber and biological capabilities. This is a November 13 review of earlier-dated primary documents, not a claim that a new export rule or model launch occurred today.",
+    "developments": [
+      {
+        "label": "U.S.–CHINA AI SEMICONDUCTORS / NOV 12 HOUSE SECOND REQUEST / NOV 11 SENATE PRESERVATION LETTER",
+        "headline": "Three House chairs seek answers from Nvidia leaders and the BIS under secretary; evidence and policy remain separate",
+        "fact": "On November 12, House Foreign Affairs Chairman Brian Mast, Select Committee on China Chairman John Moolenaar and House Intelligence Chairman Rick Crawford publicly issued a second request for appearances by former Nvidia CEO Jensen Huang, general counsel Tim Teter and Commerce Under Secretary for Industry and Security Jeffrey Kessler. The chairs urged passage of several chip and remote-compute security bills, which is a legislative position, not proof that those bills have passed. Separately, on November 11, Senators Elizabeth Warren and Chris Coons publicly demanded preservation of executive-branch records and a briefing about reported Nvidia, Megaspeed and foreign-intelligence concerns. The letters establish oversight requests and allegations under inquiry; they do not establish that any suspect was a spy, that chips were diverted, that regulators acted unlawfully, or that a new BIS export rule exists.",
+        "assessment": "The new House requests advance the November 12 WirelessRumor account beyond the earlier November 5 briefing letter and reported congressional rhetoric. National-security legislators seek evidence and stronger end-user controls; exporters and cloud providers want predictable access to profitable markets, while Chinese buyers have incentives to secure compute by legal channels or substitutes. Congressional oversight can reveal facts, but its sponsors also have incentives to frame risk urgently. The proper next verification point is an actual appearance, released evidence, enacted measure or BIS notice—not an invitation or press statement.",
+        "confidence": "HIGH: HOUSE NOV 12 AND SENATE NOV 11 LETTER ANNOUNCEMENTS · NOT VERIFIED: ESPIONAGE, DIVERSION, BREACH OR NEW RESTRICTION",
+        "sources": [
+          [
+            "U.S. House Foreign Affairs Committee — November 12 second requests and letter links",
+            "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-send-second-request-to-jensen-huang-and-nvidia-to-brief-congress-on-the-chinese-intelligence-asset"
+          ],
+          [
+            "U.S. Senate Banking Committee minority — November 11 preservation request",
+            "https://www.banking.senate.gov/newsroom/minority/senators-warren-and-coons-direct-lutnick-rubio-and-miller-to-preserve-nvidia-records-following-reports-of-foreign-intelligence-operation-targeting-ceo-jensen-huang"
+          ],
+          [
+            "U.S. BIS — standing January 13 H200 semiconductor license-review policy",
+            "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+          ]
+        ]
+      },
+      {
+        "label": "MODEL ACCESS / NOV 9 ANTHROPIC RELEASE / NOV 11 SOURCE AMENDMENT",
+        "headline": "Claude Fable 5.2 is broadly released; Mythos 5.2's more sensitive capabilities require verification",
+        "fact": "Anthropic's November 9 announcement and developer documentation identify Fable 5.2 and Mythos 5.2 as the same underlying model with different cyber and biology safeguards. Fable 5.2 is offered on Claude and major cloud/API platforms; Mythos 5.2 requires an approved organization for sensitive research access, including via Anthropic's Cyber and Life Sciences Verification Programs. Anthropic lists a one-million-token context window, 128,000-token output limit, and standard prices of $8 per million input tokens and $40 per million output tokens. Its report describes company-run improvements in coding, cybersecurity, mathematics and robotics and acknowledges that controlled tests cannot predict all real-world unsafe behavior. Anthropic also says some misuse monitoring examines windows of requests; Enterprise Frontier Safeguards is a private beta allowing monitoring within customer infrastructure, while nonqualifying customers have 30-day safety-monitoring retention. These are attributed vendor product, privacy and safety descriptions—not independent confirmation of outcomes or a universal zero-retention guarantee.",
+        "assessment": "This is an actual model distribution and differentiated access decision, separate from Google's November 10 Carbon rollout and OpenAI's earlier restricted cyber release. General availability of Fable does not imply unrestricted public access to Mythos. Anthropic can expand revenue and developer adoption while retaining gatekeeping power over dual-use capabilities and retaining some monitoring information. Security researchers and biomedical organizations may benefit from vetted access, but verification and monitoring can disadvantage small teams and raise data-governance questions. Benchmark comparisons, unusual research demonstrations and claims of safer behavior merit external replication; provider-selected tests and customer testimonials are not neutral rankings.",
+        "confidence": "HIGH: NOV 9 OFFICIAL RELEASE, PUBLISHED PRODUCT SPECS AND ACCESS TIERS · COMPANY-REPORTED: BENCHMARKS, SCIENTIFIC RESULTS, SAFETY AND MONITORING EFFECTIVENESS",
+        "sources": [
+          [
+            "Anthropic — November 9 Fable 5.2 and Mythos 5.2 release, with November 11 edit noted",
+            "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          ],
+          [
+            "Anthropic developer documentation — Mythos 5.2 verification and availability",
+            "https://platform.claude.com/docs/en/models/mythos-5-2/overview"
+          ],
+          [
+            "Anthropic — model system cards index and evaluation disclosures",
+            "https://www.anthropic.com/system-cards"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The House and Senate documents are primary evidence of institutional action, not findings about a person or an export violation. Anthropic's product documents establish its own release and access policy, while its benchmark and safety figures remain interested-party claims even when external testers participated. Washington has security and political incentives; chip suppliers have commercial incentives; model providers simultaneously seek scale, control and trust. These judgments are WirelessRumor editorial inference, not fabricated responses from independent models.",
+    "correction": "SCOPE AND DATES: The House's second requests are dated November 12 and the Senate preservation letter November 11; today's editorial is a November 13 review, not a new hearing or export-law change. This builds on, rather than repeats, the November 12 Nvidia leadership and initial oversight account. Anthropic's Fable/Mythos release occurred November 9, not November 13; the company disclosed a November 11 amendment to its mathematical-formalization description. Model claims and privacy options should not be represented as universal independent results or unrestricted model-weight access. Previous corrections remain visible.",
+    "sources": [
+      [
+        "U.S. House — November 12 original public letter announcement",
+        "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-send-second-request-to-jensen-huang-and-nvidia-to-brief-congress-on-the-chinese-intelligence-asset"
+      ],
+      [
+        "Anthropic — November 9 model launch and November 11 amendment",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 12, 2026",
     "slug": "2026-11-12-nvidia-leadership-china-chip-oversight",
     "title": "Nvidia changes leadership as China-chip scrutiny intensifies; calls for tighter controls are not new export law.",
