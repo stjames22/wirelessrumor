@@ -85,6 +85,60 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 14, 2026",
+    "slug": "2026-11-14-eu-ai-sovereignty-china-embodied-data-standards",
+    "title": "Europe puts AI sovereignty and safety on the leaders' agenda; China establishes new embodied-AI and sector data-standards groups.",
+    "overview": "Two official records published November 13 reveal different forms of AI governance work. EU heads of government held their first in-depth strategic AI discussion in Dublin on November 13. China's National Data Administration reported on November 13 that five data-standards drafting groups were created at a November 10 meeting in Xiamen. This November 14 review distinguishes leadership messaging and drafting infrastructure from enacted rules, funded capacity or deployed capabilities.",
+    "developments": [
+      {
+        "label": "EU / NOV 13 DUBLIN LEADERS' MEETING / FIRST-PARTY COUNCIL RECORD",
+        "headline": "EU leaders connect domestic AI capacity, affordable energy and global safety rules—but announce no new binding AI measure",
+        "fact": "The European Council's November 13 meeting report and President António Costa's same-day remarks describe leaders' first in-depth AI discussion. With Mistral CEO Arthur Mensch they considered investment, competitive European models, supply-chain dependencies, access to clean affordable energy and enterprise adoption. With researcher Geoffrey Hinton they discussed fundamental and children's rights, democratic integrity, jobs, concentration and cybersecurity. Costa said EU leaders would return to AI in February 2027 and use their 2027 social summit to examine work and social effects. The meeting record does not announce a new AI law, final standard, appropriated AI fund or specific additional compute installation.",
+        "assessment": "The EU is positioning itself as a third center of AI capacity and standards influence alongside the United States and China: reducing dependence on foreign models and chips while claiming a rights-based governance advantage. That is an editorial interpretation, not an agreed trade strategy. European vendors such as Mistral could gain from public procurement and industrial support; governments must balance autonomy against cost and energy constraints. Safety advocates seek enforceable accountability; firms and member states also seek flexibility. A strategic meeting can set priorities but cannot itself demonstrate new deployments, funding or independent safety results.",
+        "confidence": "HIGH: OFFICIAL NOV 13 MEETING AND COSTA REMARKS · NOT ESTABLISHED: ENACTED POLICY, FUNDED BUILDOUT OR GLOBAL STANDARD ADOPTION",
+        "sources": [
+          [
+            "European Council — November 13 informal meeting results",
+            "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/"
+          ],
+          [
+            "European Council — Costa's November 13 press conference remarks",
+            "https://www.consilium.europa.eu/en/press/press-releases/2026/11/13/remarks-by-president-antonio-costa-at-the-press-conference-following-the-informal-meeting-of-heads-of-state-or-government-of-13-november-2026/"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA / NOV 10 DATA STANDARDS MEETING / NOV 13 NDA PUBLICATION",
+        "headline": "China formalizes working groups for embodied-AI data and four industries; the standards are not yet finished",
+        "fact": "China's National Data Administration (NDA) reported on November 13 that the National Data Standardization Technical Committee formally established a working group to draft embodied-AI data standards at its November 10 opening event in Xiamen. It also established industry data-standards groups for meteorology, healthcare, electricity and commerce. The NDA said the four-day November 10–13 gathering would discuss 67 standards and 46 technical documents, and highlighted aims to improve domestic standards and participate in international standard-setting. These are drafting organizations and agenda items, not evidence that all 67 standards have been approved or that data can already move freely across institutions or borders.",
+        "assessment": "An institutional step toward comparable robot training and sector data could lower integration friction for Chinese industry and shape future international formats. But the NDA has incentives to advertise progress; suppliers and data holders have competing incentives around interoperability, proprietary advantage, privacy and state access. Health and other sensitive-sector data require controls beyond common technical specifications. Relative to Europe's leaders' strategy discussion, China has documented a narrower operational standards-workstream decision—not proof of superior model performance, immediate deployment, international acceptance or unrestricted access.",
+        "confidence": "HIGH: NDA ACCOUNT OF NOV 10 GROUP FORMATION, PUBLISHED NOV 13 · NOT VERIFIED: FINAL STANDARDS, INDUSTRY ADOPTION OR INDEPENDENT EFFECTIVENESS",
+        "sources": [
+          [
+            "China National Data Administration — November 13 report on November 10 standards-week opening",
+            "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_pc.html"
+          ],
+          [
+            "National Data Standardization Committee — October 2026 standards demand notice",
+            "https://www.nda.gov.cn/sjj/zwgk/tzgg/1015/20261015155821338735862_mobile.html"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Europe's Council account is primary evidence for what leaders discussed, not verification that EU strategic autonomy has increased. China's NDA report is primary evidence of its committee action, not an impartial performance audit. European institutions, Chinese agencies, model vendors, data holders and safety groups have overlapping but distinct incentives to shape standards and market access. This contrast is WirelessRumor editorial inference; it does not represent independently queried AI models or fabricated community consensus.",
+    "correction": "DATE / SCOPE: This article is dated November 14. Both issuer summaries appeared November 13; China's Xiamen event opened November 10. No new U.S. BIS semiconductor restriction, EU AI Act amendment, Chinese finalized embodied-AI data standard, export-rule change, operational shared-compute pool or proof of cross-border data liberalization is asserted. This extends the November 8 Wuzhen proposals and November 9 export-control reporting without changing their conclusions. Previous updates and corrections remain available.",
+    "sources": [
+      [
+        "European Council — November 13 meeting record",
+        "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/"
+      ],
+      [
+        "China NDA — November 13 account of drafting-group formation",
+        "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/1113/20261113153701287999907_pc.html"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 13, 2026",
     "slug": "2026-11-13-house-chip-oversight-claude-52-access",
     "title": "House committees press Nvidia and Commerce for answers; Anthropic's new frontier models split general access from verified high-risk access.",
