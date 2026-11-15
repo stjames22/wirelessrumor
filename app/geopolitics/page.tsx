@@ -85,6 +85,64 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 15, 2026",
+    "slug": "2026-11-15-malaysia-chip-reexport-checks-megaspeed-response",
+    "title": "Malaysia opens a specific AI-chip re-export check; the cloud provider denies wrongdoing.",
+    "overview": "New official and on-record statements bring the U.S.–China AI-chip access dispute into a third-country enforcement test. Malaysia's trade ministry announced checks on November 13 into whether AI chips brought in by Speedmatrix were re-exported, while its prime minister said no diversion was then indicated. On November 15 parent company Megaspeed denied wrongdoing in a statement to CBS News. These records establish a check and competing claims—not a proven illicit shipment, a new U.S. export rule, or a finding of guilt.",
+    "developments": [
+      {
+        "label": "MALAYSIA / NOV 13 MITI STATEMENT / ORIGINAL GOVERNMENT DOCUMENT",
+        "headline": "Malaysia differentiates lawful AI-chip imports from permitted re-exports and starts customs checks",
+        "fact": "In a dated November 13 statement, Malaysia's Ministry of Investment, Trade and Industry (MITI) said it has never cleared Singapore-based Megaspeed International or Malaysian affiliate Speedmatrix; routine visits to data centers were not company-specific approvals. MITI said Speedmatrix brings its own servers and AI chips into Malaysian facilities. Importing those chips does not currently require a Malaysian permit, but exporting, re-exporting, transshipping or transiting high-performance U.S. AI chips from or through Malaysia has required a MITI permit since July 2025. MITI and Royal Malaysian Customs are checking whether any chips were later re-exported and whether that complied with Malaysian law. MITI said it is coordinating with U.S. and Singapore authorities and considering tighter measures, not that new controls had already taken effect. Malaysia's public broadcaster RTM separately reported Prime Minister Anwar Ibrahim saying on November 13 that the government then had no indication such chips had been exported from Malaysia and had received no formal request from the United States or Singapore.",
+        "assessment": "The key jurisdictional distinction is between hardware entering Malaysia, hardware physically leaving or transiting it, and remote access to computing hosted there. The first does not prove either of the other two. Malaysia wants data-center investment without being seen as a conduit for evading foreign chip controls; Washington wants licensing restrictions to retain force beyond U.S. borders; operators have commercial incentives to preserve cross-border compute access. MITI's announcement documents scrutiny, not the chain of custody or a legal conclusion. Its existing July 2025 permit requirement is not a November 2026 policy enactment.",
+        "confidence": "HIGH: PRIMARY NOV 13 MITI STATEMENT AND ATTRIBUTED PM REMARKS · UNRESOLVED: MOVEMENT OF SPECIFIC CHIPS, PERMITS OR VIOLATIONS",
+        "sources": [
+          [
+            "Malaysia MITI — signed November 13 statement (original PDF)",
+            "https://www.miti.gov.my/miti/resources/Speech/MEDIA_STATEMENT_13112026.pdf"
+          ],
+          [
+            "Malaysia RTM — November 13 prime minister remarks (Malay)",
+            "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/tiada-petunjuk-cip-ai-berprestasi-tinggi-dieksport-dari-malaysia-pm/"
+          ]
+        ]
+      },
+      {
+        "label": "COMPANY RESPONSE / NOV 15 ON-RECORD STATEMENT REPORTED BY CBS",
+        "headline": "Megaspeed disputes allegations; its public denial is not an independent compliance audit",
+        "fact": "CBS News published a November 15 statement supplied directly by Megaspeed International. The firm said a former executive left in August 2025 and denied misconduct, asserting that its operational and supply-chain controls comply with applicable U.S. export requirements and local laws. CBS is the publication carrying the company's direct response; it is not a government finding or an independently released company audit. The MITI inquiry remains the separate authoritative record of Malaysia's checks.",
+        "assessment": "The company's incentive is to reassure regulators, customers and partners, while authorities have incentives to demonstrate credible enforcement and legislators to show oversight. The existence of investigations and news allegations does not establish an offense. Equally, a company's compliance assurance cannot by itself disprove diversion. The useful next evidence would be official permit records, independently established shipment routes, published enforcement results or a documented closing finding; none was verified in this review.",
+        "confidence": "HIGH: EXISTENCE OF ON-RECORD NOV 15 COMPANY RESPONSE · UNVERIFIED: EXTERNAL COMPLIANCE, DIVERSION OR INTELLIGENCE ALLEGATIONS",
+        "sources": [
+          [
+            "CBS News — November 15 direct Megaspeed statement and reported response",
+            "https://www.cbsnews.com/news/nvidia-alice-huang-jensen-ai-china-singapore-megaspeed/"
+          ],
+          [
+            "Malaysia MITI — official November 13 release and unresolved inquiry",
+            "https://www.miti.gov.my/index.php/announcements/view/999"
+          ]
+        ]
+      }
+    ],
+    "messaging": "MITI's original statement shows an official investigation and restatement of preexisting Malaysian permit rules, not a completed prosecution or a U.S. rule change. The prime minister's contemporaneous no-indication statement reflects evidence described at that time, not a permanent exoneration. Megaspeed's response is an interested-party claim, not independently established supply-chain tracing. The distinction between physical re-export and remote chip use is WirelessRumor analysis; no simulated model position or community activity is presented as independently sourced.",
+    "correction": "DATE / SCOPE: MITI and the prime minister spoke November 13; Megaspeed's on-record response was published November 15; this editorial is dated November 15. The July 2025 Malaysian permit requirement predates this story. No actual re-export, export-control breach, Chinese end-user shipment, new U.S. BIS rule, formal charge or conclusive clearance is established here. This supplements November 11–13 chip procurement and congressional scrutiny coverage without altering those articles or their correction records.",
+    "sources": [
+      [
+        "Malaysia MITI — November 13 primary statement",
+        "https://www.miti.gov.my/miti/resources/Speech/MEDIA_STATEMENT_13112026.pdf"
+      ],
+      [
+        "RTM Malaysia — November 13 prime minister remarks",
+        "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/tiada-petunjuk-cip-ai-berprestasi-tinggi-dieksport-dari-malaysia-pm/"
+      ],
+      [
+        "CBS News — November 15 on-record company response",
+        "https://www.cbsnews.com/news/nvidia-alice-huang-jensen-ai-china-singapore-megaspeed/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 14, 2026",
     "slug": "2026-11-14-eu-ai-sovereignty-china-embodied-data-standards",
     "title": "Europe puts AI sovereignty and safety on the leaders' agenda; China establishes new embodied-AI and sector data-standards groups.",
