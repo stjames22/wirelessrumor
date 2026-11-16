@@ -85,6 +85,64 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 16, 2026",
+    "slug": "2026-11-16-remote-compute-controls-pax-silica-declaration",
+    "title": "Washington publishes a remote-compute chip-control rule as ten governments sign an AI supply-chain security declaration.",
+    "overview": "Two new primary records move the U.S.–China AI infrastructure debate beyond allegations and diplomatic proposals. The Commerce Department announced a new interim final rule on November 16 aimed at overseas data centers that provide powerful U.S.-chip computing to restricted users. Separately, the United States and nine partners signed the San Francisco Declaration on November 15. One is a published regulatory text with a Federal Register effective-date condition; the other is a shared political commitment, not a treaty or proof of implemented joint controls.",
+    "developments": [
+      {
+        "label": "U.S. EXPORT POLICY / NOV 16 BIS ANNOUNCEMENT AND ORIGINAL INTERIM-RULE TEXT",
+        "headline": "BIS targets remote access to advanced American chips, not merely their physical destinations",
+        "fact": "On November 16, the Bureau of Industry and Security announced an interim final rule titled 'Addressing Remote Access to Advanced Semiconductors' (RIN 0694-AK50). The original posted text introduces an end-use license requirement for covered chips or servers where there is knowledge that a data center, anywhere in the world, will supply more than 12 million aggregate total processing performance (TPP) of direct or indirect compute to or for companies headquartered in Macau or Country Group D:5, or with an ultimate parent there; China is among the covered destinations. Linked facilities and indirect provision can count. The draft also adds destination-based licensing for specified advanced semiconductors to Indonesia, Malaysia, Singapore, Thailand and Brazil, with a conditional carve-out for U.S.-headquartered recipients meeting reporting rules, and exempts qualifying commercial recommendation systems from the new remote-compute control. It tightens some foundry-related presumptions and formally rescinds the never-enforced 2025 AI Diffusion Rule. The official posted rule still has placeholders for its Federal Register publication and comment dates; it states it becomes effective on Federal Register publication. No separately verified publication date or effective date is asserted here.",
+        "assessment": "This changes the policy instrument from scrutiny of suspect physical re-exports toward licensed access to large-scale remote computing. U.S. security officials want to reduce evasion through third-country cloud facilities, while U.S. chip vendors and foreign data-center operators want predictable sales, lawful research access and low compliance friction. Third countries have incentives to retain infrastructure investment while demonstrating enforcement. A license requirement is not an across-the-board ban, and BIS issuing a text does not prove any particular operator diverted chips. The agency's stated national-security rationale is a government position; implementation, licensing outcomes, customer attribution and economic effects remain unmeasured.",
+        "confidence": "HIGH: ORIGINAL BIS RULE AND RELEASE · OPEN: FEDERAL REGISTER EFFECTIVE DATE, LICENSE DECISIONS AND ENFORCEMENT RESULTS",
+        "sources": [
+          [
+            "U.S. BIS — November 16 agency announcement",
+            "https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
+          ],
+          [
+            "U.S. BIS — original interim-final-rule text, RIN 0694-AK50 (PDF)",
+            "https://www.bis.gov/media/documents/rin-0694-ak50.pdf"
+          ]
+        ]
+      },
+      {
+        "label": "INTERNATIONAL SUPPLY CHAINS / NOV 15 SAN FRANCISCO DECLARATION / STATE DEPARTMENT TEXT",
+        "headline": "The U.S. and nine partners pledge cooperation on the foundations of AI supply chains",
+        "fact": "According to the U.S. Department of State's November 15 media note, the United States, Australia, India, Israel, Japan, South Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom signed the San Francisco Declaration at the Pax Silica Founders Retreat. The published text defines sensitive technologies and critical infrastructure broadly—including software, semiconductor inputs, ports, logistics, communications, energy systems and important data flows—and proposes working groups on policy, adoption, supply chains, security hubs and resilience. The text says 'super intelligence' corresponds to 'artificial intelligence' for some participants. The available declaration supplies shared principles; it does not document enacted national export controls, legally enforceable joint obligations, delivered investments or the future membership of other governments.",
+        "assessment": "The U.S. and partner governments are seeking to coordinate trusted technological ecosystems and reduce exposure to coercive supply-chain chokepoints. This can create economic opportunities and resilience but may also favor selected suppliers, constrain market access and increase incentives for rival blocs—including Chinese firms promoting alternative models, standards or infrastructure. Participants have different trade dependencies and policy priorities; identical implementation should not be assumed. Signing and announcing working groups are verifiable diplomatic steps, not independent evidence that technical vulnerabilities have been fixed.",
+        "confidence": "HIGH: NOV 15 ISSUER STATEMENT AND DECLARATION TEXT · UNPROVEN: BINDING OBLIGATIONS, ENFORCEMENT, INVESTMENT OR SUPPLY-CHAIN EFFECTS",
+        "sources": [
+          [
+            "U.S. State Department — November 15 declaration and signatories (original issuer URL)",
+            "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/"
+          ],
+          [
+            "State Department text — unedited November 15 release mirrored by Public Technologies",
+            "https://pubt.io/view/689C324FBE010ADD3F80FCD46EE21338142A04D9"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The BIS announcement is authoritative evidence of a newly issued proposed-to-be-effective-on-publication regulatory text, but its security effects and exact effective date require follow-up. The State Department's diplomatic text demonstrates a signed declaration, not an operational AI bloc or binding common export regime. Washington's 'super intelligence' label is official terminology, not independent proof of an achieved technical capability. These distinctions and the incentives assigned to the U.S., China, technology vendors and partner governments are WirelessRumor editorial analysis—not outputs from independently consulted models or fabricated public debate.",
+    "correction": "DATE / SCOPE: The State Department declaration was signed November 15; BIS's online announcement is dated November 16 and its linked release PDF carries a November 15 date. The posted BIS rule has not yet supplied a verified Federal Register publication/effective date in the version inspected. November 15 WirelessRumor's statement that no new U.S. rule was verified referred to the prior review and is superseded by this November 16 original source, not a retroactive error. The Malaysia investigation and Megaspeed's denial remain unresolved, and neither this rule nor the declaration proves those allegations or changes the previously reported January 2027 Affiliates Rule stay. All preceding articles and corrections are retained.",
+    "sources": [
+      [
+        "U.S. BIS — original November 16 release",
+        "https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
+      ],
+      [
+        "U.S. BIS — original regulatory text RIN 0694-AK50",
+        "https://www.bis.gov/media/documents/rin-0694-ak50.pdf"
+      ],
+      [
+        "U.S. State Department — November 15 San Francisco Declaration",
+        "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 15, 2026",
     "slug": "2026-11-15-malaysia-chip-reexport-checks-megaspeed-response",
     "title": "Malaysia opens a specific AI-chip re-export check; the cloud provider denies wrongdoing.",
