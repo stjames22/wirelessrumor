@@ -85,6 +85,60 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 17, 2026",
+    "slug": "2026-11-17-doj-megaspeed-investigation-china-chip-response",
+    "title": "U.S. agencies disclose their Megaspeed investigation timeline; Beijing warns of possible retaliation over remote-compute chip controls.",
+    "overview": "Two November 17 government statements add accountable, distinct developments to the November 15–16 coverage. The U.S. Justice and Commerce departments publicly described a long-running investigation of Megaspeed, including a 2025 joint end-use check with Singapore. China's Commerce Ministry formally rejected the November 16 U.S. remote-compute rule and conditionally warned of countermeasures. Neither statement establishes a chip-diversion conviction, an actual Chinese retaliatory measure, or the rule's entry into force.",
+    "developments": [
+      {
+        "label": "U.S. ENFORCEMENT / NOV 17 JOINT JUSTICE–COMMERCE RELEASE",
+        "headline": "DOJ publicly confirms criminal-investigation leadership and a 2024–25 enforcement chronology",
+        "fact": "In a November 17 joint statement, the U.S. Justice and Commerce departments said Commerce opened an investigation into Singapore-based Megaspeed in 2024 over potential semiconductor export-control violations. The agencies say investigators requested Nvidia's direct and indirect sales records in May 2025; Nvidia placed Megaspeed on an internal no-sell list in June 2025; and BIS agents conducted a June 2025 on-site end-use check with Singaporean officials, interviewing then-CEO Alice Huang. The statement says DOJ subsequently assumed the lead in a criminal investigation. It does not announce charges against Megaspeed, a proven illegal shipment, a conviction or the outcome of the investigation. A previous November 15 Megaspeed denial and Malaysia's separate customs inquiry remain relevant; neither is displaced by the U.S. account.",
+        "assessment": "The detailed timeline is new public evidence of earlier enforcement activity, not proof that the suspected diversion occurred. The U.S. agencies have a security incentive to investigate circumvention and a reputational incentive to rebut criticism of delayed enforcement; the statement explicitly defends their leadership and cites enforcement statistics that are not independent outcome assessments. Nvidia and regional data-center operators have incentives to preserve lawful sales, supplier confidence and predictable licensing. Megaspeed's denial is its position, not an independent exoneration. Investigative records, the legal basis of any charges, and independent findings are still missing.",
+        "confidence": "HIGH: GOVERNMENT CONFIRMATION OF INVESTIGATION STEPS · OPEN: UNDERLYING EVIDENCE, CHARGES OR VIOLATIONS",
+        "sources": [
+          [
+            "U.S. Department of Justice — November 17 joint Justice–Commerce statement",
+            "https://www.justice.gov/opa/pr/joint-statement-department-commerce-and-department-justice-megaspeed-investigation"
+          ]
+        ]
+      },
+      {
+        "label": "CHINA–U.S. TRADE / NOV 17 CHINA COMMERCE MINISTRY RESPONSE",
+        "headline": "Beijing rejects the remote-compute measure but has not announced countermeasures",
+        "fact": "In a statement posted November 17 at 20:20 Beijing time, China's Ministry of Commerce responded specifically to the U.S. Commerce Department's November 16 advanced-semiconductor remote-access measure. The ministry accused Washington of overextending national-security export controls, interfering with ordinary commercial cooperation and harming semiconductor supply chains. It requested consultation and said China would take countermeasures if the United States persisted. No specific countermeasure, effective date or implementing regulation was announced in that statement. Separately, the U.S. Federal Register public-inspection notice lists the remote-access rule as unpublished and scheduled for November 19 publication; the rule's effective date is tied to publication and should not be treated as already verified in force on November 17.",
+        "assessment": "The Chinese statement is evidence of a government position and conditional diplomatic warning, not of completed retaliation. Beijing has incentives to retain access to computing and defend companies and supply-chain relationships, while Washington says it wants to prevent restricted users from obtaining advanced compute via third countries. Both arguments advance national strategic interests, but neither alone demonstrates the rule's net security effect or economic cost. November 19 is a scheduled publication date, subject to confirmation; exemptions, licensing results and any actual trade response remain open.",
+        "confidence": "HIGH: ORIGINAL CHINESE STATEMENT AND FEDERAL REGISTER NOTICE · OPEN: RETALIATION, ACTUAL PUBLICATION AND IMPACT",
+        "sources": [
+          [
+            "China Ministry of Commerce — November 17 response (Chinese original)",
+            "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
+          ],
+          [
+            "U.S. Federal Register — public-inspection schedule for RIN 0694-AK50",
+            "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The November 17 U.S. statement combines a newly detailed investigative chronology with self-interested claims about enforcement effectiveness; the Chinese statement combines policy objections with a conditional threat designed to preserve negotiating leverage. WirelessRumor assesses each by the same standard: official publication establishes what the government said or did, not the truth of every accusation or predicted outcome. No agent or independent AI-model viewpoint is simulated here.",
+    "correction": "DATE / LEGAL STATUS: The joint Justice–Commerce statement is explicitly dated November 17, even if some third-party recaps used November 16. The Chinese ministry statement was issued November 17 at 20:20 Beijing time. Federal Register public inspection currently shows November 19 as a *scheduled*, not yet completed, publication; November 16's note that the rule's effective date had not been verified remains correct. The U.S. investigation's start in 2024 does not mean there was a new 2024 ruling or that charges were filed in 2026. No previous editorial entry or correction was removed.",
+    "sources": [
+      [
+        "U.S. Justice Department — November 17 Megaspeed investigation statement",
+        "https://www.justice.gov/opa/pr/joint-statement-department-commerce-and-department-justice-megaspeed-investigation"
+      ],
+      [
+        "China Ministry of Commerce — November 17 formal response",
+        "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
+      ],
+      [
+        "U.S. Federal Register — 2026-23529 public inspection notice",
+        "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 16, 2026",
     "slug": "2026-11-16-remote-compute-controls-pax-silica-declaration",
     "title": "Washington publishes a remote-compute chip-control rule as ten governments sign an AI supply-chain security declaration.",
