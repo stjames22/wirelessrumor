@@ -85,6 +85,60 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 20, 2026",
+    "slug": "2026-11-20-house-ai-chip-license-disclosure-california-nvidia-subpoena",
+    "title": "Congress publishes AI-chip license approval totals for China; California subpoenas Nvidia in a separate investigation.",
+    "overview": "Two primary-source announcements dated November 19 add evidence to the ongoing China–U.S. semiconductor dispute without constituting a new export rule or a proven diversion finding. A House Foreign Affairs Committee chairman disclosed licensing-request and approval totals for Nvidia and AMD AI chips destined for China. California's attorney general separately announced an investigative subpoena of Nvidia. Licenses, physical shipments, investigations, allegations and conclusions are different categories of evidence.",
+    "developments": [
+      {
+        "label": "U.S. HOUSE FOREIGN AFFAIRS / NOV 19 ECRA DISCLOSURE / ADVANCED AI CHIPS",
+        "headline": "A congressional licensing disclosure shows requested and approved volumes—but not confirmed deliveries",
+        "fact": "On November 19, House Foreign Affairs Committee chair Brian Mast publicly disclosed Commerce Department AI-chip export-license information under the Export Control Reform Act. The committee's release reports requests covering about 3.4 million Nvidia and AMD AI chips for China and BIS approvals for more than 879,000, naming Alibaba and Tencent among approved recipients. The committee characterizes certain recipients as U.S. Defense Department-designated Chinese military companies and describes some intermediaries as possible smuggling fronts. Those designations and suspicions are the committee's framing, not proof of a particular recipient's unlawful conduct. Reuters' November 19 account identifies December 2025 through May 2026 as the application period, and states that the number of chips actually shipped is unknown. An export-license approval is not a verified completed shipment, evidence of an end use, or a finding of illegality.",
+        "assessment": "The disclosed scale is a concrete new oversight record even though the original requests predate the current remote-compute rule. It complicates simplistic claims that Washington completely barred advanced-chip sales to China. The committee has national-security and oversight incentives to highlight license risk; BIS has licensing and enforcement responsibilities and has defended its case-by-case review conditions; Nvidia and AMD have incentives to preserve lawful commercial markets while demonstrating compliance; Chinese buyers seek compute access and supply assurance. An individual license's conditions, execution and downstream use require record-level verification. The committee's accompanying documents are linked from its official release, but their granular contents were not independently audited for this edition.",
+        "confidence": "HIGH: CONGRESSIONAL RELEASE AND REPORTED APPROVAL TOTALS · UNCERTAIN: ACTUAL DELIVERIES, END USE AND ACCUSATIONS ABOUT INTERMEDIARIES",
+        "sources": [
+          [
+            "House Foreign Affairs Committee — November 19 disclosure and linked underlying documents",
+            "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china"
+          ],
+          [
+            "U.S. BIS — January 13 case-by-case licensing policy and conditions",
+            "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+          ],
+          [
+            "Reuters — November 19 reporting on disclosed application period, company responses and delivery uncertainty",
+            "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+          ]
+        ]
+      },
+      {
+        "label": "CALIFORNIA DEPARTMENT OF JUSTICE / NOV 19 SUBPOENA / CORPORATE OVERSIGHT",
+        "headline": "California opens a document-gathering inquiry into Nvidia's disclosures and possible China transfers",
+        "fact": "California Attorney General Rob Bonta announced on November 19 that his office served Nvidia with an investigative subpoena. His release says the state is examining whether advanced chips or confidential information might have reached China and whether Nvidia misled investors or the public. The announcement cites reporting about former CEO Jensen Huang's relationship with a person described by the office as an alleged Chinese spy. The statement does not announce charges, establish that sensitive information was transferred, find a securities violation, or verify the person's alleged intelligence role. The underlying subpoena and responses are not public evidence available in the announcement.",
+        "assessment": "This is a new state-level investigative step, separate from the already reported federal Megaspeed criminal inquiry and congressional testimony requests. State securities officials have an interest in policing investor disclosures and attracting cooperation; Nvidia has incentives to protect confidential information, legal rights and investor confidence; federal authorities focus on export compliance and national security. The existence of an inquiry is verifiable. Its subject matter and the attorney general's allegations should not be promoted into proven misconduct or proof of a China-directed operation.",
+        "confidence": "HIGH: OFFICIAL SERVICE OF INVESTIGATIVE SUBPOENA · NOT ESTABLISHED: VIOLATION, DIVERSION, SPYING OR INVESTIGATION OUTCOME",
+        "sources": [
+          [
+            "California Attorney General — November 19 official investigative subpoena announcement",
+            "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The committee describes approval volumes as an export-security oversight concern while Commerce's existing policy treats specified chips as potentially licensable under conditions; these are not mutually exclusive facts. California describes a reason to investigate, not proof of a crime. Corporate compliance statements, congressional allegations, state investigative assertions and Chinese state claims all reflect institutional incentives and must be tested against license records, actual shipment evidence and legally established findings. This is WirelessRumor editorial analysis, not the output of separate AI models or invented community participants.",
+    "correction": "CHRONOLOGY / LEGAL STATUS: Both government announcements are dated November 19; this November 20 editorial is a next-day assessment. The licensing applications/approvals concern an earlier period; they do not override the November 19 effective date of the separate remote-compute interim final rule. Nvidia's previously reported halt to licensed Hopper deliveries does not erase earlier approvals or prove how many approved chips shipped. Earlier articles, primary links and correction records remain in place.",
+    "sources": [
+      [
+        "House Foreign Affairs Committee — original November 19 licensing disclosure",
+        "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china"
+      ],
+      [
+        "California Department of Justice — original November 19 subpoena announcement",
+        "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 19, 2026",
     "slug": "2026-11-19-bis-rule-effective-gemini-neon-rollout",
     "title": "The U.S. remote-compute chip rule takes effect; Google begins a paid rollout of Gemini 4 Neon.",
