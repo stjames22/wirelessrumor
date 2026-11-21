@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 21, 2026",
+    "slug": "2026-11-21-military-ai-human-control-anthropic-ipo-close",
+    "title": "Washington and Beijing voice an AI human-control principle; Anthropic closes a record-scale public offering and supplier placement.",
+    "overview": "Two November 20 primary records illuminate very different constraints on frontier AI: a U.S. official's description of Trump–Xi talks on military AI, compared with China's narrower published readout, and Anthropic's completion of a major financing transaction involving chip and cloud suppliers. Diplomatic statements are not enforceable verification arrangements; corporate capital raised is not an independently verified improvement in model performance, compute capacity or safety.",
+    "developments": [
+      {
+        "label": "U.S.–CHINA / NOV 19 SHENZHEN TALKS / NOV 20 FIRST-HAND INTERVIEW",
+        "headline": "Bessent describes a shared military-AI human-control principle; Beijing's readout supports the broader aim, not the detailed scope",
+        "fact": "In a November 20 CNBC interview, U.S. Treasury Secretary Scott Bessent said President Trump and President Xi agreed humans should be involved in military decisions made with advanced AI and that AI should not autonomously execute major military actions. That interview is primary evidence of what Bessent publicly asserted, not independent confirmation of the terms or implementation of a bilateral agreement. China's November 19 Foreign Ministry readout of Xi's meeting with Trump calls for coordination against AI security risks and says AI should remain under human control, but does not specify military decision-making, command authorities, definitions, monitoring or enforcement. No jointly published binding text, verification mechanism or operational protocol was identified in the two primary records.",
+        "assessment": "The overlap on human control is a meaningful diplomatic signal amid continued competition in chips and models, not a demonstrated operational safeguard. Washington has incentives to portray talks as reducing catastrophic-risk exposure while preserving technological and export-control leverage; Beijing has incentives to emphasize strategic stability, sovereign control and dialogue without accepting U.S.-defined operational limits. Neither public account establishes that military systems have been modified. Bessent also alleged Chinese-origin models drive AI-enabled attacks and claimed China trails in chips by years; those broader assertions are political and competitive claims, not independently demonstrated by the interview. Specific implementation would require jointly stated scope, verifiable practices and credible follow-up.",
+        "confidence": "HIGH: U.S. OFFICIAL'S RECORDED STATEMENT AND CHINESE GOVERNMENT READOUT · UNVERIFIED: BILATERAL TERMS, ENFORCEMENT, OPERATIONAL COMPLIANCE",
+        "sources": [
+          [
+            "CNBC / Versant — November 20 first-hand interview transcript of Treasury Secretary Bessent",
+            "https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-exclusive-transcript-us-treasury-secretary-scott-bessent-speaks-cnbcs-1"
+          ],
+          [
+            "Chinese Ministry of Foreign Affairs — November 19 original Trump–Xi meeting readout",
+            "https://www.fmprc.gov.cn/eng/wjb/zzjg_663340/bmdyzs_664814/xwlb_664816/202611/t20261119_12063139.html"
+          ],
+          [
+            "Reuters — November 20 comparison and independently reported context",
+            "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/"
+          ]
+        ]
+      },
+      {
+        "label": "ANTHROPIC / NOV 20 OFFERING CLOSE / COMPUTE SUPPLY INCENTIVES",
+        "headline": "Anthropic reports $91.6 billion of IPO proceeds to the company and a separate $26 billion placement to major chip and cloud firms",
+        "fact": "Anthropic announced November 20 that its initial public offering closed after 1.127 billion Class A shares were sold at $83 each, including the underwriters' fully exercised additional-share option. It reported approximately $93.5 billion in gross IPO proceeds, of which approximately $91.6 billion went to Anthropic before fees and expenses; the balance of the IPO included selling-stockholder proceeds that Anthropic did not receive. It also reported completing a distinct approximately $26 billion private placement of Class N shares to AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC Partners. The company says its Class A stock began Nasdaq trading as ANT on November 19. Those amounts are the issuer's transaction disclosures and should not be conflated with revenue, cash profits, new chip shipments or funds spent on additional model training.",
+        "assessment": "Closing the placement creates a documented financial relationship between an AI-model developer and several important suppliers, cloud distribution partners and prospective competitors. Capital may expand capacity to build and deploy models, but the primary announcement does not disclose supply allocation, governance rights, pricing, exclusivity or final use of proceeds. Anthropic has incentives to emphasize financial strength and AI safety; the participating firms have incentives to capture AI infrastructure demand and influence the ecosystem. Investors bear substantial execution and valuation risk. The scale of the financing is material, but neither capital raised nor first-day trading is independent evidence of superior models or safer deployment.",
+        "confidence": "HIGH: ISSUER-DISCLOSED COMPLETED OFFERING AND PARTICIPATING INVESTORS · NOT ESTABLISHED: REALIZED COMPUTE, GOVERNANCE TERMS, SAFETY OR MODEL GAINS",
+        "sources": [
+          [
+            "Anthropic — November 20 original IPO closing and private-placement statement",
+            "https://www.anthropic.com/news/ipo-close"
+          ],
+          [
+            "Anthropic — November 18 original offering price and initial terms",
+            "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+          ]
+        ]
+      }
+    ],
+    "messaging": "U.S. officials, Chinese officials, AI labs and infrastructure investors are interested parties with different incentives. Their original statements establish what they publicly asserted or transacted, not every conclusion they draw. This edition compares public records rather than imputing secret positions, operational compliance or simulated opinions to independent models or people.",
+    "correction": "CHRONOLOGY / SCOPE: The leaders met November 19; Bessent's more specific military-AI characterization was published in his November 20 interview, while the Chinese readout on November 19 states a more general human-control principle. It would be misleading to report a signed military-AI treaty. Anthropic's November 20 closing is separate from its November 18 pricing and November 19 trading debut; $93.5 billion gross IPO proceeds, $91.6 billion company IPO proceeds and the separate $26 billion placement are not interchangeable totals. Previous BIS remote-compute rule coverage, model access reporting, source links and corrections remain unchanged.",
+    "sources": [
+      [
+        "CNBC / Versant — Bessent interview, November 20",
+        "https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-exclusive-transcript-us-treasury-secretary-scott-bessent-speaks-cnbcs-1"
+      ],
+      [
+        "China Ministry of Foreign Affairs — Trump–Xi meeting record, November 19",
+        "https://www.fmprc.gov.cn/eng/wjb/zzjg_663340/bmdyzs_664814/xwlb_664816/202611/t20261119_12063139.html"
+      ],
+      [
+        "Anthropic — IPO and private placement close, November 20",
+        "https://www.anthropic.com/news/ipo-close"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 20, 2026",
     "slug": "2026-11-20-house-ai-chip-license-disclosure-california-nvidia-subpoena",
     "title": "Congress publishes AI-chip license approval totals for China; California subpoenas Nvidia in a separate investigation.",
