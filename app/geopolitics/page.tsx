@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+      "date": "NOVEMBER 22, 2026",
+      "slug": "2026-11-22-inference-privacy-openrouter-together-ai-disclosures",
+      "title": "AI inference privacy promises face a real-world test: OpenRouter removes providers and Together AI discloses leaked prompts.",
+      "overview": "A November 19 canary-token study, a November 21 provider incident disclosure, and OpenRouter's November 22 platform response expose the difference between advertised model access and actual custody of users' data. The dated novelty today is OpenRouter's reported removal of three inference providers and 125 Zero Data Retention-eligible endpoints, not a newly enacted U.S. or Chinese AI law. The incidents span international model routing but do not establish a China-directed espionage campaign.",
+      "developments": [
+          {
+              "label": "OPENROUTER / NOV 22 RESPONSE TO NOV 19 DRAGOS RESEARCH / MODEL ROUTING AND DATA GOVERNANCE",
+              "headline": "OpenRouter says it removed three providers and suspended Zero Data Retention eligibility for 125 endpoints",
+              "fact": "In a statement dated November 22, OpenRouter says it off-boarded three inference providers, removed 125 endpoints from Zero Data Retention (ZDR) eligibility—including precautionary removals—and notified potentially affected customers. It says the cited testing did not show a breach of OpenRouter itself, and that network-path verification and ongoing canary-style testing are underway. In the underlying November 19 original research, Dragos chief research officer HD Moore reported sending approximately two million uniquely seeded prompts through AI inference services between July and November. Dragos reported evidence of exposure at at least three hosting providers, suspicious use of its controlled AWS canary credentials, resellers retaining prompts, and some privacy-flagged requests traversing or being inspected by parties not expected by customers. OpenRouter did not identify the three removed providers; Dragos did not name its three compromised providers. These counts must not be assumed to describe the same set of companies.",
+              "assessment": "OpenRouter's removals are an actual, attributable service-governance response; Dragos's broader attack and routing observations are the research team's findings, not a completed independent audit of every vendor's traffic. The two-million figure describes test prompts, not two million confirmed affected customers. Dragos says some test URLs were fetched by systems associated with an unnamed Chinese AI lab even when ZDR was requested, but it also documents problematic U.S. providers and marketplaces. Traffic to a lab is not by itself proof of Chinese government access or intelligence tasking. Router operators have incentives to advertise convenient cheap model access while preserving trust; hosted model sellers compete on price and scale; security researchers benefit from demonstrating the value of independent testing. Actual data residency and retention require verification across every processing hop, not just an account setting.",
+              "confidence": "HIGH: DATED OPENROUTER PLATFORM ACTIONS AND PUBLISHED DRAGOS TEST METHOD · UNCERTAIN: FULL PROVIDER IDENTITIES, CUSTOMER EXPOSURE AND DATA DESTINATIONS",
+              "sources": [
+                  [
+                      "OpenRouter — November 22 original incident response and remediation",
+                      "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+                  ],
+                  [
+                      "Dragos / HD Moore — November 19 original canary-token investigation",
+                      "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+                  ]
+              ]
+          },
+          {
+              "label": "TOGETHER AI / NOV 21 INCIDENT DISCLOSURE / CODING AGENT AND PROMPT SECURITY",
+              "headline": "Together AI says a credential committed by an AI coding agent exposed stored inference prompt samples",
+              "fact": "Together AI's November 21 statement says that prompts sampled from some June–July serverless inference requests had been stored in a private Hugging Face repository for software testing. During development of the public xorl repository, an AI coding agent committed a credential that provided access to the private repository. Together says scanning flagged and reverted the public commit, but an unauthorized party obtained the credential, downloaded prompt samples and tested credentials found inside them, including five Dragos canary keys. It identifies requests for MiniMax M3, GLM-5.2 and Kimi K2.6, mostly on June 24 and July 4, 8 and 14. The provider says it has involved an external forensic firm and law enforcement, is reviewing the scope and has made ZDR the default for new accounts. Its assertion that it found no evidence of further leakage is a qualified company statement, not proof that no further copies exist.",
+              "assessment": "The incident is distinct from OpenRouter's unspecified provider removals and from Dragos's unnamed three hosting-provider compromises; public reports do not establish a one-to-one match. It demonstrates an operational failure mode at the boundary of AI-assisted software development, stored customer data and credential lifecycle. Together has an incentive to reassure customers and demonstrate remediation, while customers need credible scope, retention and notification evidence. ZDR defaults and token-scanning help only if providers implement them correctly across development, testing and upstream model hosts. This event does not prove a Chinese model developer obtained customer prompts merely because models originally developed in China appear in the list of affected inference routes.",
+              "confidence": "HIGH: TOGETHER AI'S FIRST-PARTY DISCLOSURE OF A SPECIFIC INCIDENT · OPEN: COMPLETE CUSTOMER IMPACT, DOWNSTREAM COPIES AND INDEPENDENT FORENSIC RESULTS",
+              "sources": [
+                  [
+                      "Together AI — November 21 original prompt-exposure statement",
+                      "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+                  ],
+                  [
+                      "Dragos — November 19 original seeded-prompt findings",
+                      "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+                  ],
+                  [
+                      "OpenRouter — November 22 response linking separately disclosed provider events",
+                      "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+                  ]
+              ]
+          }
+      ],
+      "messaging": "An actual marketplace action (OpenRouter's removals), original controlled research (Dragos's canary observations), and a provider's own incident admission (Together AI's statement) carry different evidentiary weight. The geopolitical issue is cross-border control and custody of inference data, not an established state intelligence operation. Corporate assurances of ZDR are claims about a process that must be tested; the researchers' results still require careful attribution and scope limits. This is WirelessRumor editorial analysis, not an independently polled model roundtable or invented community testimony.",
+      "correction": "DATES / ATTRIBUTION: Dragos published the research on November 19; Together AI disclosed its distinct prompt-sample leak on November 21; OpenRouter published its off-boarding and ZDR changes on November 22. The test used approximately two million seeded prompts, NOT two million verified customer breaches. Neither primary source identifies OpenRouter's three removals as the same providers Dragos counted. This is not a new BIS rule, a confirmed Chinese state program, or evidence that OpenRouter itself was breached. Earlier semiconductor, model-access, policy and correction entries are preserved unchanged.",
+      "sources": [
+          [
+              "OpenRouter — November 22 operator response",
+              "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+          ],
+          [
+              "Dragos — November 19 primary methodology and findings",
+              "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+          ],
+          [
+              "Together AI — November 21 original incident statement",
+              "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+          ]
+      ]
+  },
+  {
     "date": "NOVEMBER 21, 2026",
     "slug": "2026-11-21-military-ai-human-control-anthropic-ipo-close",
     "title": "Washington and Beijing voice an AI human-control principle; Anthropic closes a record-scale public offering and supplier placement.",
