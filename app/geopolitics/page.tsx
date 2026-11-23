@@ -85,6 +85,68 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 23, 2026",
+    "slug": "2026-11-23-nvidia-ceo-reinstatement-frontier-model-limits",
+    "title": "Nvidia reinstates Jensen Huang while export-control scrutiny continues; OpenAI's chief scientist proposes shared frontier-model development limits.",
+    "overview": "Two first-party developments clarify the distinction between a real corporate governance decision and a proposed AI safety standard. Nvidia disclosed on November 23 that its board reinstated Jensen Huang after acting on November 22, while its separate foreign-intelligence inquiry remains open. OpenAI chief scientist Jakub Pachocki's November 22 essay proposes cross-laboratory progress measures and voluntary model-development limits, but no binding or industry-wide agreement has been adopted. Neither development is a new U.S. chip-export rule or evidence of Chinese state culpability.",
+    "developments": [
+      {
+        "label": "NVIDIA / NOV 22 BOARD ACTION DISCLOSED NOV 23 / LEADERSHIP AND EXPORT GOVERNANCE",
+        "headline": "Nvidia restores Jensen Huang as CEO and director, while a separate investigation and export-compliance oversight continue",
+        "fact": "Nvidia's Form 8-K filed November 23 states that its board reinstated Jen-Hsun (Jensen) Huang as president, chief executive and director effective November 22. Nvidia's November 23 announcement says the unanimous board decision followed discussions with Huang and input from senior levels of the U.S. government; the board says it believes reinstatement poses no national-security risk. Colette Kress returns to her CFO role and Harvey C. Jones remains chair. The company says its separate independent-director investigation into reports of foreign-intelligence targeting is continuing, that a National Security and Export Control Committee has been formed, and that it is beginning a search for a chief compliance officer. The statement does not disclose a completed independent investigative finding or a government exoneration.",
+        "assessment": "This is a verified corporate leadership reversal from the November 12 resignation, not a revision to export-control law or proof of innocence or wrongdoing in unrelated chip-diversion inquiries. Nvidia's board and shareholders have incentives to restore continuity and investor confidence, while officials have national-security and economic reasons to scrutinize or support leadership at a dominant AI-chip supplier. Nvidia's characterization of government input cannot be equated with a published regulatory adjudication or an independent intelligence assessment. The new oversight committee and planned compliance hire are governance announcements; their effectiveness cannot yet be measured.",
+        "confidence": "HIGH: SEC FILED BOARD ACTION AND NVIDIA'S DATED STATEMENT · OPEN: OUTCOME OF INDEPENDENT INQUIRY AND PRACTICAL EFFECT OF COMPLIANCE MEASURES",
+        "sources": [
+          [
+            "Nvidia — November 23 reinstatement announcement",
+            "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
+          ],
+          [
+            "Nvidia — Form 8-K filed November 23, board action dated November 22",
+            "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+          ],
+          [
+            "Nvidia — November 12 original CEO transition",
+            "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/"
+          ]
+        ]
+      },
+      {
+        "label": "OPENAI / NOV 22 PRIMARY ESSAY / FRONTIER-MODEL SAFETY GOVERNANCE",
+        "headline": "OpenAI's chief scientist calls for common progress metrics and development thresholds; the proposal has no formal industry force",
+        "fact": "In a November 22 essay, OpenAI chief scientist Jakub Pachocki publishes selected internal training-loss measurements and proposes that frontier developers establish cross-laboratory evaluation standards, red-team safety cases and common limits they would not cross until monitoring and interpretability reach defined milestones. He suggests perplexity or cross-entropy loss, combined with other measures, as a possible foundation. His estimates that new capabilities might emerge at certain loss ranges, that AI could accelerate pretraining research as soon as 2027, and that present monitoring may become inadequate are his projections, not independently demonstrated outcomes or enacted policy. The reported loss measurements use an internal code dataset, not a standardized public cross-lab benchmark.",
+        "assessment": "A proposed measurable pause framework would change how competing labs discuss risk if developers actually adopted compatible evaluation data, independent auditing and enforceable commitments; none is confirmed. OpenAI has incentives both to make frontier development safer and to shape standards that influence competitors and market entry. Rivals may have different model architectures, datasets and commercial interests, making any single perplexity threshold difficult to compare. The author explicitly acknowledges that task capabilities, reasoning and training-data distributions are not captured by perplexity alone. Treat this as a serious proposal and a disclosure of company measurements, not proof of automated superintelligence, an international agreement or independently verified comparative model rankings.",
+        "confidence": "HIGH: ORIGINAL AUTHOR'S PROPOSAL PUBLISHED NOV 22 · UNCERTAIN: CROSS-LAB COMPARABILITY, ADOPTION AND PREDICTIVE VALUE OF THE NUMERIC THRESHOLDS",
+        "sources": [
+          [
+            "OpenAI / Jakub Pachocki — November 22 original essay, Perplexity and Intelligence",
+            "https://openai.com/index/perplexity-and-intelligence/"
+          ],
+          [
+            "OpenAI / Jakub Pachocki — earlier September essay on alignment and risk (context)",
+            "https://openai.com/index/an-alien-mind/"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Confirmed SEC-filed leadership actions, Nvidia's interested-party assessments of security, and a scientist's explicitly normative AI pacing proposal have distinct evidentiary status. The Nvidia statement does not resolve public investigations or the China semiconductor dispute; the OpenAI essay does not impose a standard on other laboratories. Washington, Beijing, AI labs and chip providers have differing economic, national-security and institutional incentives. These are WirelessRumor editorial assessments, not independently generated model votes, a synthetic debate or a claim of human community participation.",
+    "correction": "NOV 12 / NOV 23 CHRONOLOGY: The November 12 report of Jensen Huang's resignation was accurate as of that date; the SEC filing confirms the board reinstated him on November 22, announced November 23. The board's stated confidence is not the result of a concluded independent inquiry. OPENAI / NOV 22: Proposed training limits have not been enacted, endorsed by all frontier developers, or shown comparable across labs; model capability predictions are attributed to the author. Previous stories, hyperlinks, chronology refinements and correction notes remain unchanged.",
+    "sources": [
+      [
+        "Nvidia — November 23 board announcement",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
+      ],
+      [
+        "Nvidia — November 23 SEC Form 8-K",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+      ],
+      [
+        "OpenAI — November 22 Pachocki original analysis",
+        "https://openai.com/index/perplexity-and-intelligence/"
+      ]
+    ]
+  },
+  {
       "date": "NOVEMBER 22, 2026",
       "slug": "2026-11-22-inference-privacy-openrouter-together-ai-disclosures",
       "title": "AI inference privacy promises face a real-world test: OpenRouter removes providers and Together AI discloses leaked prompts.",
