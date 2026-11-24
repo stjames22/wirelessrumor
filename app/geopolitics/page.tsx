@@ -85,6 +85,105 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 24, 2026",
+    "slug": "2026-11-24-megaspeed-entity-list-regional-ai-governance-gpt62",
+    "title": "U.S. lists seven Southeast Asian entities over chip-diversion risk; Australia and Singapore deepen AI governance cooperation; GPT-6.2 reaches more users.",
+    "overview": "November 23–24 brings three different kinds of change: an export-control action, a diplomatic commitment to shared AI governance, and a commercial model rollout. The first is a regulatory risk decision, not a criminal verdict; the second is not a new binding international standard; the third is not independent proof of model performance or safety.",
+    "developments": [
+      {
+        "label": "BIS / NOV 23 FILING · MALAYSIA AND SINGAPORE / NOV 24 RESPONSES",
+        "headline": "Megaspeed and six other entities face new export licensing; regional authorities distinguish their own enforcement powers",
+        "fact": "BIS final rule 2026-23999 names seven entities under Malaysia, Singapore and Thailand, including Megaspeed International and Speedmatrix. The public-inspection text requires licenses for all items covered by the Export Administration Regulations, with denial as the default review position. Its filing notation is November 23 and formal publication is scheduled November 25; the effective-date instruction refers to public inspection. The official PDF could not be retrieved directly during this review; the mirrored rule text and Malaysia's November 24 ministry statement corroborate the action. Malaysia's ministry says its investment agency will advise data centers not to serve the seven entities, and disputes the Malaysian presence of one listed entity, PT Megaspeed International. Singapore's prime minister says its local investigation continues, that information from the U.S. is incomplete, and that Singapore assists U.S. checks but enforces its own laws.",
+        "assessment": "This advances the investigation previously covered November 15 and 17 into a concrete trade restriction, without establishing that any particular shipment was diverted or that a person committed a crime. Washington has an incentive to constrain access to advanced compute; regional governments have incentives to preserve both investment and trade credibility while retaining legal autonomy. Malaysia's planned notice is not evidence that service has already stopped. Singapore's account of chip routing and information gaps is an official assertion, not independently verified shipment tracing. The precise final dates and disputed entity details warrant follow-up.",
+        "confidence": "HIGH: DATED MALAYSIAN AND SINGAPOREAN STATEMENTS · RULE TEXT REVIEWED VIA MIRROR · OPEN: FINAL PUBLICATION, END USERS AND INVESTIGATION OUTCOME",
+        "sources": [
+          [
+            "BIS — final rule 2026-23999, official public-inspection location (temporarily inaccessible during review)",
+            "https://publicinspection.federalregister.gov/2026-23999.pdf"
+          ],
+          [
+            "BIS — public-inspection text, third-party PDF mirror reviewed November 24",
+            "https://www.dire.it/wp-content/uploads/2026/11/2026-23999.pdf"
+          ],
+          [
+            "Malaysia MITI — November 24 media statement",
+            "https://www.miti.gov.my/miti/resources/Media%20Release/THE_ADDITION_OF_MALAYSIAN_ENTITIES_TO_THE_US_ENTITY_LIST_-_UNDER_BUREAU_OF_INDUSTRY_AND_SECURITY_OF_THE_US_DEPARTMENT_OF_COMMERCE.pdf"
+          ],
+          [
+            "Singapore PMO — November 24 press conference transcript",
+            "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-and-australia-pm-anthony-albanese-at-the-q-a-segment-of-the-11th-singapore-australia-annual-leaders-meeting-alm-joint-press-conference-on-24-november-2026/"
+          ]
+        ]
+      },
+      {
+        "label": "AUSTRALIA–SINGAPORE / NOV 24 / REGIONAL AI GOVERNANCE",
+        "headline": "Two Indo-Pacific governments commit to shared AI testing, oversight and data governance",
+        "fact": "The November 24 joint statement builds on an AI cooperation memorandum from 2024. Leaders commit to exchanges on model evaluation and assurance, research and skills, and exploration of interoperable digital infrastructure and cross-border data flows. They endorse human oversight, regional language capabilities and cooperation on testing methods through ASEAN and international measurement forums.",
+        "assessment": "This shows middle powers pursuing regional AI capacity and standards rather than simply choosing a U.S. or Chinese technology bloc. Both governments have incentives to attract investment and facilitate trade while retaining privacy, security and local control. The statement is a policy commitment; it supplies no binding common testing regime, automatic cross-border data permissions or verified deployment results.",
+        "confidence": "HIGH: JOINT GOVERNMENT STATEMENT · OPEN: IMPLEMENTATION, FUNDING AND MEASURABLE INTEROPERABILITY",
+        "sources": [
+          [
+            "Australia and Singapore — November 24 joint AI statement",
+            "https://www.pm.gov.au/media/australia-singapore-cooperation-artificial-intelligence"
+          ],
+          [
+            "Singapore PMO — November 24 press conference transcript",
+            "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-and-australia-pm-anthony-albanese-at-the-q-a-segment-of-the-11th-singapore-australia-annual-leaders-meeting-alm-joint-press-conference-on-24-november-2026/"
+          ]
+        ]
+      },
+      {
+        "label": "OPENAI / NOV 23 / CHAT MODEL ACCESS AND SAFETY DISCLOSURE",
+        "headline": "ChatGPT begins a GPT-6.2 chat rollout while OpenAI reports high-risk capability classifications",
+        "fact": "OpenAI's November 23 release notes announce a staged rollout of a chat-optimized GPT-6.2 to Plus, Pro, Business and Enterprise customers, with Enterprise access subject to administrator settings. The notes distinguish this from Work and Codex, which are unchanged in this release. Its system card rates the model Critical for cybersecurity and High for biological/chemical and AI self-improvement capabilities under the company's own framework; it describes safeguards intended to manage those risks. The company reports improvements on selected internal tests.",
+        "assessment": "The important change is wider consumer and business access to a model with acknowledged dual-use capabilities, not a new universal access entitlement or an independent safety certification. OpenAI has both safety and commercial incentives to emphasize effective safeguards and better performance. Internal test results are useful disclosures but cannot establish real-world harm rates, comparative superiority, or autonomous self-improvement. Independent evaluations and observed safeguard effectiveness remain important.",
+        "confidence": "HIGH: DATED RELEASE AND SYSTEM CARD · OPEN: ACTUAL ACCOUNT AVAILABILITY AND INDEPENDENT SAFETY VALIDATION",
+        "sources": [
+          [
+            "OpenAI — November 23 ChatGPT release notes",
+            "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+          ],
+          [
+            "OpenAI — November 23 GPT-6.2 in ChatGPT system card",
+            "https://deploymentsafety.openai.com/gpt-6-2-chatgpt/preparedness-assessment"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Separate regulatory action, government descriptions of investigations, diplomatic intent and vendor-reported evaluation results. Neither a U.S. risk designation nor a regional government's defense of its enforcement record settles allegations of misconduct. OpenAI's internal metrics receive the same scrutiny as other model providers. These are editorial assessments, not independent model votes or community contributions.",
+    "correction": "NOV 15/17: the investigation and re-export checks previously reported have now been followed by a distinct BIS listing action; investigations remain unresolved. The November 23 public-inspection date is distinct from scheduled November 25 publication; confirm the final official text when available. NOV 23/24: the Australian–Singapore statement is not a binding interoperability regime, and the GPT-6.2 chat rollout is separate from the November 17 API and Work/Codex announcements. Earlier reporting and source links remain intact.",
+    "sources": [
+      [
+        "BIS — final rule 2026-23999, official public-inspection location (temporarily inaccessible during review)",
+        "https://publicinspection.federalregister.gov/2026-23999.pdf"
+      ],
+      [
+        "BIS — public-inspection text, third-party PDF mirror reviewed November 24",
+        "https://www.dire.it/wp-content/uploads/2026/11/2026-23999.pdf"
+      ],
+      [
+        "Malaysia MITI — November 24 media statement",
+        "https://www.miti.gov.my/miti/resources/Media%20Release/THE_ADDITION_OF_MALAYSIAN_ENTITIES_TO_THE_US_ENTITY_LIST_-_UNDER_BUREAU_OF_INDUSTRY_AND_SECURITY_OF_THE_US_DEPARTMENT_OF_COMMERCE.pdf"
+      ],
+      [
+        "Singapore PMO — November 24 press conference transcript",
+        "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-and-australia-pm-anthony-albanese-at-the-q-a-segment-of-the-11th-singapore-australia-annual-leaders-meeting-alm-joint-press-conference-on-24-november-2026/"
+      ],
+      [
+        "Australia and Singapore — November 24 joint AI statement",
+        "https://www.pm.gov.au/media/australia-singapore-cooperation-artificial-intelligence"
+      ],
+      [
+        "OpenAI — November 23 ChatGPT release notes",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      [
+        "OpenAI — November 23 GPT-6.2 in ChatGPT system card",
+        "https://deploymentsafety.openai.com/gpt-6-2-chatgpt/preparedness-assessment"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 23, 2026",
     "slug": "2026-11-23-nvidia-ceo-reinstatement-frontier-model-limits",
     "title": "Nvidia reinstates Jensen Huang while export-control scrutiny continues; OpenAI's chief scientist proposes shared frontier-model development limits.",
