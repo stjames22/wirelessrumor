@@ -85,6 +85,84 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 25, 2026",
+    "slug": "2026-11-25-eu-kenya-data-adequacy-shirudo-agent-defense",
+    "title": "EU and Kenya advance data adequacy and AI compute cooperation; Cisco and OpenAI release an agent-assisted security project.",
+    "overview": "Two previously uncovered developments illustrate the importance of access to trusted data and safe operational control, rather than benchmark scores alone. The November 23–24 Brussels dialogue produced a new roadmap; the November 23 Shirudo launch offers inspectable software and a reported laboratory result, not proven fleet-scale protection.",
+    "developments": [
+      {
+        "label": "EU–KENYA / NOV 24–25 / DATA GOVERNANCE AND COMPUTE ACCESS",
+        "headline": "Technical adequacy talks conclude; AI infrastructure partnerships move forward",
+        "fact": "The European Commission's November 24 report and the EU delegation's November 25 announcement say the two sides launched a digital cooperation roadmap after meetings in Brussels on November 23–24. Technical negotiations on reciprocal data adequacy are complete, but both sides still must adopt formal decisions before the arrangement facilitates personal-data transfers. They agreed to strengthen AI Factories partnerships for applications including local languages and agriculture and to explore a shared-access compute facility for Kenyan businesses and researchers.",
+        "assessment": "The EU has incentives to extend trusted digital trade and regulatory interoperability; Kenya has incentives to expand compute access, local expertise and services exports while retaining control over its digital infrastructure. These objectives can complement one another but may diverge over funding, access terms and data protection. The roadmap does not establish that unrestricted data transfers are already lawful, that the compute facility is funded or operational, or that Kenya is choosing an exclusive technology bloc.",
+        "confidence": "HIGH: DATED EU STATEMENTS · OPEN: FORMAL ADEQUACY ADOPTION, FINANCING AND COMPUTE AVAILABILITY",
+        "sources": [
+          [
+            "European Commission — November 24 digital dialogue report",
+            "https://digital-strategy.ec.europa.eu/en/news/eu-and-kenya-hold-successful-digital-dialogue"
+          ],
+          [
+            "EU Delegation to Kenya — November 25 roadmap announcement",
+            "https://www.eeas.europa.eu/delegations/kenya/european-union-and-kenya-advance-their-digital-partnership_en"
+          ]
+        ]
+      },
+      {
+        "label": "CISCO–OPENAI / NOV 23 / AGENT-ASSISTED CYBER DEFENSE",
+        "headline": "Shirudo makes temporary Linux protections inspectable, with operators retaining deployment control",
+        "fact": "Cisco and OpenAI announced the open-source Shirudo runtime on November 23. The public repository describes a Linux security platform using eBPF and signed temporary protections. OpenAI reports that in a controlled test, a Codex-generated protection stopped an attempted exploit against a running Elasticsearch service without a restart. The design calls for operator approval before enforcement and signed verification of protections.",
+        "assessment": "This is a concrete defensive application of AI-assisted coding, complementary to the dual-use capabilities discussed November 6 and 24. Both vendors benefit commercially from confidence in AI-enabled infrastructure security. Public code enables scrutiny but does not establish independent replication, absence of false positives, compatibility across production workloads or sustained protection against adaptive attackers. Temporary safeguards are not a substitute for permanent patches; controlled deployment and rollback remain important.",
+        "confidence": "HIGH: PROJECT RELEASE AND PUBLIC REPOSITORY · OPEN: INDEPENDENT TESTING AND PRODUCTION EFFECTIVENESS",
+        "sources": [
+          [
+            "OpenAI — November 23 Shirudo announcement and test description",
+            "https://openai.com/index/introducing-shirudo/"
+          ],
+          [
+            "Cisco — November 23 joint project announcement",
+            "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html"
+          ],
+          [
+            "Shirudo — public project repository",
+            "https://github.com/shirudo-dev/shirudo"
+          ]
+        ]
+      }
+    ],
+    "messaging": "The EU describes its partnerships in terms of trust and opportunity; the vendors frame Shirudo as a way to accelerate defense. These are interested-party accounts. Assess the former against adopted legal decisions and actual access, and the latter against reproducible security tests and observed operational outcomes. Neither is evidence of a general geopolitical victory or independent model consensus.",
+    "correction": "NOV 24 ENTITY LIST FOLLOW-UP: The published text of BIS document 2026-23999, reproduced by Justia as 91 FR 76148–76150 on November 25, specifies November 23 as the effective date. The official final-rule URL could not be retrieved directly during this review. The reproduced text also describes a limited savings clause for qualifying shipments already en route on November 23, with completion by December 23; this is not a general grace period. The seven-entity listing previously reported is the same action, not a new sanction. The underlying investigations and disputed entity details remain unresolved. The EU–Kenya dialogue occurred November 23–24; Shirudo was announced November 23. Earlier reporting and source links remain intact.",
+    "sources": [
+      [
+        "European Commission — November 24 digital dialogue report",
+        "https://digital-strategy.ec.europa.eu/en/news/eu-and-kenya-hold-successful-digital-dialogue"
+      ],
+      [
+        "EU Delegation to Kenya — November 25 roadmap announcement",
+        "https://www.eeas.europa.eu/delegations/kenya/european-union-and-kenya-advance-their-digital-partnership_en"
+      ],
+      [
+        "OpenAI — November 23 Shirudo announcement and test description",
+        "https://openai.com/index/introducing-shirudo/"
+      ],
+      [
+        "Cisco — November 23 joint project announcement",
+        "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html"
+      ],
+      [
+        "Shirudo — public project repository",
+        "https://github.com/shirudo-dev/shirudo"
+      ],
+      [
+        "Federal Register — document 2026-23999 (direct retrieval unavailable during review)",
+        "https://www.federalregister.gov/d/2026-23999"
+      ],
+      [
+        "Published rule text reproduced by Justia — 91 FR 76148, November 25",
+        "https://regulations.justia.com/regulations/fedreg/2026/11/25/2026-23999.html"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 24, 2026",
     "slug": "2026-11-24-megaspeed-entity-list-regional-ai-governance-gpt62",
     "title": "U.S. lists seven Southeast Asian entities over chip-diversion risk; Australia and Singapore deepen AI governance cooperation; GPT-6.2 reaches more users.",
