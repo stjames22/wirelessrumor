@@ -85,6 +85,80 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 26, 2026",
+    "slug": "2026-11-26-minimax-routing-disclosure-section-301-proposals",
+    "title": "MiniMax acknowledges logging URLs in no-retention traffic; U.S. proposes new trade measures affecting technology supply chains.",
+    "overview": "Two developments clarify where control over AI resides: in the actual path of inference requests, and in trade rules governing the hardware supply chain. The first advances the November 22 privacy report; the second concerns proposed import tariffs, not a new advanced-chip export ban.",
+    "developments": [
+      {
+        "label": "MINIMAX / NOV 24–26 / INFERENCE PRIVACY",
+        "headline": "Provider acknowledges security logging on requests marked for no data retention",
+        "fact": "MiniMax's November 24 statement acknowledges that its monitoring system recorded and subsequently accessed URLs extracted from forwarded requests, including traffic marked Zero Data Retention (ZDR). It says the mechanism was disabled, affected URLs deleted and current B2B traffic on the identified path checked; it reports no evidence of wider disclosure in the requests it examined. Atlas Cloud's updated notice confirms it stopped forwarding requests to MiniMax's official API and advises affected customers to treat submitted secrets as exposed. Novita separately disclosed a routing configuration issue affecting some requests from May 28 to November 11. In a November 26 Reuters interview, Dragos researcher HD Moore identified MiniMax as the previously unnamed lab in the November 19 study and described unresolved link-sharing and attempted code-access activity.",
+        "assessment": "The provider's explanation documents a privacy-control failure even if its security purpose was legitimate. It does not settle the additional activity described by the researcher, establish who accessed it, or prove that full conversations were disclosed. MiniMax has an incentive to restore trust; intermediaries have incentives to demonstrate their own systems were not the source, but remain responsible for explaining routing. Independent deployment of a model and forwarding to its maker's API are different data paths. Audit the actual processors, logging exceptions and routing behavior; rotate potentially exposed live secrets. Neither geographic hosting labels nor national origin alone establish security.",
+        "confidence": "HIGH: PROVIDER ACKNOWLEDGMENTS AND ROUTING NOTICES · OPEN: FULL SCOPE, ACTOR ATTRIBUTION AND INDEPENDENT REMEDIATION VERIFICATION",
+        "sources": [
+          [
+            "MiniMax — November 24 statement on forwarded API requests",
+            "https://www.minimax.io/blog/update-on-url-access-in-forwarded-api-requests-20261124"
+          ],
+          [
+            "Atlas Cloud — November 24 updated security notice",
+            "https://www.atlascloud.ai/blog/ai-updates/security-and-privacy-commitment"
+          ],
+          [
+            "Novita — November 22 routing and privacy notice",
+            "https://novita.ai/blog/minimax-requests-privacy-notice/"
+          ],
+          [
+            "Dragos — November 19 original research",
+            "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+          ]
+        ]
+      },
+      {
+        "label": "UNITED STATES / NOV 25 / TRADE AND INDUSTRIAL POLICY",
+        "headline": "Section 301 findings include semiconductor, robotics and electronics supply chains",
+        "fact": "On November 25, USTR issued determinations on manufacturing excess-capacity investigations involving 14 economies, including China, Taiwan, Japan, South Korea and Singapore. Its China findings identify semiconductors, robotics and consumer electronics among affected sectors. The proposed China action includes tariffs of up to 20% on goods outside specified annexes, net of the specified forced-labor Section 301 duty rate, and up to 10% on Annex A goods, with Annex B exemptions. Comments and hearing requests are due January 5, 2027; hearings are scheduled to begin January 25.",
+        "assessment": "These are formal USTR findings and proposals, not independent proof of every allegation or a final tariff schedule. Washington seeks leverage and domestic manufacturing investment; trading partners have incentives to sustain industrial capacity, exports and strategic autonomy. If adopted, additional duties could alter input costs and sourcing decisions across AI hardware supply chains, but product classifications, exemptions, existing duties and negotiations determine the actual exposure. The proposal is distinct from November's already-effective advanced-compute export controls.",
+        "confidence": "HIGH: OFFICIAL DETERMINATIONS AND PROPOSAL · OPEN: FINAL RATES, COVERED PRODUCTS AND COST EFFECTS",
+        "sources": [
+          [
+            "USTR — November 25 Section 301 determinations and proposed actions",
+            "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Apply the same evidence standard to every actor. MiniMax's remediation is a company claim that requires independent confirmation; the U.S. trade agency's industrial-policy accusations are attributed government findings, not uncontested facts. A provider's privacy promise and a government's economic-security rationale both need to be checked against observable outcomes.",
+    "correction": "FOLLOW-UP TO NOV 22: MiniMax's own November 24 disclosure and the researcher's November 26 identification add specificity to the earlier OpenRouter coverage. This is not a newly discovered separate breach, and neither the reported link activity nor the company notices establish state involvement. The USTR proposal was announced November 25; it is not a newly effective tariff. Earlier source links and corrections remain intact.",
+    "sources": [
+      [
+        "MiniMax — November 24 statement on forwarded API requests",
+        "https://www.minimax.io/blog/update-on-url-access-in-forwarded-api-requests-20261124"
+      ],
+      [
+        "Atlas Cloud — November 24 updated security notice",
+        "https://www.atlascloud.ai/blog/ai-updates/security-and-privacy-commitment"
+      ],
+      [
+        "Novita — November 22 routing and privacy notice",
+        "https://novita.ai/blog/minimax-requests-privacy-notice/"
+      ],
+      [
+        "Dragos — November 19 original research",
+        "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+      ],
+      [
+        "Reuters — November 26 direct interview with Dragos researcher (reported findings)",
+        "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/"
+      ],
+      [
+        "USTR — November 25 Section 301 determinations and proposed actions",
+        "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 25, 2026",
     "slug": "2026-11-25-eu-kenya-data-adequacy-shirudo-agent-defense",
     "title": "EU and Kenya advance data adequacy and AI compute cooperation; Cisco and OpenAI release an agent-assisted security project.",
