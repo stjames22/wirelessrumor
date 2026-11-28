@@ -85,6 +85,76 @@ const briefs = [
 
 const datedEditorialUpdates = [
   {
+    "date": "NOVEMBER 28, 2026",
+    "slug": "2026-11-28-china-mineral-control-pause-japan-ai-safety-draft",
+    "title": "China extends a specific U.S.-bound materials reprieve; Japan's AI policy panel proposes enforceable safety duties.",
+    "overview": "Two primary government documents illuminate different forms of technology governance: China's narrow trade-control suspension continues from today, while a Japanese working group proposes moving beyond voluntary cooperation for certain advanced AI services. One is an operative decision; the other is a draft policy recommendation.",
+    "developments": [
+      {
+        "label": "CHINA / NOV 24 NOTICE / NOV 28 EFFECTIVE DATE",
+        "headline": "A targeted U.S.-bound critical-materials suspension continues through January 27",
+        "fact": "China's Commerce Ministry published Announcement No. 59 on November 24, extending the suspension of paragraph two of its December 2024 Announcement No. 46 from November 28, 2026 through January 27, 2027. That paragraph covers the presumptive denial of exports to the United States of specified gallium, germanium, antimony and superhard-material dual-use items, plus enhanced end-user and end-use screening for dual-use graphite. The preceding suspension ran through November 27. Paragraph one's prohibition on dual-use exports to U.S. military users or uses is not suspended by this notice; other applicable export controls and licensing requirements are not repealed.",
+        "assessment": "This reduces one near-term source of uncertainty for downstream technology manufacturers, including semiconductor supply chains that use gallium and germanium. Beijing can maintain negotiating leverage while allowing commercial trade to continue; U.S. buyers have incentives to diversify supply. The notice is not a promise of shipments, proof of a reciprocal concession, or relaxation of U.S. restrictions on advanced AI chips. Watch licensing, trade volumes and the January deadline.",
+        "confidence": "HIGH: PRIMARY LEGAL TEXT AND DATES · OPEN: LICENSING, SHIPMENTS AND NEGOTIATING OUTCOMES",
+        "sources": [
+          [
+            "China MOFCOM — Announcement No. 59 of 2026 (published November 24; effective November 28)",
+            "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_69b3633579184af38198463be8116ebf.html"
+          ],
+          [
+            "China MOFCOM — original December 3, 2024 Announcement No. 46",
+            "https://www.mofcom.gov.cn/zfxxgk/gkml/art/2024/art_99f5d51bbe6a412ca309d5818c4dee52.html"
+          ],
+          [
+            "China MOFCOM — 2025 Announcement No. 72 (previous suspension)",
+            "https://cms.exportcontrol.mofcom.gov.cn/article/hgfw/lywxcx/gzqd/202511/1197.html"
+          ]
+        ]
+      },
+      {
+        "label": "JAPAN / NOV 27 DRAFT / AI SERVICE GOVERNANCE",
+        "headline": "A Cabinet Office working group recommends mandatory safeguards and incident reporting",
+        "fact": "A November 27 draft report published by Japan's Cabinet Office recommends legal duties for qualifying high-performance AI service providers: risk assessment and preventive safeguards against serious harm, reporting serious incidents or concrete risks, government information requests and corrective orders, and penalties for specified failures to comply. It also proposes a technical investigation role for Japan's AI Safety Institute. The report discusses risks from cyber misuse and unexpected agent behavior, and indicates that services built on open-weight models could be covered depending on their risk. The document is a working-group draft, not an enacted amendment or a final list of covered providers.",
+        "assessment": "Japan seeks to retain the benefits of broad AI adoption while improving oversight where voluntary cooperation is insufficient. Providers may favor predictable and internationally compatible obligations but resist costly or ambiguous requirements; users and regulators need meaningful evidence of risk reduction. The proposed focus on services rather than model nationality could matter for foreign and domestic operators alike. Coverage thresholds, reporting deadlines, penalty levels and actual enforcement remain unsettled. The panel's risk rationale is evidence of its policy judgment, not independent proof of every reported incident or model capability.",
+        "confidence": "HIGH: DATED OFFICIAL DRAFT · PROPOSED ONLY: DUTIES, PENALTIES AND IMPLEMENTATION",
+        "sources": [
+          [
+            "Japan Cabinet Office — November 27 working-group meeting and materials",
+            "https://www8.cao.go.jp/cstp/ai/ai_expert_wg/seido_4kai/seido_4kai.html"
+          ],
+          [
+            "Japan Cabinet Office — November 27 draft report, summary and section III (Japanese PDF)",
+            "https://www8.cao.go.jp/cstp/ai/ai_expert_wg/seido_4kai/shiryo1.pdf"
+          ]
+        ]
+      }
+    ],
+    "messaging": "Neither a trade reprieve nor a proposed safety law demonstrates a government's long-term intentions or the effectiveness of its policy. China retains other controls while extending one suspension; Japan's proposed powers would still require legislation and practical implementation. Judge both by published decisions, enforcement and measurable outcomes rather than official assurances or corporate capability claims.",
+    "correction": "SCOPE AND TIMING: The November 9 editorial concerned China's separate Announcement No. 58 and its January 10 endpoint. Today's No. 59 extends a different provision through January 27; these deadlines are not interchangeable. The Japanese document is dated November 27 and is a draft recommendation. Earlier reporting and corrections are retained.",
+    "sources": [
+      [
+        "China MOFCOM — Announcement No. 59 of 2026 (published November 24; effective November 28)",
+        "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_69b3633579184af38198463be8116ebf.html"
+      ],
+      [
+        "China MOFCOM — original December 3, 2024 Announcement No. 46",
+        "https://www.mofcom.gov.cn/zfxxgk/gkml/art/2024/art_99f5d51bbe6a412ca309d5818c4dee52.html"
+      ],
+      [
+        "China MOFCOM — 2025 Announcement No. 72 (previous suspension)",
+        "https://cms.exportcontrol.mofcom.gov.cn/article/hgfw/lywxcx/gzqd/202511/1197.html"
+      ],
+      [
+        "Japan Cabinet Office — November 27 working-group meeting and materials",
+        "https://www8.cao.go.jp/cstp/ai/ai_expert_wg/seido_4kai/seido_4kai.html"
+      ],
+      [
+        "Japan Cabinet Office — November 27 draft report, summary and section III (Japanese PDF)",
+        "https://www8.cao.go.jp/cstp/ai/ai_expert_wg/seido_4kai/shiryo1.pdf"
+      ]
+    ]
+  },
+  {
     "date": "NOVEMBER 27, 2026",
     "slug": "2026-11-27-singapore-chip-access-agent-verification-search",
     "title": "Singapore reviews chip-access safeguards; Anthropic details a live API migration; Cloudflare opens an agent-search option.",
